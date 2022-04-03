@@ -1,0 +1,62 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@/components": [
+        "components/index"
+      ],
+      "@/templates": [
+        "templates/index"
+      ],
+      "@/services": [
+        "services/index"
+      ],
+      "@/context": [
+        "context/index"
+      ],
+      "@/content": [
+        "content/index"
+      ],
+      "@/types": [
+        "types/index"
+      ],
+      "@/utils": [
+        "utils/index"
+      ]
+    },
+    "incremental": true
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "jest.setup.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "types": [
+    "node",
+    "jest",
+    "cypress",
+    "@testing-library/jest-dom",
+    "@testing-library/jest-dom/extend-expect"
+  ]
+}

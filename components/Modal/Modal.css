@@ -1,0 +1,81 @@
+.modal{
+  @apply
+  fixed
+  top-0
+  left-0
+  w-full
+  h-screen
+  p-4
+  bg-opacity-50
+  flex
+  flex-col
+  justify-center
+  items-center
+  gap-4
+  backdrop-blur
+  bg-black
+}
+
+.modal__container{
+  @apply
+  max-w-[450px]
+  w-full
+  scroll-auto
+  rounded-2xl
+  relative
+  overflow-hidden
+  bg-white
+}
+
+.modal__content{
+  @apply
+  overflow-auto
+  max-h-[500px]
+  p-5
+}
+
+/* width */
+.modal__content::-webkit-scrollbar {
+  @apply
+  w-[5px]
+}
+
+/* Track */
+.modal__content::-webkit-scrollbar-track {
+  @apply
+  bg-transparent
+}
+
+/* Handle */
+.modal__content::-webkit-scrollbar-thumb {
+  @apply
+  bg-slate-300
+  rounded-full
+  transition-all
+}
+
+/* Handle on hover */
+.modal__content::-webkit-scrollbar-thumb:hover {
+  @apply
+  bg-slate-400
+}
+
+.modal__open{
+  @apply
+  inline-block
+}
+
+.modal__close{
+  @apply
+  w-[35px]
+  h-[35px]
+  p-1
+  rounded-full
+  flex
+  justify-center
+  items-center
+  cursor-pointer
+  bg-white
+  text-slate-400
+  hover:text-red-500
+}

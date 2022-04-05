@@ -23,6 +23,10 @@ module.exports = {
         // => @media (max-width: 639px) { ... }
       },
 
+      fontFamily: {
+        'sans': ['"Inter"', 'sans-serif']
+      },
+
     },
   },
   plugins: [],

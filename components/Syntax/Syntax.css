@@ -1,0 +1,21 @@
+.syntax{
+  @apply
+  p-2
+  bg-[#23241F]
+  rounded-md
+  overflow-x-auto
+  text-sm
+}
+
+/* width */
+.syntax__inside::-webkit-scrollbar {
+  @apply
+  w-[1px]
+  h-[2px]
+}
+
+/* Track */
+.syntax__inside::-webkit-scrollbar-track {
+  @apply
+  bg-transparent
+}

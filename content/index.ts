@@ -4,12 +4,12 @@ import { PT_BR } from './br'
 export const CONTENT = {
   resources: {
     en: EN,
-    pt_BR: PT_BR
+    pt_BR: PT_BR,
   },
-  lng: "en",
-  fallbackLng: "en",
+  lng: 'en',
+  fallbackLng: 'en',
 
   interpolation: {
-    escapeValue: false
-  }
+    escapeValue: false,
+  },
 }

@@ -1,4 +1,4 @@
-export default {
+const jestConfig = {
   collectCoverageFrom: [
     '**/*.{js,jsx,ts,tsx}',
     '!**/*.d.ts',
@@ -35,3 +35,5 @@ export default {
     '^.+\\.module\\.(css|sass|scss)$',
   ],
 }
+
+export default jestConfig

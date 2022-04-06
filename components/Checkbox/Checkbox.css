@@ -1,0 +1,35 @@
+.checkbox{
+  @apply
+  flex
+  gap-3
+  p-3
+  text-sm
+  bg-gray-200
+  rounded-md
+  cursor-pointer
+}
+
+.checkbox__square{
+ @apply
+ w-[20px]
+ min-w-[20px]
+ h-[20px]
+ border
+ border-gray-400
+ bg-white
+ flex
+ justify-center
+ items-center
+}
+
+.checkbox__checked{
+  @apply
+  w-[12px]
+  h-[12px]
+  bg-gray-800
+}
+
+.checkbox__label{
+  @apply
+  text-gray-700
+}

@@ -27,6 +27,8 @@
   bg-white
 }
 
+/* inside content  */
+
 .modal__content{
   @apply
   overflow-auto
@@ -34,19 +36,16 @@
   p-5
 }
 
-/* width */
 .modal__content::-webkit-scrollbar {
   @apply
   w-[5px]
 }
 
-/* Track */
 .modal__content::-webkit-scrollbar-track {
   @apply
   bg-transparent
 }
 
-/* Handle */
 .modal__content::-webkit-scrollbar-thumb {
   @apply
   bg-slate-300
@@ -54,16 +53,12 @@
   transition-all
 }
 
-/* Handle on hover */
 .modal__content::-webkit-scrollbar-thumb:hover {
   @apply
   bg-slate-400
 }
 
-.modal__open{
-  @apply
-  inline-block
-}
+/* close button */
 
 .modal__close{
   @apply

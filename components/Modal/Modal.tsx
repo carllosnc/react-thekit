@@ -12,11 +12,14 @@ export function Modal({ children, isOpen, onClose }: ModalProps) {
   const modal = {
     normal: {
       opacity: 0,
-      zIndex: '-1',
+      display: 'none',
+      transition: {
+        delay: 0.1,
+      },
     },
     expanded: {
       opacity: 1,
-      zIndex: '99999',
+      display: 'flex',
     },
   }
 
@@ -28,6 +31,9 @@ export function Modal({ children, isOpen, onClose }: ModalProps) {
     expanded: {
       opacity: 1,
       y: '0px',
+      transition: {
+        delay: 0.08,
+      },
     },
   }
 
@@ -52,6 +58,7 @@ export function Modal({ children, isOpen, onClose }: ModalProps) {
   return (
     <>
       <motion.section
+        data-testid="modal"
         animate={isOpen ? 'expanded' : 'normal'}
         variants={modal}
         onClick={onClose}
@@ -59,16 +66,23 @@ export function Modal({ children, isOpen, onClose }: ModalProps) {
         className="modal"
       >
         <motion.div
+          data-testid="modal-container"
           animate={isOpen ? 'expanded' : 'normal'}
           variants={content}
           initial="normal"
           onClick={stopPropagation}
           className="modal__container"
         >
-          <div className="modal__content">{children}</div>
+          <div data-testid="modal-content" className="modal__content">
+            {children}
+          </div>
         </motion.div>
 
-        <FiX onClick={onClose} className="modal__close" />
+        <FiX
+          data-testid="modal-close"
+          onClick={onClose}
+          className="modal__close"
+        />
       </motion.section>
     </>
   )

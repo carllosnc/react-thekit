@@ -1,5 +1,8 @@
 @import "../components/Modal/Modal.css";
 @import "../components/Button/Button.css";
+@import "../components/Syntax/Syntax.css";
+@import "../components/Expander/Expander.css";
+@import "../components/Checkbox/Checkbox.css";
 
 @tailwind base;
 @tailwind components;

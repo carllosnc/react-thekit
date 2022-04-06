@@ -1,0 +1,38 @@
+.expander{
+  @apply
+  bg-gray-200
+  rounded-md
+  overflow-hidden
+}
+
+.expander__title{
+  @apply
+  font-bold
+  text-gray-800
+  p-3
+  text-sm
+  cursor-pointer
+  flex
+  gap-2
+  items-center
+}
+
+.expander__container{
+  @apply
+  overflow-hidden
+}
+
+.expander__content{
+  @apply
+  overflow-hidden
+  p-3
+  pt-0
+  text-gray-600
+}
+
+.expander__arrow{
+  @apply
+  text-base
+  text-gray-500
+}
+

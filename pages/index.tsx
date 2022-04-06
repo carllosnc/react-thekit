@@ -1,30 +1,11 @@
 import { Page } from '@/templates'
-import { useLoremIpsum } from '@/services'
 
-export default function Home(){
-  const { data, isError, isLoading } = useLoremIpsum()
-
-  if(isLoading){
-    return (
-      <Page>
-        <h1 className="font-bold"> loading... </h1>
-       </Page>
-    )
-  }
-
-  if(isError){
-    return (
-      <Page>
-        <h1 className="font-bold text-red-500"> error </h1>
-      </Page>
-    )
-  }
-
-  console.log(data)
-
+export default function Home() {
   return (
     <Page>
-      <h1 className="font-bold"> home page </h1>
+      <div className="w-screen h-screen flex flex-col gap-4 justify-center items-center">
+        <h1 className="text-6xl"> the kit </h1>
+      </div>
     </Page>
   )
 }

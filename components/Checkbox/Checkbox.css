@@ -2,30 +2,36 @@
   @apply
   flex
   gap-3
-  p-3
   text-sm
-  bg-gray-200
-  rounded-md
   cursor-pointer
+  outline-offset-4
+  outline-gray-600
+}
+
+.checkbox__default{
+  @apply
+  border
+  bg-red-500
+  border-red-500
 }
 
 .checkbox__square{
  @apply
- w-[20px]
- min-w-[20px]
- h-[20px]
+ w-[22px]
+ min-w-[22px]
+ h-[22px]
  border
- border-gray-400
- bg-white
  flex
  justify-center
  items-center
+ border-gray-400
+ bg-white
 }
 
 .checkbox__checked{
   @apply
-  w-[12px]
-  h-[12px]
+  w-[14px]
+  h-[14px]
   bg-gray-800
 }
 

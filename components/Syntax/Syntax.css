@@ -1,21 +1,77 @@
 .syntax{
   @apply
-  p-2
+  px-3
+  py-2
   bg-[#23241F]
-  rounded-md
-  overflow-x-auto
-  text-sm
+  rounded-lg
+  overflow-hidden
+  text-base
+  relative
 }
 
-/* width */
-.syntax__inside::-webkit-scrollbar {
+.syntax__header{
   @apply
-  w-[1px]
-  h-[2px]
+  flex
+  justify-end
 }
 
-/* Track */
-.syntax__inside::-webkit-scrollbar-track {
+.syntax__copy{
   @apply
-  bg-transparent
+  bg-blue-600
+  text-white
+  transition-all
+  rounded-[3px]
+  px-[5px]
+  pt-[2px]
+  h-[24px]
+  text-[12px]
+  font-bold
+  absolute
+  flex
+  items-center
+  justify-center
+  top-2
+  -right-20
+  opacity-0
+}
+
+.syntax__copy--copied{
+  @apply
+  bg-green-700
+  opacity-100
+  right-2
+}
+
+.syntax:hover .syntax__copy{
+  @apply
+  opacity-100
+  right-2
+}
+
+.syntax__content::-webkit-scrollbar {
+  @apply
+  w-[4px]
+  h-[4px]
+}
+
+.syntax__content::-webkit-scrollbar-track {
+  @apply
+  bg-black
+}
+
+.syntax__content::-webkit-scrollbar-thumb {
+  @apply
+  bg-neutral-700
+  rounded-full
+  transition-all
+}
+
+.syntax__content::-webkit-scrollbar-thumb:hover {
+  @apply
+  bg-neutral-600
+}
+
+.syntax .linenumber{
+  @apply
+  opacity-40
 }

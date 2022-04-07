@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { useEffect } from 'react'
 
 type CheckboxProps = {
   label: string
@@ -19,11 +20,28 @@ export function Checkbox({ label, isChecked, toggle }: CheckboxProps) {
     },
   }
 
+  const tabAction = function (e: KeyboardEvent) {
+    if (e.code === 'Space') {
+      toggle()
+    }
+
+    if (e.code === 'Tab') {
+      window.removeEventListener('keydown', tabAction)
+    }
+  }
+
   return (
     <motion.article
       data-testid="checkbox"
       onClick={toggle}
       className="checkbox"
+      onFocus={() => {
+        window.addEventListener('keydown', tabAction)
+      }}
+      onBlur={() => {
+        window.removeEventListener('keydown', tabAction)
+      }}
+      tabIndex={0}
     >
       <div data-testid="checkbox-square" className="checkbox__square">
         <motion.div

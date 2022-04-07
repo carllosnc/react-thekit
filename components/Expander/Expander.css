@@ -3,6 +3,8 @@
   bg-gray-200
   rounded-md
   overflow-hidden
+  outline-offset-4
+  outline-gray-400
 }
 
 .expander__title{

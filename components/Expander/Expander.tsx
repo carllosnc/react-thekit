@@ -31,11 +31,31 @@ export function Expander({ title, children }: ExpanderProps) {
   }
 
   function toggle() {
-    setIsOpen(!isOpen)
+    setIsOpen(s => !s)
+  }
+
+  function tabAction(e: KeyboardEvent) {
+    if (e.code === 'Space' || e.code === 'Enter') {
+      toggle()
+    }
+
+    if (e.code === 'Tab') {
+      window.removeEventListener('keydown', tabAction)
+    }
   }
 
   return (
-    <article data-testid="expander" className="expander">
+    <article
+      tabIndex={0}
+      onFocus={() => {
+        window.addEventListener('keydown', tabAction)
+      }}
+      onBlur={() => {
+        window.removeEventListener('keydown', tabAction)
+      }}
+      data-testid="expander"
+      className="expander"
+    >
       <h3
         data-testid="expander-title"
         className="expander__title"

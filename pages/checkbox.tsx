@@ -23,21 +23,21 @@ export default function ExpanderPage() {
 
           <p> Live example </p>
 
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-4">
             <Checkbox
-              label="checkbox 1"
+              label="Checkbox 1"
               isChecked={check1}
               toggle={togleCheck1}
             />
 
             <Checkbox
-              label="checkbox 2 - Lorem ipsum dolor sit amet consectetur adipisicing elit"
+              label="Checkbox 2"
               isChecked={check2}
               toggle={togleCheck2}
             />
 
             <Checkbox
-              label="checkbox 3 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ad eius ipsa, vel porro expedita perferendis, numquam atque soluta, est ut accusantium. Alias fugiat impedit, vero ducimus placeat architecto ipsum."
+              label="Checkbox 3"
               isChecked={check3}
               toggle={togleCheck3}
             />

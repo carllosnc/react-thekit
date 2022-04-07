@@ -21,7 +21,7 @@ export function Checkbox({ label, isChecked, toggle }: CheckboxProps) {
   }
 
   const tabAction = function (e: KeyboardEvent) {
-    if (e.code === 'Space') {
+    if (e.code === 'Space' || e.code === 'Enter') {
       toggle()
     }
 

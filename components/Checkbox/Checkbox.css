@@ -3,6 +3,7 @@
   flex
   gap-3
   text-sm
+  items-center
   cursor-pointer
   outline-offset-4
   outline-gray-400
@@ -17,10 +18,10 @@
 
 .checkbox__square{
  @apply
- w-[22px]
- min-w-[22px]
- h-[22px]
- border
+ w-[24px]
+ min-w-[24px]
+ h-[24px]
+ border-2
  flex
  justify-center
  items-center

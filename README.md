@@ -4,17 +4,24 @@
 
 > some react components
 
+### What's inside
+
+- Typescript
+- React
+- Framer motion
+- Tailwind
+
 ### Components
 
-- ✅ Checkbox
-- ✅ Radio
-- ✅ Modal
-- ✅ Syntax
-- ✅ Expander
-- ⬜ Input
-- ⬜ Drawer
-- ⬜ Input
-- ⬜ Textarea
+- ✔️ Checkbox
+- ✔️ Radio
+- ✔️ Modal
+- ✔️ Syntax
+- ✔️ Expander
+- 🔲 Input
+- 🔲 Drawer
+- 🔲 Textarea
+- 🔲 Menu
 
 ### License
 

@@ -18,9 +18,11 @@
 .radio__check{
   @apply
   w-[24px]
+  min-w-[24px]
   h-[24px]
   border-2
-  border-gray-500
+  border-gray-400
+  bg-white
   rounded-full
   flex
   justify-center
@@ -39,4 +41,5 @@
 .radio__label{
   @apply
   text-gray-700
+  text-sm
 }

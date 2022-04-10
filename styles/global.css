@@ -3,6 +3,7 @@
 @import "../components/Syntax/Syntax.css";
 @import "../components/Expander/Expander.css";
 @import "../components/Checkbox/Checkbox.css";
+@import "../components/Radio/Radio.css";
 
 @tailwind base;
 @tailwind components;

@@ -1,0 +1,42 @@
+.radio-group{
+  @apply
+  flex
+  flex-col
+  gap-4
+  relative
+}
+
+.radio{
+  @apply
+  flex
+  items-center
+  gap-3
+  outline-offset-4
+  outline-gray-400
+}
+
+.radio__check{
+  @apply
+  w-[24px]
+  h-[24px]
+  border-2
+  border-gray-500
+  rounded-full
+  flex
+  justify-center
+  items-center
+  cursor-pointer
+}
+
+.radio__circle{
+  @apply
+  w-[14px]
+  h-[14px]
+  bg-gray-800
+  rounded-full
+}
+
+.radio__label{
+  @apply
+  text-gray-700
+}

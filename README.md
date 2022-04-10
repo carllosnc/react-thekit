@@ -4,6 +4,18 @@
 
 > some react components
 
+### Components
+
+- ✅ Checkbox
+- ✅ Radio
+- ✅ Modal
+- ✅ Syntax
+- ✅ Expander
+- ⬜ Input
+- ⬜ Drawer
+- ⬜ Input
+- ⬜ Textarea
+
 ### License
 
 MIT © [C4co](https://github.com/C4co)

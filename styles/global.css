@@ -4,6 +4,7 @@
 @import "../components/Expander/Expander.css";
 @import "../components/Checkbox/Checkbox.css";
 @import "../components/Radio/Radio.css";
+@import "../components/Input/Input.css";
 
 @tailwind base;
 @tailwind components;

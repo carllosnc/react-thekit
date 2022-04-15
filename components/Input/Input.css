@@ -1,0 +1,74 @@
+.input {
+  @apply
+  flex
+  flex-col
+  gap-1
+}
+
+.input__info{
+  @apply
+  flex
+  gap-1
+}
+
+.input__content{
+  @apply
+  flex
+  gap-3
+  items-center
+  relative
+  border
+  rounded
+  py-2
+  px-3
+  border-gray-200
+  bg-gray-200
+}
+
+.input__content--error{
+  @apply
+  border-red-500
+}
+
+.input__label{
+  @apply
+  text-xs
+  text-gray-700
+}
+
+.input__icon svg{
+  @apply
+  w-[18px]
+  h-[18px]
+  text-gray-500
+}
+
+.input__success svg{
+  @apply
+  w-[18px]
+  h-[18px]
+  text-lime-700
+}
+
+.input__field{
+  @apply
+  outline-none
+  w-full
+  border-b
+  bg-transparent
+  text-gray-700
+  border-gray-200
+  focus:border-gray-400
+}
+
+.input__error-message{
+  @apply
+  text-xs
+  text-red-500
+}
+
+.input__description{
+  @apply
+  text-xs
+  text-gray-700
+}

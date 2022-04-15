@@ -18,7 +18,7 @@
 - ✔️ Modal
 - ✔️ Syntax
 - ✔️ Expander
-- 🔲 Input
+- ✔️ Input
 - 🔲 Drawer
 - 🔲 Textarea
 - 🔲 Menu

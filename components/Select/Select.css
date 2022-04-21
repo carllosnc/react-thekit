@@ -1,0 +1,55 @@
+.select {
+  @apply
+  flex
+  flex-col
+  gap-1
+}
+
+.select__label{
+  @apply
+  text-xs
+  text-gray-700
+}
+
+.select__content {
+  @apply
+  w-full
+  flex
+  items-center
+  relative
+}
+
+.select__icon svg{
+  @apply
+  w-[18px]
+  h-[18px]
+  text-gray-500
+}
+
+.select__field {
+  @apply
+  w-full
+  bg-transparent
+  px-3
+  py-2
+  pr-6
+  truncate
+  rounded
+  text-gray-700
+  bg-gray-200
+  outline-gray-400
+  outline-offset-2
+  appearance-none
+}
+
+.select__arrow {
+  @apply
+  absolute
+  right-2
+  text-gray-600
+}
+
+.select__option{
+  @apply
+  truncate
+}

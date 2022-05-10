@@ -6,6 +6,7 @@
 @import "../components/Radio/Radio.css";
 @import "../components/Input/Input.css";
 @import "../components/Select/Select.css";
+@import "../components/Navbar/Navbar.css";
 
 @tailwind base;
 @tailwind components;

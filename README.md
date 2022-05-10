@@ -19,6 +19,7 @@
 - ✔️ Syntax
 - ✔️ Expander
 - ✔️ Input
+- ✔️ Navbar
 - 🔲 Drawer
 - 🔲 Textarea
 - 🔲 Menu

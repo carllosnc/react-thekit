@@ -1,6 +1,5 @@
 import '@fontsource/inter/400.css'
 import '@fontsource/inter/700.css'
-import '@fontsource/inter/900.css'
 import '../styles/global.css'
 
 import { initReactI18next } from 'react-i18next'

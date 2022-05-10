@@ -1,0 +1,153 @@
+.navbar {
+  @apply
+  w-full
+  justify-center
+  h-[55px]
+  px-[10px]
+  fixed
+  top-0
+  left-0
+  flex
+  bg-gray-900
+  bg-opacity-60
+  backdrop-blur-sm
+  text-sm
+  font-bold
+}
+
+.navbar__open-menu {
+  @apply
+  w-[40px]
+  h-[40px]
+  bg-gray-900
+  rounded-full
+  justify-center
+  items-center
+  text-white
+  hidden
+
+  /* mobile */
+  md:flex
+}
+
+.navbar__content {
+  @apply
+  w-full
+  max-w-[1400px]
+  h-full
+  flex
+  justify-between
+  items-center
+}
+
+.navbar__brand {
+  @apply
+  h-[40px]
+  flex
+  text-white
+  justify-center
+  items-center
+}
+
+/* overlay */
+.navbar__overlay{
+  @apply
+  h-full
+  transition-all
+
+  /* mobile */
+  md:h-0
+  md:absolute
+  md:-z-10
+  md:top-[100px]
+  md:left-0
+  md:opacity-0
+  md:invisible
+  md:w-full
+}
+
+.navbar__overlay--active{
+  @apply
+  h-full
+  transition-all
+
+  /* mobile */
+  md:h-screen
+  md:absolute
+  md:z-50
+  md:top-[55px]
+  md:w-full
+  md:left-0
+  md:block
+}
+
+/* menu list */
+.navbar__menu {
+  @apply
+  h-full
+  flex
+
+  /* mobile */
+  md:w-full
+  md:flex-col
+  md:h-auto
+  md:bg-gray-800
+  md:divide-y
+  md:divide-gray-700
+}
+
+/* menu item */
+.navbar__menu a, .navbar__dropdown {
+  @apply
+  h-full
+  flex
+  items-center
+  px-4
+  relative
+  text-white
+  hover:bg-gray-900
+  cursor-pointer
+
+  /* mobile */
+  md:py-4
+  md:flex-col
+  md:items-start
+  md:h-auto
+  md:gap-2
+}
+
+/* dropdown */
+.navbar__dropdown__label {
+  @apply
+  flex
+  gap-1
+  items-center
+}
+
+.navbar__dropdown__content{
+  @apply
+  absolute
+  flex
+  flex-col
+  h-auto
+  whitespace-nowrap
+  bg-gray-900
+  top-[55px]
+  left-0
+  z-10
+  opacity-100
+
+  /* mobile */
+  md:relative
+  md:w-full
+  md:top-0
+  md:left-0
+}
+
+/* dropdown item */
+.navbar__dropdown a{
+  @apply
+  px-4
+  py-2
+  hover:bg-gray-800
+}

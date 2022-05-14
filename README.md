@@ -20,6 +20,7 @@
 - ✔️ Expander
 - ✔️ Input
 - ✔️ Navbar
+- ✔️ Reveal
 - 🔲 Drawer
 - 🔲 Textarea
 - 🔲 Menu

@@ -1,9 +1,27 @@
 .button{
   @apply
-  px-6
+  px-4
   py-2
-  rounded-md
+  rounded
   text-white
   bg-gray-800
   text-sm
+  flex
+  justify-center
+  items-center
+  transition
+  gap-2
+  hover:bg-gray-700
+}
+
+.button--loading{
+  @apply
+  animate-pulse
+  !cursor-not-allowed
+}
+
+.button__icon{
+  @apply
+  opacity-50
+  text-base
 }

@@ -1,0 +1,31 @@
+.page-component {
+  @apply
+  flex
+  flex-col
+  gap-6
+  py-[50px]
+  px-4
+  max-w-[600px]
+  m-auto
+  w-full
+}
+
+.page-component__title {
+  @apply
+  text-3xl
+  w-full
+  text-gray-600
+}
+
+.page-component__text{
+  @apply
+  text-gray-600
+}
+
+.page-component__content {
+  @apply
+  flex
+  w-full
+  flex-col
+  gap-4
+}

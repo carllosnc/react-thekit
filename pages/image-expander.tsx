@@ -41,23 +41,21 @@ export default function ImageExpanderPage() {
 
   return (
     <Page>
-      <div className="w-full flex flex-col gap-4">
-        <div className="flex flex-col gap-5 py-8 px-4 max-w-[600px] m-auto w-full">
-          <h1 className="text-4xl"> Image expander </h1>
+      <div className="page-component">
+        <h1 className="page-component__title"> Image expander </h1>
 
-          <hr />
+        <hr />
 
-          <p> Live example </p>
-
-          <div className="grid grid-cols-3 gap-2">
+        <div className="page-component__content">
+          <div className="grid grid-cols-3">
             {images.map((item, index) => {
               return (
                 <ImageExpander
                   key={key()}
                   thumb={
                     <Image
-                      width={230}
-                      height={260}
+                      width={250}
+                      height={250}
                       placeholder="blur"
                       blurDataURL={item.src}
                       alt="image"

@@ -1,3 +1,4 @@
+/* components */
 @import "../components/Modal/Modal.css";
 @import "../components/Button/Button.css";
 @import "../components/Syntax/Syntax.css";
@@ -8,6 +9,10 @@
 @import "../components/Select/Select.css";
 @import "../components/Navbar/Navbar.css";
 @import "../components/ImageExpander/ImageExpander.css";
+
+/* pages */
+@import "./page-index.css";
+@import "./page-component.css";
 
 @tailwind base;
 @tailwind components;

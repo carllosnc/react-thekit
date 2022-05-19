@@ -15,33 +15,29 @@ export default function ExpanderPage() {
 
   return (
     <Page>
-      <div className="w-screen flex flex-col gap-4">
-        <div className="flex flex-col gap-5 py-8 px-4 max-w-[600px] m-auto w-full">
-          <h1 className="text-4xl"> Checkbox </h1>
+      <div className="page-component">
+        <h1 className="page-component__title"> Checkbox </h1>
 
-          <hr />
+        <hr />
 
-          <p> Live example </p>
+        <div className="page-component__content">
+          <Checkbox
+            label="Checkbox 1"
+            isChecked={check1}
+            toggle={togleCheck1}
+          />
 
-          <div className="flex flex-col gap-4">
-            <Checkbox
-              label="Checkbox 1"
-              isChecked={check1}
-              toggle={togleCheck1}
-            />
+          <Checkbox
+            label="Checkbox 2"
+            isChecked={check2}
+            toggle={togleCheck2}
+          />
 
-            <Checkbox
-              label="Checkbox 2"
-              isChecked={check2}
-              toggle={togleCheck2}
-            />
-
-            <Checkbox
-              label="Checkbox 3"
-              isChecked={check3}
-              toggle={togleCheck3}
-            />
-          </div>
+          <Checkbox
+            label="Checkbox 3"
+            isChecked={check3}
+            toggle={togleCheck3}
+          />
         </div>
       </div>
     </Page>

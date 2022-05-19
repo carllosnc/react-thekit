@@ -32,12 +32,12 @@ function createElement({ node, style, useInlineStyles, key }) {
 export default function SyntaxPage() {
   return (
     <Page>
-      <div className="w-screen flex flex-col gap-4">
-        <div className="flex flex-col gap-5 py-8 px-4 max-w-[600px] m-auto w-full">
-          <h1 className="text-4xl"> Syntax </h1>
+      <div className="page-component">
+        <h1 className="page-component__title"> Syntax </h1>
 
-          <hr />
+        <hr />
 
+        <div className="page-component__content">
           <Syntax lang="typescript">{EXAMPLE_01}</Syntax>
           <Syntax lang="typescript">{EXAMPLE_02}</Syntax>
         </div>

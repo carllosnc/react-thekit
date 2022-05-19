@@ -24,25 +24,25 @@ export default function SelectPage() {
 
   return (
     <Page>
-      <div className="w-screen flex flex-col gap-4">
-        <div className="flex flex-col gap-5 py-8 px-4 max-w-[600px] m-auto w-full">
-          <h1 className="text-4xl"> Select </h1>
+      <div className="page-component">
+        <h1 className="page-component__title"> Select </h1>
+
+        <hr />
+
+        <div className="page-component__content">
+          <p> Live Example </p>
+
+          <Select
+            onChange={(event: React.ChangeEvent<HTMLSelectElement>) => {
+              setSelected(event.currentTarget.value)
+            }}
+            placeholder="Select an item"
+            items={items}
+          />
 
           <hr />
 
-          <div className="flex flex-col gap-4">
-            <p> Live Example </p>
-
-            <Select
-              onChange={(event: React.ChangeEvent<HTMLSelectElement>) => {
-                setSelected(event.currentTarget.value)
-              }}
-              placeholder="Select an item"
-              items={items}
-            />
-
-            <span> Selected value: {selected} </span>
-          </div>
+          <span> Selected value: {selected} </span>
         </div>
       </div>
     </Page>

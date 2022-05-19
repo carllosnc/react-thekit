@@ -5,7 +5,7 @@ import Link from 'next/link'
 function Brand() {
   return (
     <Link href="/">
-      <a className="h-full bg-black text-white flex items-center px-3 rounded">
+      <a className="h-full bg-gray-800 text-white flex items-center px-3 rounded">
         TheKit
       </a>
     </Link>
@@ -15,41 +15,56 @@ function Brand() {
 export default function NavbarPage() {
   return (
     <Page>
-      <div className="flex flex-col gap-4 w-full">
-        <div className="flex flex-col gap-5 pt-16 pb-5 px-4 max-w-[600px] m-auto w-full">
-          <Navbar brand={<Brand />}>
-            <NavbarDropdown label="Dropdown 1">
-              <Link href="/">
-                <a> Dropdown item 1</a>
-              </Link>
+      <div className="page-component">
+        <br />
 
-              <Link href="/">
-                <a> Dropdown item 2</a>
-              </Link>
-            </NavbarDropdown>
+        <h1 className="page-component__title"> Navbar </h1>
 
-            <NavbarDropdown label="Dropdown 2">
-              <Link href="/">
-                <a> Dropdown item 1</a>
-              </Link>
+        <hr />
 
-              <Link href="/">
-                <a> Dropdown item 2</a>
-              </Link>
-            </NavbarDropdown>
-
+        <Navbar brand={<Brand />}>
+          <NavbarDropdown label="Dropdown 1">
             <Link href="/">
-              <a>Internal item</a>
+              <a> Dropdown item 1</a>
             </Link>
 
-            <a target="_blank" rel="noreferrer" href="https://dev.to">
-              External item
-            </a>
-          </Navbar>
+            <Link href="/">
+              <a> Dropdown item 2</a>
+            </Link>
+          </NavbarDropdown>
 
-          <h1 className="text-4xl"> Navbar </h1>
+          <NavbarDropdown label="Dropdown 2">
+            <Link href="/">
+              <a> Dropdown item 1</a>
+            </Link>
 
-          <div className="bg-red-500 w-full h-[2000px]"></div>
+            <Link href="/">
+              <a> Dropdown item 2</a>
+            </Link>
+          </NavbarDropdown>
+
+          <Link href="/">
+            <a>Internal item</a>
+          </Link>
+
+          <a target="_blank" rel="noreferrer" href="https://dev.to">
+            External item
+          </a>
+        </Navbar>
+
+        <div className="page-component__content">
+          <div className="bg-gray-200 w-full h-[200px] rounded-md" />
+          <div className="bg-gray-200 w-full h-[200px] rounded-md" />
+          <div className="bg-gray-200 w-full h-[200px] rounded-md" />
+          <div className="bg-gray-200 w-full h-[200px] rounded-md" />
+          <div className="bg-gray-200 w-full h-[200px] rounded-md" />
+          <div className="bg-gray-200 w-full h-[200px] rounded-md" />
+          <div className="bg-gray-200 w-full h-[200px] rounded-md" />
+          <div className="bg-gray-200 w-full h-[200px] rounded-md" />
+          <div className="bg-gray-200 w-full h-[200px] rounded-md" />
+          <div className="bg-gray-200 w-full h-[200px] rounded-md" />
+          <div className="bg-gray-200 w-full h-[200px] rounded-md" />
+          <div className="bg-gray-200 w-full h-[200px] rounded-md" />
         </div>
       </div>
     </Page>

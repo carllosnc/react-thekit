@@ -26,10 +26,12 @@ export default function SyntaxPage() {
 
   return (
     <Page>
-      <div className="w-screen flex flex-col gap-4">
-        <div className="flex flex-col gap-5 py-8 px-4 max-w-[600px] m-auto w-full">
-          <h1 className="text-4xl"> Radio </h1>
-          <hr />
+      <div className="page-component">
+        <h1 className="page-component__title"> Radio </h1>
+
+        <hr />
+
+        <div className="page-component__content">
           <Radio values={values} onChange={changeHandle} />
           <hr />
           Selected: {radioValue}

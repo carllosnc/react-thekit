@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { ReactNode } from 'react'
 
 type RevealProps = {
+  className?: string
   children: ReactNode
   delay?: number
   duration?: number
@@ -79,6 +80,7 @@ export function Reveal({
   delay = 0,
   type,
   duration = 0.9,
+  className = '',
 }: RevealProps) {
   let ANIMATE: any = DOWN
 
@@ -91,6 +93,7 @@ export function Reveal({
 
   return (
     <motion.div
+      className={className}
       data-testid="reveal"
       transition={{
         delay: delay,

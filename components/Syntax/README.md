@@ -6,6 +6,14 @@
 import { Syntax } from '@/components'
 ```
 
+## Dependencies
+
+[react-syntax-highlighter](https://github.com/react-syntax-highlighter/react-syntax-highlighter)
+
+```
+npm install react-syntax-highlighter
+```
+
 ## Syntax
 
 ```jsx

@@ -6,9 +6,17 @@
 import { Input } from '@/components'
 ```
 
+## Anatomy
+
+`<Input />` extends `React.InputHTMLAttributes<HTMLInputElement>`, then you can use all props and event of `<input>`
+
 ## Dependencies
 
-All icons are provided by [React-Icons](https://react-icons.github.io/react-icons/)
+[React-Icons](https://react-icons.github.io/react-icons/)
+
+```
+npm install react-icons
+```
 
 ## Usage
 

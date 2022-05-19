@@ -6,6 +6,10 @@
 import { Select, SelectItem } from '@/components'
 ```
 
+## Anatomy
+
+`<Select />` extends `React.SelectHTMLAttributes<HTMLSelectElement>`, then you can use all props and event of `<select>`
+
 ## Usage
 
 ```tsx

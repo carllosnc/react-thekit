@@ -13,19 +13,19 @@
 
 ### Components
 
-| Name          | Example  | Doc                                                                                |
-| ------------- | -------- | ---------------------------------------------------------------------------------- |
-| Button        | [Link]() | [Link](https://github.com/C4co/cn-react-thekit/tree/main/components/Button)        |
-| Checkbox      | [Link]() | [Link](https://github.com/C4co/cn-react-thekit/tree/main/components/Checkbox)      |
-| Expander      | [Link]() | [Link](https://github.com/C4co/cn-react-thekit/tree/main/components/Expander)      |
-| ImageExpander | [Link]() | [Link](https://github.com/C4co/cn-react-thekit/tree/main/components/ImageExpander) |
-| Input         | [Link]() | [Link](https://github.com/C4co/cn-react-thekit/tree/main/components/Input)         |
-| Modal         | [Link]() | [Link](https://github.com/C4co/cn-react-thekit/tree/main/components/Modal)         |
-| Navbar        | [Link]() | [Link](https://github.com/C4co/cn-react-thekit/tree/main/components/Navbar)        |
-| Radio         | [Link]() | [Link](https://github.com/C4co/cn-react-thekit/tree/main/components/Radio)         |
-| Reveal        | [Link]() | [Link](https://github.com/C4co/cn-react-thekit/tree/main/components/Reveal)        |
-| Select        | [Link]() | [Link](https://github.com/C4co/cn-react-thekit/tree/main/components/Select)        |
-| Syntax        | [Link]() | [Link](https://github.com/C4co/cn-react-thekit/tree/main/components/Syntax)        |
+| Name            | Example  | Doc                                                                                |
+| --------------- | -------- | ---------------------------------------------------------------------------------- |
+| 🆗 Button       | [Link]() | [Link](https://github.com/C4co/cn-react-thekit/tree/main/components/Button)        |
+| ✅ Checkbox     | [Link]() | [Link](https://github.com/C4co/cn-react-thekit/tree/main/components/Checkbox)      |
+| 👇 Expander     | [Link]() | [Link](https://github.com/C4co/cn-react-thekit/tree/main/components/Expander)      |
+| 🖼 ImageExpander | [Link]() | [Link](https://github.com/C4co/cn-react-thekit/tree/main/components/ImageExpander) |
+| 🔠 Input        | [Link]() | [Link](https://github.com/C4co/cn-react-thekit/tree/main/components/Input)         |
+| 🖐 Modal        | [Link]() | [Link](https://github.com/C4co/cn-react-thekit/tree/main/components/Modal)         |
+| 🍱 Navbar       | [Link]() | [Link](https://github.com/C4co/cn-react-thekit/tree/main/components/Navbar)        |
+| 🔘 Radio        | [Link]() | [Link](https://github.com/C4co/cn-react-thekit/tree/main/components/Radio)         |
+| 🙈 Reveal       | [Link]() | [Link](https://github.com/C4co/cn-react-thekit/tree/main/components/Reveal)        |
+| 👉 Select       | [Link]() | [Link](https://github.com/C4co/cn-react-thekit/tree/main/components/Select)        |
+| 🖋 Syntax        | [Link]() | [Link](https://github.com/C4co/cn-react-thekit/tree/main/components/Syntax)        |
 
 ---
 

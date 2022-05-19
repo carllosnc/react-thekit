@@ -1,0 +1,88 @@
+.image-expander {
+  @apply
+  relative
+  cursor-pointer
+}
+
+.image-expander__thumb {
+  @apply
+  flex
+}
+
+.image-expander__reference {
+  @apply
+  absolute
+  top-0
+  w-full
+  h-full
+  transition-all
+  opacity-0
+  flex
+  justify-center
+  items-center
+  bg-black
+  bg-opacity-40
+  hover:opacity-100
+}
+
+.image-expander__reference__icon {
+  @apply
+  text-white
+  text-4xl
+}
+
+.image-expander__overlay {
+  @apply
+  bg-black
+  p-3
+  overflow-y-auto
+  bg-opacity-50
+  backdrop-blur-sm
+  top-0
+  fixed
+  left-0
+  w-full
+  h-screen
+  z-50
+}
+
+.image-expander__overlay::-webkit-scrollbar {
+  @apply
+  w-[5px]
+}
+
+.image-expander__overlay::-webkit-scrollbar-track {
+  @apply
+  bg-transparent
+}
+
+.image-expander__overlay::-webkit-scrollbar-thumb {
+  @apply
+  bg-white
+  bg-opacity-40
+  rounded-full
+  transition-all
+}
+
+.image-expander__overlay::-webkit-scrollbar-thumb:hover {
+  @apply
+  bg-opacity-60
+}
+
+.image-expander__content {
+  @apply
+  min-h-screen
+  flex
+  items-center
+  justify-center
+  text-center
+}
+
+.image-expander__figure {
+  @apply
+  flex
+  border
+  p-1
+  bg-white
+  shadow-lg
+}

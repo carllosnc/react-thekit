@@ -1,4 +1,4 @@
-# Modal
+# Navbar
 
 ## Import
 

@@ -1,5 +1,11 @@
 # Syntax
 
+## Download
+
+```
+npx github-download-directory c4co/cn-react-thekit components/Syntax
+```
+
 ## Import
 
 ```jsx

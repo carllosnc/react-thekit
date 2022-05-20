@@ -10,6 +10,9 @@
 @import "../components/Navbar/Navbar.css";
 @import "../components/ImageExpander/ImageExpander.css";
 
+/* templates */
+@import "./../templates/page/page.css";
+
 /* pages */
 @import "./page-index.css";
 @import "./page-component.css";

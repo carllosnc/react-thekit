@@ -1,7 +1,7 @@
 describe('navigation', () => {
   it('Check home page', () => {
     cy.visit('/')
-    cy.contains('the kit')
+    cy.contains('thekit')
   })
 })
 

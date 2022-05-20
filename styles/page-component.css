@@ -7,6 +7,7 @@
   px-4
   max-w-[600px]
   m-auto
+  min-h-screen
   w-full
 }
 
@@ -15,6 +16,7 @@
   text-3xl
   w-full
   text-gray-600
+  text-center
 }
 
 .page-component__text{

@@ -1,0 +1,20 @@
+.github {
+  @apply
+  animate-bounce
+  w-[70px]
+  h-[70px]
+  fixed
+  bottom-[20px]
+  right-[20px]
+  bg-gray-800
+  rounded-full
+  flex
+  justify-center
+  items-center
+}
+
+.github__icon {
+  @apply
+  text-[40px]
+  text-white
+}

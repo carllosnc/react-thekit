@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prepare": "npx husky install",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -11,8 +10,8 @@
     "test:unit": "jest --verbose",
     "test:e2e": "cypress open",
     "test:e2e:headless": "cypress run",
-    "test:ci": "start-server-and-test start http://localhost:3000 test:e2e:headless",
-    "test:full": "next build && jest && start-server-and-test start http://localhost:3000 test:e2e:headless"
+    "test:ci": "DEBUG=start-server-and-test start-server-and-test start http://localhost:3000 test:e2e:headless",
+    "test:full": "npm run test:unit && npm run test:ci && npm run lint"
   },
   "dependencies": {
     "@fontsource/inter": "^4.5.10",

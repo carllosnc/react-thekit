@@ -1,0 +1,62 @@
+/* carousel */
+
+.carousel {
+  @apply
+  w-full
+  flex
+  flex-col
+  justify-center
+  relative
+}
+
+.carousel__container {
+  @apply
+  flex
+  overflow-hidden
+bg-black
+}
+
+.carousel__button {
+  @apply
+  absolute
+  w-[40px]
+  h-[40px]
+  flex
+  rounded-full
+  justify-center
+  items-center
+  bg-opacity-50
+  backdrop-blur-md
+bg-black
+  outline-4
+  outline-offset-4
+  outline-gray-700
+}
+
+.carousel__button--prev {
+  @apply
+  left-6
+}
+
+.carousel__button--next {
+  @apply
+  right-6
+}
+
+.carousel__button__icon {
+  @apply
+text-white text-xl
+}
+
+/* carousel item */
+
+.carousel-item {
+  @apply
+  min-w-full
+  min-h-[100px]
+  p-1
+  flex
+  justify-center
+  items-center
+bg-black
+}

@@ -12,6 +12,7 @@ import {
   RiPictureInPictureExitFill,
   RiArrowDownSLine,
   RiCodeView,
+  RiLayoutMasonryFill,
 } from 'react-icons/ri'
 
 export default function Home() {
@@ -27,6 +28,13 @@ export default function Home() {
             <a className="index__item">
               <RiCheckboxBlankFill className="index__item__icon" />
               Button
+            </a>
+          </Link>
+
+          <Link href="/carousel">
+            <a className="index__item">
+              <RiLayoutMasonryFill className="index__item__icon" />
+              Carousel
             </a>
           </Link>
 

@@ -9,6 +9,7 @@
 @import "../components/Select/Select.css";
 @import "../components/Navbar/Navbar.css";
 @import "../components/ImageExpander/ImageExpander.css";
+@import "../components/Carousel/Carousel.css";
 
 /* templates */
 @import "./../templates/page/page.css";

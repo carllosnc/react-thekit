@@ -1,11 +1,15 @@
 import { motion, AnimatePresence } from 'framer-motion'
-import { useEffect, useRef, useState } from 'react'
+import { ReactNode, useEffect, useRef, useState } from 'react'
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
+
+export function key() {
+  return (Math.random() + 1).toString(36).substring(7)
+}
 
 // carousel item
 
 type CarouselItemProps = {
-  children: any
+  children: ReactNode
   position: number
 }
 
@@ -15,6 +19,7 @@ function CarouselItem({ children, position = 0 }: CarouselItemProps) {
       transition={{ duration: 0.6 }}
       animate={{ x: position }}
       className="carousel-item"
+      data-testid="carousel-item"
     >
       {children}
     </motion.div>
@@ -25,9 +30,10 @@ function CarouselItem({ children, position = 0 }: CarouselItemProps) {
 
 type CarouselProps = {
   items: any[]
+  dots?: boolean
 }
 
-export function Carousel({ items }: CarouselProps) {
+export function Carousel({ items, dots = false }: CarouselProps) {
   const [current, setCurrent] = useState<number>(0)
   const containerRef = useRef<HTMLDivElement>(null)
   const [containerWidth, setContainerWidth] = useState<number>(0)
@@ -60,14 +66,35 @@ export function Carousel({ items }: CarouselProps) {
     })
   }
 
-  useEffect(() => {
-    console.log(current)
+  function Dots() {
+    return (
+      <div data-testid="carousel-dots" className="carousel-dots">
+        {items.map((dot, index) => {
+          return (
+            <motion.div
+              data-testid="carousel-dots-item"
+              onClick={() => setCurrent(s => index)}
+              animate={{
+                scale: current === index ? 1.6 : 1,
+                opacity: current === index ? 1 : 0.6,
+              }}
+              className="carousel-dots__item"
+              key={key()}
+            />
+          )
+        })}
+      </div>
+    )
+  }
 
+  useEffect(() => {
     getContainerWidth()
   }, [containerWidth, current])
 
   return (
     <div className="carousel" data-testid="carousel">
+      {dots && <Dots />}
+
       <div
         ref={containerRef}
         className="carousel__container"
@@ -85,10 +112,11 @@ export function Carousel({ items }: CarouselProps) {
       <AnimatePresence>
         {current > 0 && (
           <motion.button
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            exit={{ scale: 0 }}
+            initial={{ scale: 0, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0, opacity: 0 }}
             onClick={prev}
+            data-testid="carousel-button-left"
             className="carousel__button carousel__button--prev"
           >
             <FiChevronLeft className="carousel__button__icon" />
@@ -99,10 +127,11 @@ export function Carousel({ items }: CarouselProps) {
       <AnimatePresence>
         {current < items.length - 1 && (
           <motion.button
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            exit={{ scale: 0 }}
+            initial={{ scale: 0, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0, opacity: 0 }}
             onClick={next}
+            data-testid="carousel-button-right"
             className="carousel__button carousel__button--next"
           >
             <FiChevronRight className="carousel__button__icon" />

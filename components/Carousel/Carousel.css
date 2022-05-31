@@ -13,7 +13,7 @@
   @apply
   flex
   overflow-hidden
-bg-black
+  bg-black
 }
 
 .carousel__button {
@@ -27,10 +27,12 @@ bg-black
   items-center
   bg-opacity-50
   backdrop-blur-md
-bg-black
+  bg-black
   outline-4
   outline-offset-4
   outline-gray-700
+  transition-all
+  hover:bg-opacity-100
 }
 
 .carousel__button--prev {
@@ -45,7 +47,7 @@ bg-black
 
 .carousel__button__icon {
   @apply
-text-white text-xl
+  text-white text-xl
 }
 
 /* carousel item */
@@ -58,5 +60,27 @@ text-white text-xl
   flex
   justify-center
   items-center
-bg-black
+  bg-black
+}
+
+/* carousel dots */
+
+.carousel-dots {
+  @apply
+  flex
+  gap-3
+  absolute
+  bottom-5
+  left-5
+  z-10
+}
+
+.carousel-dots__item {
+  @apply
+  w-[15px]
+  h-[15px]
+  shadow-lg
+  cursor-pointer
+  rounded-full
+  bg-white
 }

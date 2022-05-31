@@ -27,6 +27,7 @@ export default function CarouselPage() {
 
         <div className="page-component__content">
           <Carousel
+            dots
             items={[
               <MyImage
                 key={111}

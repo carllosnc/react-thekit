@@ -17,6 +17,7 @@
 | Name            | Example                                            | Doc                                                                                |
 | --------------- | -------------------------------------------------- | ---------------------------------------------------------------------------------- |
 | 🆗 Button       | [Link](https://the-kit.netlify.app/button)         | [Link](https://github.com/C4co/cn-react-thekit/tree/main/components/Button)        |
+| 🚂 Carousel     | [Link](https://the-kit.netlify.app/carousel)       | [Link](https://github.com/C4co/cn-react-thekit/tree/main/components/Carousel)      |
 | ✅ Checkbox     | [Link](https://the-kit.netlify.app/checkbox)       | [Link](https://github.com/C4co/cn-react-thekit/tree/main/components/Checkbox)      |
 | 👇 Expander     | [Link](https://the-kit.netlify.app/expander)       | [Link](https://github.com/C4co/cn-react-thekit/tree/main/components/Expander)      |
 | 🖼 ImageExpander | [Link](https://the-kit.netlify.app/image-expander) | [Link](https://github.com/C4co/cn-react-thekit/tree/main/components/ImageExpander) |

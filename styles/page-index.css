@@ -5,10 +5,18 @@
   flex
   flex-col
   gap-8
-  max-w-[600px]
+  max-w-[700px]
   m-auto
   items-center
-  pt-[30px]
+  py-[30px]
+}
+
+.index__header {
+  @apply
+  flex
+  flex-col
+  text-center
+  gap-4
 }
 
 .index__title {
@@ -24,11 +32,12 @@
 
 .index__menu {
   @apply
-  flex
-  flex-col
+  grid
+  grid-cols-2
   gap-2
   w-full
   px-4
+  md:grid-cols-1
 }
 
 .index__item {
@@ -48,5 +57,5 @@
 .index__item__icon {
   @apply
   text-[25px]
-  opacity-70
+  opacity-50
 }

@@ -14,6 +14,7 @@ import {
   TbBoxMultiple,
   TbCode,
   TbPictureInPictureOff,
+  TbVideo,
 } from 'react-icons/tb'
 
 export default function Home() {
@@ -107,6 +108,13 @@ export default function Home() {
             <a className="index__item">
               <TbCode className="index__item__icon" />
               Syntax
+            </a>
+          </Link>
+
+          <Link href="/video-background">
+            <a className="index__item">
+              <TbVideo className="index__item__icon" />
+              Video background
             </a>
           </Link>
         </div>

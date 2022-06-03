@@ -6,17 +6,12 @@ type VideoBackgroundProps = {
   className?: string
 }
 
-export function VideoBackground({
-  children,
-  video,
-  className,
-}: VideoBackgroundProps) {
+export function VideoBackground({ children, video }: VideoBackgroundProps) {
   return (
-    <section className="relative flex justify-center center items-center w-full h-screen overflow-hidden">
-      <div className="absolute top-0 left-0 opacity-50 w-full bg-black h-screen z-10" />
-
+    <section data-testid="video-background" className="video-background">
       <video
-        className="absolute z-0 w-auto saturate-150 min-w-full min-h-full max-w-none mix-blend-normal"
+        data-testid="video-background-media"
+        className="video-background__media"
         autoPlay
         muted
         loop
@@ -25,7 +20,12 @@ export function VideoBackground({
         <source src={video} type="video/mp4" />
       </video>
 
-      <div className="p-4 relative z-20">{children}</div>
+      <div
+        data-testid="video-background-content"
+        className="video-background__content"
+      >
+        {children}
+      </div>
     </section>
   )
 }

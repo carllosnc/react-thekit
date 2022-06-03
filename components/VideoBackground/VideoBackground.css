@@ -1,0 +1,38 @@
+.video-background {
+  @apply
+  relative
+  flex
+  justify-center
+  items-center
+  w-full
+  h-screen
+  overflow-hidden
+  bg-black
+}
+
+.video-background__media {
+  @apply
+  absolute
+  z-0
+  w-auto
+  saturate-150
+  min-w-full
+  min-h-full
+  max-w-none
+  mix-blend-normal
+}
+
+.video-background__content {
+  @apply
+  p-4
+  z-0
+  justify-center
+  items-center
+  flex
+  flex-col
+  bg-black
+  bg-opacity-50
+  backdrop-blur-sm
+  w-full
+  h-full
+}

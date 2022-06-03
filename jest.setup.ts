@@ -6,4 +6,7 @@ import { initReactI18next } from 'react-i18next'
 import i18n from 'i18next'
 import { CONTENT } from './content'
 
+const mock = () => {}
+Object.defineProperty(window, 'scrollTo', { value: mock, writable: true })
+
 i18n.use(initReactI18next).init(CONTENT)

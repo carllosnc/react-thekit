@@ -1,5 +1,5 @@
-describe('navigation', () => {
-  it('Check home page', () => {
+describe('spec.cy.ts', () => {
+  it('should visit', () => {
     cy.visit('/')
     cy.contains('thekit')
   })

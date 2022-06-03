@@ -10,8 +10,8 @@
     "test:unit": "jest --verbose",
     "test:e2e": "cypress open",
     "test:e2e:headless": "cypress run",
-    "test:ci": "DEBUG=start-server-and-test start-server-and-test start http://localhost:3000 test:e2e:headless",
-    "test:full": "npm run test:unit && npm run test:ci && npm run lint"
+    "test:ci": "start-server-and-test start http://localhost:3000 test:e2e:headless",
+    "test:full": "npm run build && npm run test:unit && npm run lint && npm run test:ci"
   },
   "dependencies": {
     "@fontsource/inter": "^4.5.10",

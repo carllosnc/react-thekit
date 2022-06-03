@@ -10,6 +10,7 @@
 @import "../components/Navbar/Navbar.css";
 @import "../components/ImageExpander/ImageExpander.css";
 @import "../components/Carousel/Carousel.css";
+@import "../components/VideoBackground/VideoBackground.css";
 
 /* templates */
 @import "./../templates/page/page.css";

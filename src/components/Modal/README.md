@@ -3,7 +3,7 @@
 ## Download
 
 ```
-npx github-download-directory c4co/cn-react-thekit components/Modal
+npx github-download-directory c4co/cn-react-thekit src/components/Modal
 ```
 
 ## Import
@@ -37,10 +37,10 @@ function App() {
 
 ## Modal Props
 
-| name    | type     | default | description                                     |
-| ------- | -------- | ------- | ----------------------------------------------- |
-| isOpen  | boolean  | false   | determine if boolean is open or close           |
-| onClose | function | none    | action to close modal provided by useModal hook |
+| name      | type     | default     | description                                     |
+| --------- | -------- | ----------- | ----------------------------------------------- |
+| `isOpen`  | boolean  | `false`     | determine if boolean is open or close           |
+| `onClose` | function | `undefined` | action to close modal provided by useModal hook |
 
 ## useModal
 
@@ -48,11 +48,11 @@ function App() {
 const [modal, openModal, closeModal] = useModal()
 ```
 
-| name       | type     | description                  |
-| ---------- | -------- | ---------------------------- |
-| modal      | boolean  | state to open or close modal |
-| openModal  | function | function to open modal       |
-| closeModal | function | function to close modal      |
+| name         | type       | description                  |
+| ------------ | ---------- | ---------------------------- |
+| `modal`      | `boolean`  | state to open or close modal |
+| `openModal`  | `function` | function to open modal       |
+| `closeModal` | `function` | function to close modal      |
 
 ## Calling multiple modals
 

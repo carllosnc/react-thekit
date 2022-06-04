@@ -3,7 +3,7 @@
 ## Download
 
 ```
-npx github-download-directory c4co/cn-react-thekit components/Reveal
+npx github-download-directory c4co/cn-react-thekit src/components/Reveal
 ```
 
 ## Import
@@ -50,11 +50,11 @@ function App() {
 
 ## Reveal Props
 
-| name     | type          | default | description             |
-| -------- | ------------- | ------- | ----------------------- |
-| children | ReactNode     | false   | component children      |
-| delay    | number        | 0       | time to start animation |
-| type     | animationType | DOWN    | animation type          |
-| duration | number        | 0.9     | animation duration      |
+| name       | type          | default | description             |
+| ---------- | ------------- | ------- | ----------------------- |
+| `children` | ReactNode     | `false` | component children      |
+| `delay`    | number        | `0`     | time to start animation |
+| `type`     | animationType | `DOWN`  | animation type          |
+| `duration` | number        | `0.9`   | animation duration      |
 
 animationType = DOWN | UP | LEFT | RIGHT | SCALE | ROTATE

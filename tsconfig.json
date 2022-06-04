@@ -17,7 +17,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "baseUrl": ".",
+    "baseUrl": "./src/",
     "paths": {
       "@/components": [
         "components/index"
@@ -32,7 +32,7 @@
         "context/index"
       ],
       "@/content": [
-        "content/index"
+        "src/content/index"
       ],
       "@/types": [
         "types/index"

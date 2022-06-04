@@ -3,7 +3,7 @@
 ## Download
 
 ```
-npx github-download-directory c4co/cn-react-thekit components/Expander
+npx github-download-directory c4co/cn-react-thekit src/components/Expander
 ```
 
 ## Import
@@ -30,7 +30,7 @@ function App() {
 
 ## Props
 
-| name     | type   | default | description      |
-| -------- | ------ | ------- | ---------------- |
-| title    | string | none    | expander title   |
-| children | any    | none    | expander content |
+| name       | type   | default     | description      |
+| ---------- | ------ | ----------- | ---------------- |
+| `title`    | string | `undefined` | expander title   |
+| `children` | any    | `undefined` | expander content |

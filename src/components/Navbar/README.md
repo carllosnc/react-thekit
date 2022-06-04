@@ -3,7 +3,7 @@
 ## Download
 
 ```
-npx github-download-directory c4co/cn-react-thekit components/Navbar
+npx github-download-directory c4co/cn-react-thekit src/components/Navbar
 ```
 
 ## Import
@@ -67,14 +67,14 @@ function App() {
 
 ## Navbar Props
 
-| name     | type      | default | description  |
-| -------- | --------- | ------- | ------------ |
-| children | ReactNode | null    | navbar items |
-| brand    | ReactNode | null    | navbar brand |
+| name       | type      | default     | description  |
+| ---------- | --------- | ----------- | ------------ |
+| `children` | ReactNode | `undefined` | navbar items |
+| `brand`    | ReactNode | `undefined` | navbar brand |
 
 ## NavbarDropdown Props
 
-| name     | type      | default | description    |
-| -------- | --------- | ------- | -------------- |
-| children | ReactNode | null    | dropdown items |
-| label    | string    | null    | dropdown label |
+| name       | type      | default     | description    |
+| ---------- | --------- | ----------- | -------------- |
+| `children` | ReactNode | `undefined` | dropdown items |
+| `label`    | string    | `undefined` | dropdown label |

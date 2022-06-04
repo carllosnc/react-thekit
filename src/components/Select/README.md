@@ -3,7 +3,7 @@
 ## Download
 
 ```
-npx github-download-directory c4co/cn-react-thekit components/Select
+npx github-download-directory c4co/cn-react-thekit src/components/Select
 ```
 
 ## Import
@@ -60,8 +60,8 @@ function App() {
 
 ## Props
 
-| name        | type         | default | description        |
-| ----------- | ------------ | ------- | ------------------ |
-| items       | selectItem[] | null    | select items       |
-| label       | string       | null    | select label       |
-| placeholder | string       | null    | select placeholder |
+| name          | type         | default     | description        |
+| ------------- | ------------ | ----------- | ------------------ |
+| `items`       | selectItem[] | `undefined` | select items       |
+| `label`       | string       | `undefined` | select label       |
+| `placeholder` | string       | `undefined` | select placeholder |

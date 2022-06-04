@@ -3,7 +3,7 @@
 ## Download
 
 ```
-npx github-download-directory c4co/cn-react-thekit components/Button
+npx github-download-directory c4co/cn-react-thekit src/components/Button
 ```
 
 ## Import
@@ -52,9 +52,9 @@ function App() {
 
 ## Props
 
-| name      | type                                                    | default | description   |
-| --------- | ------------------------------------------------------- | ------- | ------------- |
-| children  | string                                                  | null    | button label  |
-| isloading | string                                                  | false   | loading mode  |
-| leftIcon  | [ReactIcon](https://react-icons.github.io/react-icons/) | null    | icon at left  |
-| rightIcon | [ReactIcon](https://react-icons.github.io/react-icons/) | null    | icon at right |
+| name        | type                                                    | default     | description   |
+| ----------- | ------------------------------------------------------- | ----------- | ------------- |
+| `children`  | string                                                  | `undefined` | button label  |
+| `isloading` | string                                                  | `false`     | loading mode  |
+| `leftIcon`  | [ReactIcon](https://react-icons.github.io/react-icons/) | `undefined` | icon at left  |
+| `rightIcon` | [ReactIcon](https://react-icons.github.io/react-icons/) | `undefined` | icon at right |

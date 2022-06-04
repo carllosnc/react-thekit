@@ -3,7 +3,7 @@
 ## Download
 
 ```
-npx github-download-directory c4co/cn-react-thekit components/ImageExpander
+npx github-download-directory c4co/cn-react-thekit src/components/ImageExpander
 ```
 
 ## Import
@@ -81,7 +81,7 @@ function App() {
 
 ## Props
 
-| name     | type         | default | description |
-| -------- | ------------ | ------- | ----------- |
-| normal   | ReactElement | null    | thumbnail   |
-| expanded | ReactElement | null    | full image  |
+| name       | type         | default     | description |
+| ---------- | ------------ | ----------- | ----------- |
+| `normal`   | ReactElement | `undefined` | thumbnail   |
+| `expanded` | ReactElement | `undefined` | full image  |

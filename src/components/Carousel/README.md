@@ -3,7 +3,7 @@
 ## Download
 
 ```
-npx github-download-directory c4co/cn-react-thekit components/Carousel
+npx github-download-directory c4co/cn-react-thekit src/components/Carousel
 ```
 
 ## Import
@@ -67,7 +67,7 @@ function App() {
 
 ## Props
 
-| name  | type      | default | description    |
-| ----- | --------- | ------- | -------------- |
-| items | ReactNode | null    | carousel items |
-| dots  | bollean   | false   | carousel dots  |
+| name    | type      | default     | description    |
+| ------- | --------- | ----------- | -------------- |
+| `items` | ReactNode | `undefined` | carousel items |
+| `dots`  | bollean   | `false`     | carousel dots  |

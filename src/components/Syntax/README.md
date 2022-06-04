@@ -3,7 +3,7 @@
 ## Download
 
 ```
-npx github-download-directory c4co/cn-react-thekit components/Syntax
+npx github-download-directory c4co/cn-react-thekit src/components/Syntax
 ```
 
 ## Import
@@ -38,7 +38,7 @@ function App() {
 
 ## Modal Props
 
-| name     | type   | default    | description                                          |
-| -------- | ------ | ---------- | ---------------------------------------------------- |
-| lang     | string | typescript | programing language, all syntax are provided by hljs |
-| children | string | none       | code example                                         |
+| name       | type   | default      | description                                          |
+| ---------- | ------ | ------------ | ---------------------------------------------------- |
+| `lang`     | string | `typescript` | programing language, all syntax are provided by hljs |
+| `children` | string | `undefined`  | code example                                         |

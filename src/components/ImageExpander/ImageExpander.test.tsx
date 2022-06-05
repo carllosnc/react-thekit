@@ -1,5 +1,4 @@
-import React from 'react'
-import { render, fireEvent, waitFor } from '@testing-library/react'
+import { render, fireEvent, waitFor, screen } from '@testing-library/react'
 import { ImageExpander } from './ImageExpander'
 import Image from 'next/image'
 
@@ -8,7 +7,7 @@ const image =
 
 describe('<ImageExpande /> component', () => {
   test('check initial render', () => {
-    const { getByTestId } = render(
+    render(
       <ImageExpander
         thumb={
           <Image
@@ -36,23 +35,23 @@ describe('<ImageExpande /> component', () => {
       ></ImageExpander>
     )
 
-    expect(getByTestId('image-expander')).toBeInTheDocument()
-    expect(getByTestId('image-expander')).toBeVisible()
+    expect(screen.getByTestId('image-expander')).toBeInTheDocument()
+    expect(screen.getByTestId('image-expander')).toBeVisible()
 
-    expect(getByTestId('image-expander-overlay')).toBeInTheDocument()
-    expect(getByTestId('image-expander-overlay')).not.toBeVisible()
+    expect(screen.getByTestId('image-expander-overlay')).toBeInTheDocument()
+    expect(screen.getByTestId('image-expander-overlay')).not.toBeVisible()
 
-    expect(getByTestId('image-expander-content')).toBeInTheDocument()
-    expect(getByTestId('image-expander-content')).not.toBeVisible()
+    expect(screen.getByTestId('image-expander-content')).toBeInTheDocument()
+    expect(screen.getByTestId('image-expander-content')).not.toBeVisible()
 
-    expect(getByTestId('image-expander-figure')).toBeInTheDocument()
-    expect(getByTestId('image-expander-figure')).not.toBeVisible()
+    expect(screen.getByTestId('image-expander-figure')).toBeInTheDocument()
+    expect(screen.getByTestId('image-expander-figure')).not.toBeVisible()
 
-    expect(getByTestId('image-expander-reference')).toBeInTheDocument()
+    expect(screen.getByTestId('image-expander-reference')).toBeInTheDocument()
   })
 
   test('check click event', async () => {
-    const { getByTestId } = render(
+    render(
       <ImageExpander
         thumb={
           <Image
@@ -80,13 +79,22 @@ describe('<ImageExpande /> component', () => {
       ></ImageExpander>
     )
 
-    fireEvent.click(getByTestId('image-expander'))
+    fireEvent.click(screen.getByTestId('image-expander'))
 
     await waitFor(() => {
-      expect(getByTestId('image-expander')).toBeVisible()
-      expect(getByTestId('image-expander-overlay')).toBeVisible()
-      expect(getByTestId('image-expander-content')).toBeVisible()
-      expect(getByTestId('image-expander-figure')).toBeVisible()
+      expect(screen.getByTestId('image-expander')).toBeVisible()
+    })
+
+    await waitFor(() => {
+      expect(screen.getByTestId('image-expander-overlay')).toBeVisible()
+    })
+
+    await waitFor(() => {
+      expect(screen.getByTestId('image-expander-content')).toBeVisible()
+    })
+
+    await waitFor(() => {
+      expect(screen.getByTestId('image-expander-figure')).toBeVisible()
     })
   })
 })

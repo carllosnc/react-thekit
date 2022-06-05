@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import { VideoBackground } from './VideoBackground'
 
 const videoUrl =
@@ -6,15 +6,15 @@ const videoUrl =
 
 describe('<VideoBackground /> component', () => {
   test('check initial render', () => {
-    const { getByTestId } = render(<VideoBackground video={videoUrl} />)
+    render(<VideoBackground video={videoUrl} />)
 
-    expect(getByTestId('video-background')).toBeInTheDocument()
-    expect(getByTestId('video-background')).toBeVisible()
+    expect(screen.getByTestId('video-background')).toBeInTheDocument()
+    expect(screen.getByTestId('video-background')).toBeVisible()
 
-    expect(getByTestId('video-background-media')).toBeInTheDocument()
-    expect(getByTestId('video-background-media')).toBeVisible()
+    expect(screen.getByTestId('video-background-media')).toBeInTheDocument()
+    expect(screen.getByTestId('video-background-media')).toBeVisible()
 
-    expect(getByTestId('video-background-content')).toBeInTheDocument()
-    expect(getByTestId('video-background-content')).toBeVisible()
+    expect(screen.getByTestId('video-background-content')).toBeInTheDocument()
+    expect(screen.getByTestId('video-background-content')).toBeVisible()
   })
 })

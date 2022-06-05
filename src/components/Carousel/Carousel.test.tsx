@@ -1,5 +1,4 @@
-import React from 'react'
-import { render, waitFor } from '@testing-library/react'
+import { render, waitFor, screen } from '@testing-library/react'
 import { Carousel } from './Carousel'
 import Image from 'next/image'
 
@@ -20,7 +19,7 @@ function MyImage({ src }: any) {
 
 describe('<Carrousel /> component', () => {
   test('check init render', async () => {
-    const { getByTestId, queryByTestId, getAllByTestId } = render(
+    render(
       <Carousel
         dots
         items={[
@@ -42,27 +41,27 @@ describe('<Carrousel /> component', () => {
       />
     )
 
-    expect(getByTestId('carousel')).toBeInTheDocument()
-    expect(getByTestId('carousel')).toBeVisible()
+    expect(screen.getByTestId('carousel')).toBeInTheDocument()
+    expect(screen.getByTestId('carousel')).toBeVisible()
 
-    expect(getByTestId('carousel-content')).toBeInTheDocument()
-    expect(getByTestId('carousel-content')).toBeVisible()
+    expect(screen.getByTestId('carousel-content')).toBeInTheDocument()
+    expect(screen.getByTestId('carousel-content')).toBeVisible()
 
-    expect(getByTestId('carousel-button-right')).toBeInTheDocument()
+    expect(screen.getByTestId('carousel-button-right')).toBeInTheDocument()
 
     await waitFor(() => {
-      expect(getByTestId('carousel-button-right')).toBeVisible()
+      expect(screen.getByTestId('carousel-button-right')).toBeVisible()
     })
 
-    expect(queryByTestId('carousel-button-left')).not.toBeInTheDocument()
+    expect(screen.queryByTestId('carousel-button-left')).not.toBeInTheDocument()
 
-    expect(getAllByTestId('carousel-item').length).toBe(3)
+    expect(screen.getAllByTestId('carousel-item').length).toBe(3)
 
-    getAllByTestId('carousel-item').map(item => {
+    screen.getAllByTestId('carousel-item').map(item => {
       expect(item).toBeInTheDocument()
       expect(item).toBeVisible()
     })
 
-    expect(getByTestId('carousel-dots')).toBeInTheDocument()
+    expect(screen.getByTestId('carousel-dots')).toBeInTheDocument()
   })
 })

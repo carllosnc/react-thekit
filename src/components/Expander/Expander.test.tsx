@@ -1,43 +1,43 @@
-import React from 'react'
-import { render, fireEvent, waitFor } from '@testing-library/react'
+import { render, fireEvent, waitFor, screen } from '@testing-library/react'
 import { Expander } from './Expander'
 
 describe('<Expander /> component', () => {
   test('check initial render', () => {
-    const { getByTestId } = render(
-      <Expander title="expander title"> expander content </Expander>
+    render(<Expander title="expander title"> expander content </Expander>)
+
+    expect(screen.getByTestId('expander')).toBeInTheDocument()
+    expect(screen.getByTestId('expander')).toBeVisible()
+
+    expect(screen.getByTestId('expander-title')).toBeInTheDocument()
+    expect(screen.getByTestId('expander-title')).toBeVisible()
+    expect(screen.getByTestId('expander-title')).toHaveTextContent(
+      'expander title'
     )
 
-    expect(getByTestId('expander')).toBeInTheDocument()
-    expect(getByTestId('expander')).toBeVisible()
+    expect(screen.getByTestId('expander-arrow')).toBeInTheDocument()
+    expect(screen.getByTestId('expander-arrow')).toBeVisible()
 
-    expect(getByTestId('expander-title')).toBeInTheDocument()
-    expect(getByTestId('expander-title')).toBeVisible()
-    expect(getByTestId('expander-title')).toHaveTextContent('expander title')
+    expect(screen.getByTestId('expander-container')).toBeInTheDocument()
+    expect(screen.getByTestId('expander-container')).not.toBeVisible()
 
-    expect(getByTestId('expander-arrow')).toBeInTheDocument()
-    expect(getByTestId('expander-arrow')).toBeVisible()
-
-    expect(getByTestId('expander-container')).toBeInTheDocument()
-    expect(getByTestId('expander-container')).not.toBeVisible()
-
-    expect(getByTestId('expander-content')).toBeInTheDocument()
-    expect(getByTestId('expander-container')).not.toBeVisible()
-    expect(getByTestId('expander-content')).toHaveTextContent(
+    expect(screen.getByTestId('expander-content')).toBeInTheDocument()
+    expect(screen.getByTestId('expander-container')).not.toBeVisible()
+    expect(screen.getByTestId('expander-content')).toHaveTextContent(
       'expander content'
     )
   })
 
   test('check interaction with click event', async () => {
-    const { getByTestId } = render(
-      <Expander title="expander title"> expander content </Expander>
-    )
+    render(<Expander title="expander title"> expander content </Expander>)
 
-    fireEvent.click(getByTestId('expander-title'))
+    fireEvent.click(screen.getByTestId('expander-title'))
 
     await waitFor(() => {
-      expect(getByTestId('expander-container')).toBeVisible()
-      expect(getByTestId('expander-content')).toBeVisible()
+      expect(screen.getByTestId('expander-container')).toBeVisible()
+    })
+
+    await waitFor(() => {
+      expect(screen.getByTestId('expander-content')).toBeVisible()
     })
   })
 })

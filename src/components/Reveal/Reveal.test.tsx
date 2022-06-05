@@ -1,11 +1,10 @@
 import 'intersection-observer'
-import React from 'react'
-import { render, waitFor } from '@testing-library/react'
+import { render, waitFor, screen } from '@testing-library/react'
 import { Reveal } from './Reveal'
 
 describe('<Reveal /> component', () => {
   test('check initial render', async () => {
-    const { getByTestId } = render(
+    render(
       <Reveal>
         <p data-testid="first-item"> first item </p>
         <p data-testid="second-item"> second item </p>
@@ -13,23 +12,32 @@ describe('<Reveal /> component', () => {
       </Reveal>
     )
 
-    expect(getByTestId('reveal')).toBeInTheDocument()
-    expect(getByTestId('reveal')).not.toBeVisible()
+    expect(screen.getByTestId('reveal')).toBeInTheDocument()
+    expect(screen.getByTestId('reveal')).not.toBeVisible()
 
-    expect(getByTestId('first-item')).toBeInTheDocument()
-    expect(getByTestId('first-item')).not.toBeVisible()
+    expect(screen.getByTestId('first-item')).toBeInTheDocument()
+    expect(screen.getByTestId('first-item')).not.toBeVisible()
 
-    expect(getByTestId('second-item')).toBeInTheDocument()
-    expect(getByTestId('second-item')).not.toBeVisible()
+    expect(screen.getByTestId('second-item')).toBeInTheDocument()
+    expect(screen.getByTestId('second-item')).not.toBeVisible()
 
-    expect(getByTestId('third-item')).toBeInTheDocument()
-    expect(getByTestId('third-item')).not.toBeVisible()
+    expect(screen.getByTestId('third-item')).toBeInTheDocument()
+    expect(screen.getByTestId('third-item')).not.toBeVisible()
 
     await waitFor(() => {
-      expect(getByTestId('reveal')).toBeVisible()
-      expect(getByTestId('first-item')).toBeVisible()
-      expect(getByTestId('second-item')).toBeVisible()
-      expect(getByTestId('third-item')).toBeVisible()
+      expect(screen.getByTestId('reveal')).toBeVisible()
+    })
+
+    await waitFor(() => {
+      expect(screen.getByTestId('first-item')).toBeVisible()
+    })
+
+    await waitFor(() => {
+      expect(screen.getByTestId('second-item')).toBeVisible()
+    })
+
+    await waitFor(() => {
+      expect(screen.getByTestId('third-item')).toBeVisible()
     })
   })
 })

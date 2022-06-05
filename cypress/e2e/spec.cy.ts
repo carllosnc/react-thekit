@@ -3,3 +3,5 @@ describe('spec.cy.ts', () => {
     cy.visit('/')
   })
 })
+
+export {}

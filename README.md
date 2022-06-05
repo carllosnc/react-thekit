@@ -1,34 +1,63 @@
-# CN React The kit
+# CN Next Starter
 
-[![Node.js CI](https://github.com/C4co/cn-react-thekit/actions/workflows/node.js.yml/badge.svg)](https://github.com/C4co/cn-react-thekit/actions/workflows/node.js.yml)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e283ee42-0ecc-4cfe-bbfc-3f81a39aaf44/deploy-status)](https://app.netlify.com/sites/the-kit/deploys)
+[![Node.js CI](https://github.com/C4co/cn-next-starter/actions/workflows/node.js.yml/badge.svg)](https://github.com/C4co/cn-next-starter/actions/workflows/node.js.yml)
 
-> some react components
+Next.js and typescript starter project
 
-### What's inside
+### Whats inside
 
+- NextJS
 - Typescript
-- React
-- Framer motion
 - Tailwind
+- Jest
+- Testing Library
+- Cypress
+- i18n
+- SWR
 
-### Components
+### New project
 
-| Name            | Example                                            | Doc                                                                                    |
-| --------------- | -------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| 🆗 Button       | [Link](https://the-kit.netlify.app/button)         | [Link](https://github.com/C4co/cn-react-thekit/tree/main/src/components/Button)        |
-| 🚂 Carousel     | [Link](https://the-kit.netlify.app/carousel)       | [Link](https://github.com/C4co/cn-react-thekit/tree/main/src/components/Carousel)      |
-| ✅ Checkbox     | [Link](https://the-kit.netlify.app/checkbox)       | [Link](https://github.com/C4co/cn-react-thekit/tree/main/src/components/Checkbox)      |
-| 👇 Expander     | [Link](https://the-kit.netlify.app/expander)       | [Link](https://github.com/C4co/cn-react-thekit/tree/main/src/components/Expander)      |
-| 🙅‍♂️ If           | [Link](https://the-kit.netlify.app/if)             | [Link](https://github.com/C4co/cn-react-thekit/tree/main/src/components/If)            |
-| 🖼 ImageExpander | [Link](https://the-kit.netlify.app/image-expander) | [Link](https://github.com/C4co/cn-react-thekit/tree/main/src/components/ImageExpander) |
-| 🔠 Input        | [Link](https://the-kit.netlify.app/input)          | [Link](https://github.com/C4co/cn-react-thekit/tree/main/src/components/Input)         |
-| 🖐 Modal        | [Link](https://the-kit.netlify.app/modal)          | [Link](https://github.com/C4co/cn-react-thekit/tree/main/src/components/Modal)         |
-| 🍱 Navbar       | [Link](https://the-kit.netlify.app/navbar)         | [Link](https://github.com/C4co/cn-react-thekit/tree/main/src/components/Navbar)        |
-| 🔘 Radio        | [Link](https://the-kit.netlify.app/radio)          | [Link](https://github.com/C4co/cn-react-thekit/tree/main/src/components/Radio)         |
-| 🙈 Reveal       | [Link](https://the-kit.netlify.app/reveal)         | [Link](https://github.com/C4co/cn-react-thekit/tree/main/src/components/Reveal)        |
-| 👉 Select       | [Link](https://the-kit.netlify.app/select)         | [Link](https://github.com/C4co/cn-react-thekit/tree/main/src/components/Select)        |
-| 🖋 Syntax        | [Link](https://the-kit.netlify.app/syntax)         | [Link](https://github.com/C4co/cn-react-thekit/tree/main/src/components/Syntax)        |
+```
+npx create-next-app --use-npm --example https://github.com/C4co/cn-next-starter
+```
+
+### Commands
+
+start development
+
+```
+npm run dev
+```
+
+run unitary tests(jest and testing library)
+
+```
+npm run test:unit
+```
+
+run e2e tests(cypress)
+
+```
+npm run test:e2e
+```
+
+run e2e tests without ui
+
+```
+npm run test:e2e:headless
+```
+
+start a server and run e2e tests
+
+```
+npm run test:ci
+```
+
+running all tests and checks
+
+```
+npm run test:full
+```
 
 ---
 

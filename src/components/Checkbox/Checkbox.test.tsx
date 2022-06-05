@@ -1,6 +1,10 @@
-import React from 'react'
-import { render, waitFor } from '@testing-library/react'
-import { renderHook, act } from '@testing-library/react-hooks'
+import {
+  render,
+  waitFor,
+  renderHook,
+  act,
+  screen,
+} from '@testing-library/react'
 import { Checkbox } from './Checkbox'
 import { useCheckbox } from './Checkbox.hook'
 
@@ -9,27 +13,23 @@ describe('<Expander /> component', () => {
     const { result } = renderHook(() => useCheckbox(false))
     const [checked, toggle] = result.current
 
-    const { getByTestId } = render(
-      <Checkbox isChecked={checked} label="checkbox" toggle={toggle} />
-    )
+    render(<Checkbox isChecked={checked} label="checkbox" toggle={toggle} />)
 
-    expect(getByTestId('checkbox')).toBeInTheDocument()
-    expect(getByTestId('checkbox-square')).toBeInTheDocument()
-    expect(getByTestId('checkbox-checked')).toBeInTheDocument()
-    expect(getByTestId('checkbox-checked')).not.toBeVisible()
-    expect(getByTestId('checkbox-label')).toBeInTheDocument()
+    expect(screen.getByTestId('checkbox')).toBeInTheDocument()
+    expect(screen.getByTestId('checkbox-square')).toBeInTheDocument()
+    expect(screen.getByTestId('checkbox-checked')).toBeInTheDocument()
+    expect(screen.getByTestId('checkbox-checked')).not.toBeVisible()
+    expect(screen.getByTestId('checkbox-label')).toBeInTheDocument()
   })
 
-  test('check if checkbox is checked', () => {
+  test('check if checkbox is checked', async () => {
     const { result } = renderHook(() => useCheckbox(true))
     const [checked, toggle] = result.current
 
-    const { getByTestId } = render(
-      <Checkbox isChecked={checked} label="checkbox" toggle={toggle} />
-    )
+    render(<Checkbox isChecked={checked} label="checkbox" toggle={toggle} />)
 
-    waitFor(() => {
-      expect(getByTestId('checkbox-checked')).toBeVisible()
+    await waitFor(() => {
+      expect(screen.getByTestId('checkbox-checked')).toBeVisible()
     })
   })
 

@@ -1,12 +1,11 @@
-import React from 'react'
-import { render, fireEvent } from '@testing-library/react'
+import { render, fireEvent, screen } from '@testing-library/react'
 import { Navbar } from './Navbar'
 import { NavbarDropdown } from './NavbarDropdown'
 import './Navbar.css'
 
 describe('<Navbar/>', () => {
   test('check initial render ', () => {
-    const { getByTestId, queryAllByTestId } = render(
+    render(
       <Navbar>
         <a data-testid="navbar-item" href="https://dev.to">
           devto
@@ -17,25 +16,25 @@ describe('<Navbar/>', () => {
       </Navbar>
     )
 
-    expect(getByTestId('navbar')).toBeInTheDocument()
-    expect(getByTestId('navbar')).toBeVisible()
+    expect(screen.getByTestId('navbar')).toBeInTheDocument()
+    expect(screen.getByTestId('navbar')).toBeVisible()
 
-    expect(getByTestId('navbar-content')).toBeInTheDocument()
-    expect(getByTestId('navbar-content')).toBeVisible()
+    expect(screen.getByTestId('navbar-content')).toBeInTheDocument()
+    expect(screen.getByTestId('navbar-content')).toBeVisible()
 
-    expect(getByTestId('navbar-menu')).toBeInTheDocument()
-    expect(getByTestId('navbar-menu')).toBeVisible()
+    expect(screen.getByTestId('navbar-menu')).toBeInTheDocument()
+    expect(screen.getByTestId('navbar-menu')).toBeVisible()
 
-    expect(getByTestId('navbar-overlay')).toBeInTheDocument()
-    expect(getByTestId('navbar-overlay')).toBeVisible()
+    expect(screen.getByTestId('navbar-overlay')).toBeInTheDocument()
+    expect(screen.getByTestId('navbar-overlay')).toBeVisible()
 
-    expect(getByTestId('navbar-menu-open')).toBeInTheDocument()
+    expect(screen.getByTestId('navbar-menu-open')).toBeInTheDocument()
 
-    expect(queryAllByTestId('navbar-item').length).toBe(2)
+    expect(screen.queryAllByTestId('navbar-item').length).toBe(2)
   })
 
   test('check dropdown when mouse over', async () => {
-    const { getByTestId, queryAllByTestId, queryByTestId } = render(
+    render(
       <Navbar>
         <NavbarDropdown label="dropdown">
           <a data-testid="navbar-dropdown-item" href="https://dev.to">
@@ -48,21 +47,23 @@ describe('<Navbar/>', () => {
       </Navbar>
     )
 
-    expect(getByTestId('navbar-dropdown')).toBeInTheDocument()
-    expect(getByTestId('navbar-dropdown')).toBeVisible()
+    expect(screen.getByTestId('navbar-dropdown')).toBeInTheDocument()
+    expect(screen.getByTestId('navbar-dropdown')).toBeVisible()
 
-    expect(getByTestId('navbar-dropdown-label')).toBeInTheDocument()
-    expect(getByTestId('navbar-dropdown-label')).toBeVisible()
-    expect(getByTestId('navbar-dropdown-label')).toHaveTextContent('dropdown')
+    expect(screen.getByTestId('navbar-dropdown-label')).toBeInTheDocument()
+    expect(screen.getByTestId('navbar-dropdown-label')).toBeVisible()
+    expect(screen.getByTestId('navbar-dropdown-label')).toHaveTextContent(
+      'dropdown'
+    )
 
-    expect(queryByTestId('navbar-dropdown-content')).toBeNull()
+    expect(screen.queryByTestId('navbar-dropdown-content')).toBeNull()
 
-    fireEvent.mouseEnter(getByTestId('navbar-dropdown'))
+    fireEvent.mouseEnter(screen.getByTestId('navbar-dropdown'))
 
-    expect(queryByTestId('navbar-dropdown-content')).toBeInTheDocument()
-    expect(queryByTestId('navbar-dropdown-content')).toBeVisible()
+    expect(screen.getByTestId('navbar-dropdown-content')).toBeInTheDocument()
+    expect(screen.queryByTestId('navbar-dropdown-content')).toBeVisible()
 
-    queryAllByTestId('navbar-dropdown-item').forEach(item => {
+    screen.queryAllByTestId('navbar-dropdown-item').forEach(item => {
       expect(item).toBeInTheDocument()
       expect(item).toBeVisible()
     })

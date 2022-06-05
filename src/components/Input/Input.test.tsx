@@ -1,60 +1,61 @@
-import React from 'react'
-import { render } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import { Input } from './Input'
 
 describe('<Input /> component ', () => {
   test('check basic render', () => {
-    const { getByTestId } = render(<Input />)
+    render(<Input />)
 
-    expect(getByTestId('input')).toBeInTheDocument()
-    expect(getByTestId('input')).toBeVisible()
+    expect(screen.getByTestId('input')).toBeInTheDocument()
+    expect(screen.getByTestId('input')).toBeVisible()
 
-    expect(getByTestId('input-info')).toBeInTheDocument()
-    expect(getByTestId('input-info')).toBeVisible()
+    expect(screen.getByTestId('input-info')).toBeInTheDocument()
+    expect(screen.getByTestId('input-info')).toBeVisible()
 
-    expect(getByTestId('input-content')).toBeInTheDocument()
-    expect(getByTestId('input-content')).toBeVisible()
+    expect(screen.getByTestId('input-content')).toBeInTheDocument()
+    expect(screen.getByTestId('input-content')).toBeVisible()
 
-    expect(getByTestId('input-field')).toBeInTheDocument()
-    expect(getByTestId('input-field')).toBeVisible()
+    expect(screen.getByTestId('input-field')).toBeInTheDocument()
+    expect(screen.getByTestId('input-field')).toBeVisible()
   })
 
   test('check input label', () => {
-    const { getByTestId } = render(<Input label="input label" />)
+    render(<Input label="input label" />)
 
-    expect(getByTestId('input-label')).toBeInTheDocument()
-    expect(getByTestId('input-label')).toBeVisible()
-    expect(getByTestId('input-label')).toHaveTextContent('input label')
+    expect(screen.getByTestId('input-label')).toBeInTheDocument()
+    expect(screen.getByTestId('input-label')).toBeVisible()
+    expect(screen.getByTestId('input-label')).toHaveTextContent('input label')
   })
 
   test('check input error', () => {
-    const { getByTestId } = render(<Input error label="input label" />)
-    expect(getByTestId('input-content')).toHaveClass('input__content--error')
+    render(<Input error label="input label" />)
+    expect(screen.getByTestId('input-content')).toHaveClass(
+      'input__content--error'
+    )
   })
 
   test('check input error message', () => {
-    const { getByTestId } = render(
+    render(
       <Input error errorMessage="input error message" label="input label" />
     )
 
-    expect(getByTestId('input-error-message')).toBeInTheDocument()
-    expect(getByTestId('input-error-message')).toBeVisible()
-    expect(getByTestId('input-error-message')).toHaveTextContent(
+    expect(screen.getByTestId('input-error-message')).toBeInTheDocument()
+    expect(screen.getByTestId('input-error-message')).toBeVisible()
+    expect(screen.getByTestId('input-error-message')).toHaveTextContent(
       'input error message'
     )
   })
 
   test('check input description', () => {
-    const { getByTestId } = render(<Input description="input description" />)
+    render(<Input description="input description" />)
 
-    expect(getByTestId('input-description')).toBeInTheDocument()
-    expect(getByTestId('input-description')).toBeVisible()
+    expect(screen.getByTestId('input-description')).toBeInTheDocument()
+    expect(screen.getByTestId('input-description')).toBeVisible()
   })
 
   test('check input success', () => {
-    const { getByTestId } = render(<Input success />)
+    render(<Input success />)
 
-    expect(getByTestId('input-success')).toBeInTheDocument()
-    expect(getByTestId('input-success')).toBeVisible()
+    expect(screen.getByTestId('input-success')).toBeInTheDocument()
+    expect(screen.getByTestId('input-success')).toBeVisible()
   })
 })

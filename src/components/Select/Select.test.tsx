@@ -1,5 +1,4 @@
-import React from 'react'
-import { render } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import { Select, SelectItem } from './Select'
 
 describe('<Select /> component', () => {
@@ -21,45 +20,41 @@ describe('<Select /> component', () => {
   ]
 
   test('check initial render', () => {
-    const { getByTestId } = render(<Select items={items} />)
+    render(<Select items={items} />)
 
-    expect(getByTestId('select')).toBeInTheDocument()
-    expect(getByTestId('select')).toBeVisible()
+    expect(screen.getByTestId('select')).toBeInTheDocument()
+    expect(screen.getByTestId('select')).toBeVisible()
 
-    expect(getByTestId('select-content')).toBeInTheDocument()
-    expect(getByTestId('select-content')).toBeVisible()
+    expect(screen.getByTestId('select-content')).toBeInTheDocument()
+    expect(screen.getByTestId('select-content')).toBeVisible()
 
-    expect(getByTestId('select-arrow')).toBeInTheDocument()
-    expect(getByTestId('select-arrow')).toBeVisible()
+    expect(screen.getByTestId('select-arrow')).toBeInTheDocument()
+    expect(screen.getByTestId('select-arrow')).toBeVisible()
   })
 
   test('check label', () => {
-    const { getByTestId } = render(
-      <Select label="select label" items={items} />
-    )
+    render(<Select label="select label" items={items} />)
 
-    expect(getByTestId('select-label')).toBeInTheDocument()
-    expect(getByTestId('select-label')).toBeVisible()
-    expect(getByTestId('select-label')).toHaveTextContent('select label')
+    expect(screen.getByTestId('select-label')).toBeInTheDocument()
+    expect(screen.getByTestId('select-label')).toBeVisible()
+    expect(screen.getByTestId('select-label')).toHaveTextContent('select label')
   })
 
   test('check placeholder', () => {
-    const { getByTestId } = render(
-      <Select placeholder="input placeholder" items={items} />
-    )
+    render(<Select placeholder="input placeholder" items={items} />)
 
-    expect(getByTestId('select-placeholder')).toBeInTheDocument()
-    expect(getByTestId('select-placeholder')).toHaveTextContent(
+    expect(screen.getByTestId('select-placeholder')).toBeInTheDocument()
+    expect(screen.getByTestId('select-placeholder')).toHaveTextContent(
       'input placeholder'
     )
   })
 
   test('check options', () => {
-    const { queryAllByTestId } = render(<Select items={items} />)
+    render(<Select items={items} />)
 
-    expect(queryAllByTestId('select-option').length).toBe(items.length)
+    expect(screen.queryAllByTestId('select-option').length).toBe(items.length)
 
-    queryAllByTestId('select-option').forEach(item => {
+    screen.queryAllByTestId('select-option').forEach(item => {
       expect(item).toBeInTheDocument()
     })
   })

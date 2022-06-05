@@ -1,5 +1,4 @@
-import React from 'react'
-import { render } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import { Syntax } from './Syntax'
 
 const CODE_EXAMPLE = `
@@ -10,12 +9,10 @@ const CODE_EXAMPLE = `
 
 describe('<Syntax /> component', () => {
   test('check initial render', () => {
-    const { getByTestId } = render(
-      <Syntax lang="typescript">{CODE_EXAMPLE}</Syntax>
-    )
+    render(<Syntax lang="typescript">{CODE_EXAMPLE}</Syntax>)
 
-    expect(getByTestId('syntax')).toBeInTheDocument()
-    expect(getByTestId('syntax-copy')).toBeInTheDocument()
-    expect(getByTestId('syntax-content')).toBeInTheDocument()
+    expect(screen.getByTestId('syntax')).toBeInTheDocument()
+    expect(screen.getByTestId('syntax-copy')).toBeInTheDocument()
+    expect(screen.getByTestId('syntax-content')).toBeInTheDocument()
   })
 })

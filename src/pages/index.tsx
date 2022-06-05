@@ -15,6 +15,7 @@ import {
   TbCode,
   TbPictureInPictureOff,
   TbVideo,
+  TbQuestionMark,
 } from 'react-icons/tb'
 
 export default function Home() {
@@ -52,6 +53,13 @@ export default function Home() {
             <a className="index__item">
               <TbArrowBarDown className="index__item__icon" />
               Expander
+            </a>
+          </Link>
+
+          <Link href="/if">
+            <a className="index__item">
+              <TbQuestionMark className="index__item__icon" />
+              If (condition)
             </a>
           </Link>
 

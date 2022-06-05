@@ -20,25 +20,25 @@
     "baseUrl": "./src/",
     "paths": {
       "@/components": [
-        "components/index"
+        "components/"
       ],
       "@/templates": [
-        "templates/index"
+        "templates/"
       ],
       "@/services": [
-        "services/index"
+        "services/"
       ],
       "@/context": [
-        "context/index"
+        "context/"
       ],
       "@/content": [
-        "src/content/index"
+        "content/"
       ],
       "@/types": [
-        "types/index"
+        "types/"
       ],
       "@/utils": [
-        "utils/index"
+        "utils/"
       ]
     },
     "incremental": true

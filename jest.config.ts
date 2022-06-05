@@ -16,13 +16,13 @@ const jestConfig = {
     https://jestjs.io/docs/webpack#handling-static-assets */
     '^.+\\.(jpg|jpeg|png|gif|webp|svg)$': '<rootDir>/__mocks__/fileMock.ts',
 
-    '^@/components/(.*)$': '<rootDir>/components/$1'
+    '^@/components/(.*)$': '<rootDir>/src/components/$1',
   },
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   testPathIgnorePatterns: [
     '<rootDir>/node_modules/',
     '<rootDir>/.next/',
-    '<rootDir>/cypress/'
+    '<rootDir>/cypress/',
   ],
   testEnvironment: 'jsdom',
   transform: {

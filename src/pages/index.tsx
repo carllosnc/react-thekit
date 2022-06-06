@@ -16,6 +16,7 @@ import {
   TbPictureInPictureOff,
   TbVideo,
   TbQuestionMark,
+  TbAppWindow,
 } from 'react-icons/tb'
 
 export default function Home() {
@@ -116,6 +117,13 @@ export default function Home() {
             <a className="index__item">
               <TbCode className="index__item__icon" />
               Syntax
+            </a>
+          </Link>
+
+          <Link href="/tabs">
+            <a className="index__item">
+              <TbAppWindow className="index__item__icon" />
+              Tabs
             </a>
           </Link>
 

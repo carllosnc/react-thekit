@@ -29,6 +29,7 @@
 | 🙈 Reveal       | [Link](https://the-kit.netlify.app/reveal)         | [Link](https://github.com/C4co/cn-react-thekit/tree/main/src/components/Reveal)        |
 | 👉 Select       | [Link](https://the-kit.netlify.app/select)         | [Link](https://github.com/C4co/cn-react-thekit/tree/main/src/components/Select)        |
 | 🖋 Syntax        | [Link](https://the-kit.netlify.app/syntax)         | [Link](https://github.com/C4co/cn-react-thekit/tree/main/src/components/Syntax)        |
+| 🍫 Tabs         | [Link](https://the-kit.netlify.app/tabs)           | [Link](https://github.com/C4co/cn-react-thekit/tree/main/src/components/Tabs)          |
 
 ---
 

@@ -11,6 +11,7 @@
 @import "../components/ImageExpander/ImageExpander.css";
 @import "../components/Carousel/Carousel.css";
 @import "../components/VideoBackground/VideoBackground.css";
+@import "../components/Tabs/Tabs.css";
 
 /* templates */
 @import "./../templates/page/page.css";

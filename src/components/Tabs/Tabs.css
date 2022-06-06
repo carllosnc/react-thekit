@@ -1,0 +1,39 @@
+.tabs {
+  @apply
+  flex
+  flex-col
+  gap-[20px]
+}
+
+.tabs__header {
+  @apply
+  flex
+  border-b-[2px]
+}
+
+.tabs__button {
+  @apply
+  w-full
+  relative
+}
+
+.tabs__button__item {
+  @apply
+  w-full
+  cursor-pointer
+  p-3
+  text-center
+  text-gray-600
+  transition-all
+
+  hover:bg-gray-100
+}
+
+.tabs__button__line {
+  @apply
+  h-[2px]
+  absolute
+  -bottom-[2px]
+bg-gray-800
+  w-full
+}

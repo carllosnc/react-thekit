@@ -10,10 +10,7 @@
     "lint": "next lint",
     "format": "prettier --check './src/**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
     "test:unit": "jest",
-    "test:e2e": "cypress open",
-    "test:e2e:headless": "cypress run",
-    "test:ci": "start-server-and-test start http://localhost:3000 test:e2e:headless",
-    "test:full": "npm run build && npm run test:unit && npm run test:ci && npm run lint && npm run format"
+    "test:full": "npm run build && npm run test:unit && npm run lint && npm run format"
   },
   "dependencies": {
     "@fontsource/inter": "^4.5.11",
@@ -39,7 +36,6 @@
     "@types/react": "18.0.9",
     "autoprefixer": "10.4.7",
     "babel-jest": "28.1.0",
-    "cypress": "^10.0.2",
     "eslint": "^8.17.0",
     "eslint-config-next": "^12.1.6",
     "eslint-plugin-testing-library": "^5.5.1",

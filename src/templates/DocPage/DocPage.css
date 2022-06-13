@@ -1,0 +1,91 @@
+.doc-page {
+  @apply
+  max-w-[800px]
+  m-auto
+  px-4
+  py-[100px]
+  flex
+  flex-col
+  gap-8
+}
+
+.doc-page__title {
+  @apply
+  text-3xl
+  text-gray-700
+}
+
+.doc-page__emoji {
+  @apply
+  text-4xl
+}
+
+.doc-page__back {
+  @apply
+  text-blue-600
+  hover:underline
+}
+
+.doc-line {
+  @apply
+  border-4
+  border-gray-200
+}
+
+.markdown {
+  @apply
+  prose
+  max-w-full
+}
+
+.markdown h1 {
+  @apply
+  font-normal
+  text-gray-700
+  hidden
+  w-0
+  h-0
+}
+
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  @apply
+  border-b
+  pb-2
+  border-gray-200
+  text-gray-700
+  text-lg
+}
+
+.markdown pre {
+  @apply
+  rounded-none
+  p-3
+  text-white
+  bg-[#23241F]
+}
+
+.markdown pre > code {
+  @apply
+  px-2
+}
+
+.markdown a {
+  @apply
+  text-blue-600
+}
+
+.markdown p > code,
+.markdown td > code
+{
+  @apply
+  text-xs
+  leading-none
+  rounded-full
+  p-[2px]
+  pt-[4px]
+  bg-blue-100
+}

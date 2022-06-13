@@ -1,8 +1,8 @@
-import { Page } from '@/templates'
+import { DocPage } from '@/templates'
 import { Radio, RadioValue, useRadio } from '@/components'
 import { useEffect } from 'react'
 
-export default function SyntaxPage() {
+export default function RadioPage({ doc }) {
   const [radioValue, changeHandle] = useRadio()
 
   const values: RadioValue[] = [
@@ -25,18 +25,22 @@ export default function SyntaxPage() {
   })
 
   return (
-    <Page>
-      <div className="page-component">
-        <h1 className="page-component__title"> Radio </h1>
-
+    <DocPage markdown={doc} title="Radio">
+      <div className="flex flex-col gap-4">
+        <Radio values={values} onChange={changeHandle} />
         <hr />
-
-        <div className="page-component__content">
-          <Radio values={values} onChange={changeHandle} />
-          <hr />
-          Selected: {radioValue}
-        </div>
+        Selected: {radioValue}
       </div>
-    </Page>
+    </DocPage>
   )
+}
+
+export async function getStaticProps() {
+  const content = await require('../components/Radio/README.md')
+
+  return {
+    props: {
+      doc: JSON.stringify(content),
+    },
+  }
 }

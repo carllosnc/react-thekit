@@ -1,4 +1,4 @@
-import { Page } from '@/templates'
+import { DocPage } from '@/templates'
 import { Navbar, NavbarDropdown } from '@/components'
 import Link from 'next/link'
 
@@ -12,16 +12,11 @@ function Brand() {
   )
 }
 
-export default function NavbarPage() {
+export default function NavbarPage({ doc }) {
   return (
-    <Page>
-      <div className="page-component">
-        <br />
-
-        <h1 className="page-component__title"> Navbar </h1>
-
-        <hr />
-
+    <DocPage title="Navbar" markdown={doc}>
+      <p> Navbar is here ☝️ </p>
+      <div>
         <Navbar brand={<Brand />}>
           <NavbarDropdown label="Dropdown 1">
             <Link href="/">
@@ -51,22 +46,17 @@ export default function NavbarPage() {
             External item
           </a>
         </Navbar>
-
-        <div className="page-component__content">
-          <div className="bg-gray-200 w-full h-[200px] rounded-md" />
-          <div className="bg-gray-200 w-full h-[200px] rounded-md" />
-          <div className="bg-gray-200 w-full h-[200px] rounded-md" />
-          <div className="bg-gray-200 w-full h-[200px] rounded-md" />
-          <div className="bg-gray-200 w-full h-[200px] rounded-md" />
-          <div className="bg-gray-200 w-full h-[200px] rounded-md" />
-          <div className="bg-gray-200 w-full h-[200px] rounded-md" />
-          <div className="bg-gray-200 w-full h-[200px] rounded-md" />
-          <div className="bg-gray-200 w-full h-[200px] rounded-md" />
-          <div className="bg-gray-200 w-full h-[200px] rounded-md" />
-          <div className="bg-gray-200 w-full h-[200px] rounded-md" />
-          <div className="bg-gray-200 w-full h-[200px] rounded-md" />
-        </div>
       </div>
-    </Page>
+    </DocPage>
   )
+}
+
+export async function getStaticProps() {
+  const content = await require('../components/Navbar/README.md')
+
+  return {
+    props: {
+      doc: JSON.stringify(content),
+    },
+  }
 }

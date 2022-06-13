@@ -8,13 +8,13 @@ npx github-download-directory c4co/cn-react-thekit src/components/Radio
 
 ## Import
 
-```tsx
+```typescript
 import { Radio, useRadio, RadioValue } from '@/components'
 ```
 
 ## Usage
 
-```tsx
+```typescript
 import { Radio, useRadio, RadioValue } from '@/components'
 
 function App() {
@@ -56,7 +56,7 @@ function App() {
 
 ## useCheckbox
 
-```tsx
+```typescript
 const [radioValue, changeHandle] = useRadio()
 ```
 

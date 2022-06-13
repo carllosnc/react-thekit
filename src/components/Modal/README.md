@@ -44,7 +44,7 @@ function App() {
 
 ## useModal
 
-```jsx
+```javascript
 const [modal, openModal, closeModal] = useModal()
 ```
 
@@ -56,7 +56,7 @@ const [modal, openModal, closeModal] = useModal()
 
 ## Calling multiple modals
 
-```jsx
+```javascript
 const [modal1, openModal1, closeModal1] = useModal()
 const [modal2, openModal2, closeModal2] = useModal()
 const [modal3, openModal3, closeModal3] = useModal()

@@ -42,7 +42,7 @@ function App() {
 
 ## useCheckbox
 
-```tsx
+```typescript
 const [check, togle] = useCheckbox()
 ```
 

@@ -18,6 +18,8 @@ import { If, Else } from '@/components'
 import { If, Else } from '@/components'
 
 function App() {
+  const condition: boolean = 10 > 20
+
   return (
     <div>
       <If condition={true}>

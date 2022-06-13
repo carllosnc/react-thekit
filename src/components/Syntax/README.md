@@ -8,7 +8,7 @@ npx github-download-directory c4co/cn-react-thekit src/components/Syntax
 
 ## Import
 
-```jsx
+```typescript
 import { Syntax } from '@/components'
 ```
 
@@ -22,7 +22,7 @@ npm install react-syntax-highlighter
 
 ## Syntax
 
-```jsx
+```typescript
 import { Syntax } from '@/components'
 
 const CODE_EXAMPLE = `

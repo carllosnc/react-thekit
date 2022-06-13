@@ -12,4 +12,12 @@ module.exports = withPWA({
     dest: 'public',
     disable: process.env.NODE_ENV === 'development',
   },
+
+  webpack: function (config) {
+    config.module.rules.push({
+      test: /\.md$/,
+      use: 'raw-loader',
+    })
+    return config
+  },
 })

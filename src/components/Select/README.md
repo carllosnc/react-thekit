@@ -18,11 +18,11 @@ import { Select, SelectItem } from '@/components'
 
 ## Usage
 
-```tsx
+```typescript
 import { Select, SelectItem } from '@/components'
 
 function App() {
-  const [selected, setSelected] = (useState < number) | (string > 0)
+  const [selected, setSelected] = useState<number | string>(0)
 
   const items: SelectItem[] = [
     {

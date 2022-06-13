@@ -1,8 +1,8 @@
-import { Page } from '@/templates'
+import { DocPage } from '@/templates'
 import { Select, SelectItem } from '@/components'
 import React, { useState } from 'react'
 
-export default function SelectPage() {
+export default function SelectPage({ doc }) {
   const [selected, setSelected] = useState<number | string>(0)
 
   const items: SelectItem[] = [
@@ -23,28 +23,28 @@ export default function SelectPage() {
   ]
 
   return (
-    <Page>
-      <div className="page-component">
-        <h1 className="page-component__title"> Select </h1>
-
+    <DocPage title="Select" markdown={doc}>
+      <div className="flex flex-col gap-4">
+        <Select
+          onChange={(event: React.ChangeEvent<HTMLSelectElement>) => {
+            setSelected(event.currentTarget.value)
+          }}
+          placeholder="Select an item"
+          items={items}
+        />
         <hr />
-
-        <div className="page-component__content">
-          <p> Live Example </p>
-
-          <Select
-            onChange={(event: React.ChangeEvent<HTMLSelectElement>) => {
-              setSelected(event.currentTarget.value)
-            }}
-            placeholder="Select an item"
-            items={items}
-          />
-
-          <hr />
-
-          <span> Selected value: {selected} </span>
-        </div>
+        <span> Selected value: {selected} </span>
       </div>
-    </Page>
+    </DocPage>
   )
+}
+
+export async function getStaticProps() {
+  const content = await require('../components/Select/README.md')
+
+  return {
+    props: {
+      doc: JSON.stringify(content),
+    },
+  }
 }

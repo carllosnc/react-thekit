@@ -15,10 +15,10 @@
 
 /* templates */
 @import "./../templates/page/page.css";
+@import "./../templates/DocPage/DocPage";
 
 /* pages */
 @import "./page-index.css";
-@import "./page-component.css";
 
 @tailwind base;
 @tailwind components;

@@ -1,29 +1,29 @@
-import { Page } from '@/templates'
+import { DocPage } from '@/templates'
 import { Button } from '@/components'
 import { MdStar, MdHeadset } from 'react-icons/md'
 
-export default function ButtonPage() {
+export default function ButtonPage({ doc }) {
   return (
-    <Page>
-      <div className="page-component">
-        <h1 className="page-component__title"> Button </h1>
-
-        <hr />
-
-        <div className="page-component__content">
-          <div className="flex gap-4">
-            <Button leftIcon={<MdStar />}>Button</Button>
-            <Button rightIcon={<MdHeadset />}>Button</Button>
-            <Button leftIcon={<MdStar />} rightIcon={<MdHeadset />}>
-              Button
-            </Button>
-          </div>
-          <div className="flex gap-4">
-            <Button isLoading="Carregando...">Button</Button>
-            <Button isLoading="Loading...">Button</Button>
-          </div>
-        </div>
+    <DocPage title="Buttons" markdown={doc}>
+      <div className="flex gap-4 flex-wrap">
+        <Button leftIcon={<MdStar />}>Button</Button>
+        <Button rightIcon={<MdHeadset />}>Button</Button>
+        <Button leftIcon={<MdStar />} rightIcon={<MdHeadset />}>
+          Button
+        </Button>
+        <Button isLoading="Carregando...">Button</Button>
+        <Button isLoading="Loading...">Button</Button>
       </div>
-    </Page>
+    </DocPage>
   )
+}
+
+export async function getStaticProps() {
+  const content = await require('../components/Button/README.md')
+
+  return {
+    props: {
+      doc: JSON.stringify(content),
+    },
+  }
 }

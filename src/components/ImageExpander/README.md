@@ -14,7 +14,7 @@ import { ImageExpander } from '@/components'
 
 ## Usage
 
-```jsx
+```javascript
 import { ImageExpander } from '@/components'
 import Image from 'next/image'
 

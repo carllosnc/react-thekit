@@ -1,40 +1,44 @@
-import { Page } from '@/templates'
+import { DocPage } from '@/templates'
 import { Reveal } from '@/components'
 
-export default function RevealPage() {
+export default function RevealPage({ doc }) {
   return (
-    <Page>
-      <div className="page-component">
-        <h1 className="page-component__title"> Reveal </h1>
+    <DocPage title="Reveal" markdown={doc}>
+      <div className="w-full flex flex-col gap-4">
+        <Reveal type="DOWN">
+          <div className="w-full h-[100px] bg-gray-400 rounded-md" />
+        </Reveal>
 
-        <hr />
+        <Reveal type="UP" delay={0.2}>
+          <div className="w-full h-[100px] bg-gray-400 rounded-md" />
+        </Reveal>
 
-        <div className="page-component__content">
-          <Reveal type="DOWN">
-            <div className="w-full h-[100px] bg-gray-400 rounded-md" />
-          </Reveal>
+        <Reveal type="LEFT" delay={0.4}>
+          <div className="w-full h-[100px] bg-gray-400 rounded-md" />
+        </Reveal>
 
-          <Reveal type="UP" delay={0.2}>
-            <div className="w-full h-[100px] bg-gray-400 rounded-md" />
-          </Reveal>
+        <Reveal type="RIGHT" delay={0.6}>
+          <div className="w-full h-[100px] bg-gray-400 rounded-md" />
+        </Reveal>
 
-          <Reveal type="LEFT" delay={0.4}>
-            <div className="w-full h-[100px] bg-gray-400 rounded-md" />
-          </Reveal>
+        <Reveal type="SCALE" delay={0.8}>
+          <div className="w-full h-[100px] bg-gray-400 rounded-md" />
+        </Reveal>
 
-          <Reveal type="RIGHT" delay={0.6}>
-            <div className="w-full h-[100px] bg-gray-400 rounded-md" />
-          </Reveal>
-
-          <Reveal type="SCALE" delay={0.8}>
-            <div className="w-full h-[100px] bg-gray-400 rounded-md" />
-          </Reveal>
-
-          <Reveal type="ROTATE" delay={1}>
-            <div className="w-full h-[100px] bg-gray-400 rounded-md" />
-          </Reveal>
-        </div>
+        <Reveal type="ROTATE" delay={1}>
+          <div className="w-full h-[100px] bg-gray-400 rounded-md" />
+        </Reveal>
       </div>
-    </Page>
+    </DocPage>
   )
+}
+
+export async function getStaticProps() {
+  const content = await require('../components/Reveal/README.md')
+
+  return {
+    props: {
+      doc: JSON.stringify(content),
+    },
+  }
 }

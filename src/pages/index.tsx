@@ -17,6 +17,7 @@ import {
   TbVideo,
   TbQuestionMark,
   TbAppWindow,
+  TbLayoutSidebar,
 } from 'react-icons/tb'
 
 export default function Home() {
@@ -47,6 +48,13 @@ export default function Home() {
             <a className="index__item">
               <TbCheckbox className="index__item__icon" />
               Checkbox
+            </a>
+          </Link>
+
+          <Link href="/drawer">
+            <a className="index__item">
+              <TbLayoutSidebar className="index__item__icon" />
+              Drawer
             </a>
           </Link>
 

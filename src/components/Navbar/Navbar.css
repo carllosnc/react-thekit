@@ -106,6 +106,7 @@
   text-white
   hover:bg-gray-900
   cursor-pointer
+  font-bold
 
   /* mobile */
   md:py-4

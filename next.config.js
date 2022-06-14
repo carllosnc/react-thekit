@@ -5,7 +5,7 @@ module.exports = withPWA({
   reactStrictMode: true,
 
   images: {
-    domains: ['unsplash.com', 'images.unsplash.com'],
+    domains: ['unsplash.com', 'images.unsplash.com', 'res.cloudinary.com'],
   },
 
   pwa: {

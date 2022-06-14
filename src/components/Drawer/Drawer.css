@@ -1,0 +1,74 @@
+.drawer{
+  @apply
+  fixed
+  top-0
+  left-0
+  w-full
+  h-screen
+  flex
+  gap-4
+  bg-opacity-50
+  backdrop-blur
+  bg-black
+}
+
+.drawer__container{
+  @apply
+  max-w-[300px]
+  relative
+  bg-white
+}
+
+/* inside content  */
+
+.drawer__content{
+  @apply
+  scroll-auto
+  overflow-auto
+  border
+  h-screen
+  p-5
+  pb-[100px]
+}
+
+.drawer__content::-webkit-scrollbar {
+  @apply
+  w-[5px]
+}
+
+.drawer__content::-webkit-scrollbar-track {
+  @apply
+  bg-transparent
+}
+
+.drawer__content::-webkit-scrollbar-thumb {
+  @apply
+  bg-slate-300
+  rounded-full
+  transition-all
+}
+
+.drawer__content::-webkit-scrollbar-thumb:hover {
+  @apply
+  bg-slate-400
+}
+
+/* close button */
+
+.drawer__close{
+  @apply
+  w-[35px]
+  h-[35px]
+  min-w-[35px]
+  p-1
+  mr-4
+  mt-4
+  rounded-full
+  flex
+  justify-center
+  items-center
+  cursor-pointer
+  bg-white
+  text-slate-400
+  hover:text-red-500
+}

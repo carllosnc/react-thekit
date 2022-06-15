@@ -23,7 +23,7 @@ module.exports = {
       },
 
       fontFamily: {
-        sans: ['"Roboto Condensed"', 'sans-serif'],
+        sans: ['"Inter"', 'sans-serif'],
       },
     },
   },

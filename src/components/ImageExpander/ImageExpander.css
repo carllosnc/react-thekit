@@ -58,8 +58,7 @@
 
 .image-expander__overlay::-webkit-scrollbar-thumb {
   @apply
-  bg-white
-  bg-opacity-40
+  bg-transparent
   rounded-full
   transition-all
 }

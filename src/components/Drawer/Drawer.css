@@ -33,7 +33,7 @@
 
 .drawer__content::-webkit-scrollbar {
   @apply
-  w-[5px]
+  w-[3px]
 }
 
 .drawer__content::-webkit-scrollbar-track {

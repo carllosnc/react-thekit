@@ -6,26 +6,33 @@ export default function TabsPage({ doc }) {
     <DocPage title="Tabs" markdown={doc}>
       <Tabs labels={['Tab 0', 'Tab 1', 'Tab 2']}>
         <Tab>
-          0 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-          dicta nulla doloremque et. Explicabo culpa delectus tempore, incidunt
-          minus quam quibusdam tempora assumenda consequuntur dolore dolorem
-          ipsa atque rem necessitatibus!
+          <p className="text-gray-700">
+            0 - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptas dicta nulla doloremque et. Explicabo culpa delectus
+            tempore, incidunt minus quam quibusdam tempora assumenda
+            consequuntur dolore dolorem ipsa atque rem necessitatibus!
+          </p>
         </Tab>
 
         <Tab>
-          1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-          dicta nulla doloremque et. Explicabo culpa delectus tempore, incidunt
-          minus quam quibusdam tempora assumenda
+          <p className="text-gray-700">
+            1 - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptas dicta nulla doloremque et. Explicabo culpa delectus
+            tempore, incidunt minus quam quibusdam tempora assumenda
+          </p>
         </Tab>
 
         <Tab>
-          2 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-          dicta nulla doloremque et. Explicabo culpa delectus tempore, incidunt
-          minus quam quibusdam tempora assumenda consequuntur dolore dolorem
-          ipsa atque rem necessitatibus! Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Voluptas dicta nulla doloremque et. Explicabo culpa
-          delectus tempore, incidunt minus quam quibusdam tempora assumenda
-          consequuntur dolore dolorem ipsa atque rem necessitatibus!
+          <p className="text-gray-700">
+            2 - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptas dicta nulla doloremque et. Explicabo culpa delectus
+            tempore, incidunt minus quam quibusdam tempora assumenda
+            consequuntur dolore dolorem ipsa atque rem necessitatibus! Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Voluptas dicta
+            nulla doloremque et. Explicabo culpa delectus tempore, incidunt
+            minus quam quibusdam tempora assumenda consequuntur dolore dolorem
+            ipsa atque rem necessitatibus!
+          </p>
         </Tab>
       </Tabs>
     </DocPage>

@@ -21,7 +21,10 @@ export function DocPage({ children, markdown, title }: PageProps) {
       </Head>
 
       <Link href="/">
-        <a className="doc-page__back"> ⇱ Black to home </a>
+        <a className="doc-page__back">
+          <div className="doc-page__emoji"> 👈 </div>
+          <span>Black to home</span>
+        </a>
       </Link>
 
       <h1 className="doc-page__title"> {title} </h1>

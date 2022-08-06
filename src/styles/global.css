@@ -15,7 +15,7 @@
 @import "../components/Drawer/Drawer.css";
 
 /* templates */
-@import "./../templates/page/page.css";
+@import "./../templates/Page/Page.css";
 @import "./../templates/DocPage/DocPage";
 
 /* pages */

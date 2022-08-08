@@ -1,0 +1,42 @@
+.regular-table {
+  @apply
+  text-sm
+  text-gray-700
+  overflow-auto
+}
+
+.regular-table table {
+  @apply
+  w-full
+  min-w-[600px]
+  table-auto
+}
+
+.regular-table caption {
+  @apply
+  pb-3
+  border-b
+  text-left
+  italic
+  border-gray-200
+}
+
+.regular-table th {
+  @apply
+  text-left
+  py-3
+  border-b
+  border-gray-400
+  capitalize
+}
+
+.regular-table tr {
+  @apply
+  border-b
+  border-gray-200
+}
+
+.regular-table td {
+  @apply
+  py-3
+}

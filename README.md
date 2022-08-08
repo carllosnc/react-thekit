@@ -26,7 +26,7 @@
 | 🖐 Modal         | [Link](https://the-kit.netlify.app/modal)          | [Link](https://github.com/C4co/cn-react-thekit/tree/main/src/components/Modal)         |
 | 🍱 Navbar        | [Link](https://the-kit.netlify.app/navbar)         | [Link](https://github.com/C4co/cn-react-thekit/tree/main/src/components/Navbar)        |
 | 🔘 Radio         | [Link](https://the-kit.netlify.app/radio)          | [Link](https://github.com/C4co/cn-react-thekit/tree/main/src/components/Radio)         |
-| 🧱 ReactTable    | [Link](https://the-kit.netlify.app/regular-table)  | [Link](https://github.com/C4co/cn-react-thekit/tree/main/src/components/RegularTable)  |
+| 🧱 RegularTable  | [Link](https://the-kit.netlify.app/regular-table)  | [Link](https://github.com/C4co/cn-react-thekit/tree/main/src/components/RegularTable)  |
 | 🙈 Reveal        | [Link](https://the-kit.netlify.app/reveal)         | [Link](https://github.com/C4co/cn-react-thekit/tree/main/src/components/Reveal)        |
 | 👉 Select        | [Link](https://the-kit.netlify.app/select)         | [Link](https://github.com/C4co/cn-react-thekit/tree/main/src/components/Select)        |
 | 🖋 Syntax        | [Link](https://the-kit.netlify.app/syntax)         | [Link](https://github.com/C4co/cn-react-thekit/tree/main/src/components/Syntax)        |

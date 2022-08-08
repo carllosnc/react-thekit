@@ -13,6 +13,7 @@
 @import "../components/VideoBackground/VideoBackground.css";
 @import "../components/Tabs/Tabs.css";
 @import "../components/Drawer/Drawer.css";
+@import "../components/RegularTable/RegularTable.css";
 
 /* templates */
 @import "./../templates/Page/Page.css";

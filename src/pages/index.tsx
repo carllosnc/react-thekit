@@ -18,6 +18,7 @@ import {
   TbQuestionMark,
   TbAppWindow,
   TbLayoutSidebar,
+  TbTable,
 } from 'react-icons/tb'
 
 export default function Home() {
@@ -104,6 +105,13 @@ export default function Home() {
             <a className="index__item">
               <TbCircleDot className="index__item__icon" />
               Radio
+            </a>
+          </Link>
+
+          <Link href="/regular-table">
+            <a className="index__item">
+              <TbTable className="index__item__icon" />
+              Regular Table
             </a>
           </Link>
 

@@ -1,16 +1,9 @@
-const withPWA = require('next-pwa')
-
 /** @type {import('next').NextConfig} */
-module.exports = withPWA({
+const nextConfig = {
   reactStrictMode: true,
 
   images: {
     domains: ['unsplash.com', 'images.unsplash.com', 'res.cloudinary.com'],
-  },
-
-  pwa: {
-    dest: 'public',
-    disable: process.env.NODE_ENV === 'development',
   },
 
   webpack: function (config) {
@@ -20,4 +13,6 @@ module.exports = withPWA({
     })
     return config
   },
-})
+}
+
+module.exports = nextConfig

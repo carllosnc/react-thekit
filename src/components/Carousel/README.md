@@ -14,7 +14,7 @@ import { Carousel } from '@/components'
 
 ## Usage
 
-```tsx
+```typescript
 import { Carousel } from '@/components'
 import Image from 'next/image'
 
@@ -55,7 +55,7 @@ function App() {
           />,
 
           <MyImage
-            key={333}
+            key={444}
             src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
           />,
         ]}
@@ -67,7 +67,7 @@ function App() {
 
 ## Props
 
-| name    | type      | default     | description    |
-| ------- | --------- | ----------- | -------------- |
-| `items` | ReactNode | `undefined` | carousel items |
-| `dots`  | bollean   | `false`     | carousel dots  |
+| name    | type        | default     | description    |
+| ------- | ----------- | ----------- | -------------- |
+| `items` | ReactNode[] | `undefined` | carousel items |
+| `dots`  | bollean     | `false`     | carousel dots  |

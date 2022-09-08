@@ -15,7 +15,7 @@ function Brand() {
 export default function NavbarPage({ doc }) {
   return (
     <DocPage title="Navbar" markdown={doc}>
-      <p> Navbar is here ☝️ </p>
+      <p> Navbar is there ☝️ </p>
       <div>
         <Navbar brand={<Brand />}>
           <NavbarDropdown label="Dropdown 1">

@@ -51,7 +51,8 @@
   gap-4
   items-center
   transition-all
-  hover:bg-slate-300
+
+  hover:bg-gray-300
 }
 
 .index__item__icon {

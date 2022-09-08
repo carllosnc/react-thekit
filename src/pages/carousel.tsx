@@ -49,7 +49,7 @@ export default function CarouselPage({ doc }) {
 }
 
 export async function getStaticProps() {
-  const content = await require('../components/VideoBackground/README.md')
+  const content = await require('../components/Carousel/README.md')
 
   return {
     props: {

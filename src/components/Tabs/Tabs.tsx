@@ -49,7 +49,7 @@ export function Tabs({ labels, children }: TabsProps) {
 
       {children.map((tab, index) => {
         if (index === currentTab) {
-          return tab
+          return <div> {tab} </div>
         }
       })}
     </section>

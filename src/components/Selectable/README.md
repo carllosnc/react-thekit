@@ -18,7 +18,7 @@ import { Selectable, SelectableItem } from '@/components'
 import { Selectable, SelectableItem } from '@/components'
 import { useState } from 'react'
 
-function App(){
+function App() {
   const [data, setData] = useState<string>(null)
 
   return (

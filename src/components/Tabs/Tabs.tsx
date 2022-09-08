@@ -25,7 +25,7 @@ export function Tabs({ labels, children }: TabsProps) {
             <div
               data-testid="tabs-button"
               className="tabs__button"
-              key={item + index}
+              key={`${item}${index}`}
             >
               <button
                 data-testid="tabs-item"
@@ -49,7 +49,7 @@ export function Tabs({ labels, children }: TabsProps) {
 
       {children.map((tab, index) => {
         if (index === currentTab) {
-          return <div> {tab} </div>
+          return <div key={index}> {tab} </div>
         }
       })}
     </section>

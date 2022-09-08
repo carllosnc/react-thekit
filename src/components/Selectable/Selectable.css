@@ -1,0 +1,37 @@
+.selectable {
+  @apply
+  flex
+  flex-col
+  gap-4;
+}
+
+.selectable__item {
+  @apply
+  outline-offset-4
+  outline-gray-400
+  bg-gray-200
+  rounded-md
+  p-4
+  transition-all
+  text-gray-700
+  relative
+  flex
+  items-center
+  gap-3;
+}
+
+.selectable__item--active {
+  @apply
+  transition-all
+  bg-gray-300
+}
+
+.selectable__mark {
+  @apply
+  absolute
+  left-[0px]
+  z-20
+  w-[3px]
+  h-[20px]
+  bg-blue-600
+}

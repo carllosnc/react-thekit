@@ -19,6 +19,7 @@ import {
   TbAppWindow,
   TbLayoutSidebar,
   TbTable,
+  TbHandFinger,
 } from 'react-icons/tb'
 
 export default function Home() {
@@ -126,6 +127,13 @@ export default function Home() {
             <a className="index__item">
               <TbSelect className="index__item__icon" />
               Select
+            </a>
+          </Link>
+
+          <Link href="/selectable">
+            <a className="index__item">
+              <TbHandFinger className="index__item__icon" />
+              Selectable
             </a>
           </Link>
 

@@ -8,10 +8,11 @@
     "build": "next build",
     "start": "next start -p 3000",
     "lint": "next lint",
-    "format": "prettier --check './src/**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
+    "format:check": "prettier --check './src/**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
+    "format:fix": "prettier --write './src/**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
     "test:unit": "jest",
     "test:unit:watch": "jest --watch",
-    "test:full": "npm run build && npm run test:unit && npm run lint && npm run format"
+    "test:full": "npm run build && npm run test:unit && npm run lint && npm run format:check"
   },
   "dependencies": {
     "@fontsource/inter": "^4.5.11",

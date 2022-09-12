@@ -9,7 +9,7 @@ export function Page(props: PageProps) {
   return (
     <div>
       <Head>
-        <title> React Thekit </title>
+        <title>React Thekit</title>
       </Head>
 
       <a

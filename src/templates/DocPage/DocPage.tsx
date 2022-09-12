@@ -17,7 +17,7 @@ export function DocPage({ children, markdown, title }: PageProps) {
   return (
     <div className="doc-page">
       <Head>
-        <title> {title} - thekit </title>
+        <title>{`${title} - thekit`}</title>
       </Head>
 
       <Link href="/">

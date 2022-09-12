@@ -97,6 +97,7 @@ class MyDocument extends Document {
           />
           <meta name="apple-mobile-web-app-capable" content="yes" />
         </Head>
+
         <body>
           <Main />
           <NextScript />

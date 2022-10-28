@@ -33,129 +33,129 @@ export default function Home() {
 
         <div className="index__menu">
           <Link href="/button">
-            <a className="index__item">
+            <span className="index__item">
               <TbRectangle className="index__item__icon" />
               Button
-            </a>
+            </span>
           </Link>
 
           <Link href="/carousel">
-            <a className="index__item">
+            <span className="index__item">
               <TbSlideshow className="index__item__icon" />
               Carousel
-            </a>
+            </span>
           </Link>
 
           <Link href="/checkbox">
-            <a className="index__item">
+            <span className="index__item">
               <TbCheckbox className="index__item__icon" />
               Checkbox
-            </a>
+            </span>
           </Link>
 
           <Link href="/drawer">
-            <a className="index__item">
+            <span className="index__item">
               <TbLayoutSidebar className="index__item__icon" />
               Drawer
-            </a>
+            </span>
           </Link>
 
           <Link href="/expander">
-            <a className="index__item">
+            <span className="index__item">
               <TbArrowBarDown className="index__item__icon" />
               Expander
-            </a>
+            </span>
           </Link>
 
           <Link href="/if">
-            <a className="index__item">
+            <span className="index__item">
               <TbQuestionMark className="index__item__icon" />
               If (condition)
-            </a>
+            </span>
           </Link>
 
           <Link href="/image-expander">
-            <a className="index__item">
+            <span className="index__item">
               <TbPictureInPictureOff className="index__item__icon" />
               Image expander
-            </a>
+            </span>
           </Link>
 
           <Link href="/input">
-            <a className="index__item">
+            <span className="index__item">
               <TbBallpen className="index__item__icon" />
               Input
-            </a>
+            </span>
           </Link>
 
           <Link href="/modal">
-            <a className="index__item">
+            <span className="index__item">
               <TbBoxMultiple className="index__item__icon" />
               Modal
-            </a>
+            </span>
           </Link>
 
           <Link href="/navbar">
-            <a className="index__item">
+            <span className="index__item">
               <TbLayoutNavbar className="index__item__icon" />
               Navbar
-            </a>
+            </span>
           </Link>
 
           <Link href="/radio">
-            <a className="index__item">
+            <span className="index__item">
               <TbCircleDot className="index__item__icon" />
               Radio
-            </a>
+            </span>
           </Link>
 
           <Link href="/regular-table">
-            <a className="index__item">
+            <span className="index__item">
               <TbTable className="index__item__icon" />
               Regular Table
-            </a>
+            </span>
           </Link>
 
           <Link href="/reveal">
-            <a className="index__item">
+            <span className="index__item">
               <TbArrowBigUpLines className="index__item__icon" />
               Reveal
-            </a>
+            </span>
           </Link>
 
           <Link href="/select">
-            <a className="index__item">
+            <span className="index__item">
               <TbSelect className="index__item__icon" />
               Select
-            </a>
+            </span>
           </Link>
 
           <Link href="/selectable">
-            <a className="index__item">
+            <span className="index__item">
               <TbHandFinger className="index__item__icon" />
               Selectable
-            </a>
+            </span>
           </Link>
 
           <Link href="/syntax">
-            <a className="index__item">
+            <span className="index__item">
               <TbCode className="index__item__icon" />
               Syntax
-            </a>
+            </span>
           </Link>
 
           <Link href="/tabs">
-            <a className="index__item">
+            <span className="index__item">
               <TbAppWindow className="index__item__icon" />
               Tabs
-            </a>
+            </span>
           </Link>
 
           <Link href="/video-background">
-            <a className="index__item">
+            <span className="index__item">
               <TbVideo className="index__item__icon" />
               Video background
-            </a>
+            </span>
           </Link>
         </div>
       </div>

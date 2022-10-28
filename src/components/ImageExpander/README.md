@@ -55,7 +55,6 @@ function App() {
                 placeholder="blur"
                 blurDataURL={item.src}
                 alt="image"
-                objectFit="cover"
                 objectPosition="center"
                 src={item.src}
               />
@@ -63,7 +62,6 @@ function App() {
             full={
               <Image
                 alt="image"
-                objectFit="cover"
                 src={item.src}
                 placeholder="blur"
                 blurDataURL={item.src}

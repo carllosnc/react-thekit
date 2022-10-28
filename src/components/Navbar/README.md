@@ -34,31 +34,31 @@ function App() {
       <Navbar brand={<Brand />}>
         <NavbarDropdown label="Dropdown 1">
           <Link href="/">
-            <a> Dropdown item 1</a>
+            <span> Dropdown item 1</span>
           </Link>
 
           <Link href="/">
-            <a> Dropdown item 2</a>
+            <span> Dropdown item 2</span>
           </Link>
         </NavbarDropdown>
 
         <NavbarDropdown label="Dropdown 2">
           <Link href="/">
-            <a> Dropdown item 1</a>
+            <span> Dropdown item 1</span>
           </Link>
 
           <Link href="/">
-            <a> Dropdown item 2</a>
+            <span> Dropdown item 2</span>
           </Link>
         </NavbarDropdown>
 
         <Link href="/">
-          <a>Item</a>
+          <span>Item</span>
         </Link>
 
         <a target="_blank" rel="noreferrer" href="https://dev.to">
           External link
-        </a>
+        </span>
       </Navbar>
     </div>
   )

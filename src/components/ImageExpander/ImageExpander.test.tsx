@@ -16,15 +16,12 @@ describe('<ImageExpande /> component', () => {
             placeholder="blur"
             blurDataURL={image}
             alt="image"
-            objectFit="cover"
-            objectPosition="center"
             src={image}
           />
         }
         full={
           <Image
             alt="image"
-            objectFit="cover"
             src={image}
             placeholder="blur"
             blurDataURL={image}
@@ -60,15 +57,12 @@ describe('<ImageExpande /> component', () => {
             placeholder="blur"
             blurDataURL={image}
             alt="image"
-            objectFit="cover"
-            objectPosition="center"
             src={image}
           />
         }
         full={
           <Image
             alt="image"
-            objectFit="cover"
             src={image}
             placeholder="blur"
             blurDataURL={image}

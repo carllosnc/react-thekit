@@ -43,10 +43,6 @@ export function Selectable({
     }
   }
 
-  useEffect(() => {
-    console.log(children)
-  })
-
   return (
     <div data-testid="selectable" className="selectable">
       {children.map((item, index) => {

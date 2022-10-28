@@ -27,7 +27,6 @@ function MyImage({ src }: any) {
       placeholder="blur"
       blurDataURL={src}
       alt="image"
-      objectFit="cover"
       src={src}
     />
   )

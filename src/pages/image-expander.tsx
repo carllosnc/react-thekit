@@ -56,14 +56,12 @@ export default function ImageExpanderPage({ doc }) {
                   placeholder="blur"
                   blurDataURL={item.src}
                   alt="image"
-                  objectFit="cover"
                   src={item.src}
                 />
               }
               full={
                 <Image
                   alt="image"
-                  objectFit="cover"
                   src={item.src}
                   placeholder="blur"
                   blurDataURL={item.src}

@@ -5,9 +5,9 @@ import Link from 'next/link'
 function Brand() {
   return (
     <Link href="/">
-      <a className="h-full bg-gray-800 text-white flex items-center px-3 rounded">
+      <span className="h-full bg-gray-800 text-white flex items-center px-3 rounded">
         TheKit
-      </a>
+      </span>
     </Link>
   )
 }
@@ -20,26 +20,26 @@ export default function NavbarPage({ doc }) {
         <Navbar brand={<Brand />}>
           <NavbarDropdown label="Dropdown 1">
             <Link href="/">
-              <a> Dropdown item 1</a>
+              <span> Dropdown item 1</span>
             </Link>
 
             <Link href="/">
-              <a> Dropdown item 2</a>
+              <span> Dropdown item 2</span>
             </Link>
           </NavbarDropdown>
 
           <NavbarDropdown label="Dropdown 2">
             <Link href="/">
-              <a> Dropdown item 1</a>
+              <span> Dropdown item 1</span>
             </Link>
 
             <Link href="/">
-              <a> Dropdown item 2</a>
+              <span> Dropdown item 2</span>
             </Link>
           </NavbarDropdown>
 
           <Link href="/">
-            <a>Internal item</a>
+            <span>Internal item</span>
           </Link>
 
           <a target="_blank" rel="noreferrer" href="https://dev.to">

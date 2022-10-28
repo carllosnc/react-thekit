@@ -42,3 +42,6 @@ cypress/downloads
 **/public/workbox-*.js
 **/public/sw.js
 **/public/worker-*.js
+/test-results/
+/playwright-report/
+/playwright/.cache/

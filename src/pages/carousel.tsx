@@ -1,18 +1,9 @@
 import { DocPage } from '@/templates'
 import { Carousel } from '@/components'
-import Image from 'next/image'
 
 function MyImage({ src }: any) {
   return (
-    <Image
-      key={111}
-      width={800}
-      height={450}
-      placeholder="blur"
-      blurDataURL={src}
-      alt="image"
-      src={src}
-    />
+    <img className="w-full max-h-[380px] object-cover" src={src} alt="image" />
   )
 }
 

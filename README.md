@@ -1,4 +1,4 @@
-# React The kit
+# React Thekit
 
 [![Node.js CI](https://github.com/C4co/react-thekit/actions/workflows/node.js.yml/badge.svg)](https://github.com/C4co/react-thekit/actions/workflows/node.js.yml)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e283ee42-0ecc-4cfe-bbfc-3f81a39aaf44/deploy-status)](https://app.netlify.com/sites/the-kit/deploys)

@@ -1,14 +1,11 @@
 .index {
   @apply
-  min-h-screen
   w-full
   flex
   flex-col
   gap-8
-  max-w-[700px]
   m-auto
   items-center
-  py-[80px]
 }
 
 .index__header {
@@ -36,7 +33,6 @@
   grid-cols-2
   gap-4
   w-full
-  px-4
   md:grid-cols-1
 }
 

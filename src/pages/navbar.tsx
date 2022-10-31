@@ -5,7 +5,7 @@ import Link from 'next/link'
 function Brand() {
   return (
     <Link href="/">
-      <span className="h-full bg-gray-800 text-white flex items-center px-3 rounded">
+      <span className="h-full bg-neutral-800 text-white flex items-center px-3 rounded">
         TheKit
       </span>
     </Link>

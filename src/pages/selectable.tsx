@@ -28,7 +28,7 @@ export default function SelectPage({ doc }) {
 
       <br />
 
-      <p className="text-gray-600">
+      <p className="text-neutral-600">
         Selected item: <b>{data ?? 'null'}</b>
       </p>
     </DocPage>

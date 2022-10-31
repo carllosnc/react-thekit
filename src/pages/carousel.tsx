@@ -3,7 +3,11 @@ import { Carousel } from '@/components'
 
 function MyImage({ src }: any) {
   return (
-    <img className="w-full max-h-[380px] object-cover" src={src} alt="image" />
+    <img
+      className="w-full h-[400px] md:h-[250px] object-cover object-center"
+      src={src}
+      alt="image"
+    />
   )
 }
 

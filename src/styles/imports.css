@@ -17,7 +17,6 @@
 @import "../components/Selectable/Selectable.css";
 
 /* templates */
-@import "./../templates/Page/Page.css";
 @import "./../templates/DocPage/DocPage";
 
 /* pages */

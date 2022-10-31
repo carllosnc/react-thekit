@@ -16,86 +16,61 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <meta charSet="UTF-8" />
+          <meta name="description" content="Some useful react components" />
+          <meta
+            name="keywords"
+            content="react, components, javascript, html, css"
+          />
+          <meta name="author" content="Carlos Costa" />
+
           {/* open Graph */}
 
-          <meta property="og:title" content="React thekit" />
+          <meta property="og:title" content="Thekit" />
           <meta
             property="og:type"
-            content="React thekit - some react componentes"
+            content="Thekit - Some useful react components"
           />
-          <meta property="og:url" content="https://react-thekit.vercel.app/" />
-          <meta
-            property="og:image"
-            content="https://res.cloudinary.com/c4co/image/upload/v1638714592/Projects/opengraph_fl61uv.jpg"
-          />
+          <meta property="og:url" content="react-thekit.netlify.app" />
+          <meta property="og:image" content="/opengraph.png" />
           <meta property="og:type" content="website" />
 
           {/* twitter */}
 
           <meta name="twitter:card" content="summary_large_image" />
-          <meta
-            property="twitter:domain"
-            content="https://react-thekit.vercel.app/"
-          />
-          <meta
-            property="twitter:url"
-            content="https://react-thekit.vercel.app/"
-          />
-          <meta name="twitter:title" content="React thekit" />
+          <meta property="twitter:domain" content="react-thekit.netlify.app" />
+          <meta property="twitter:url" content="react-thekit.netlify.app" />
+          <meta name="twitter:title" content="Thekit" />
           <meta
             name="twitter:description"
-            content="React thekit - some react components"
+            content="Thekit - some useful react components"
           />
-          <meta
-            name="twitter:image"
-            content="https://res.cloudinary.com/c4co/image/upload/v1638714592/Projects/opengraph_fl61uv.jpg"
-          />
+          <meta name="twitter:image" content="/opengraph.png" />
 
           {/* icons */}
 
-          <meta name="msapplication-TileColor" content="#da532c " />
           <link
             rel="apple-touch-icon"
             sizes="180x180"
-            href="https://res.cloudinary.com/c4co/image/upload/v1638714923/Projects/apple-touch-icon_xwpbc2.png"
+            href="/apple-touch-icon.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="32x32"
-            href="https://res.cloudinary.com/c4co/image/upload/v1638714923/Projects/favicon-32x32_bbyasm.png"
+            href="/favicon-32x32.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="16x16"
-            href="https://res.cloudinary.com/c4co/image/upload/v1638714923/Projects/favicon-16x16_i8wujj.png"
-          />
-          <link
-            rel="mask-icon"
-            href="https://res.cloudinary.com/c4co/image/upload/v1638715109/Projects/safari-pinned-tab_ayqwce.svg"
-            color="#000000"
+            href="/favicon-16x16.png"
           />
 
           {/* app */}
 
           <meta name="application-name" content="Thekit" />
-
           <meta name="theme-color" content="#000000" />
-          <meta name="mobile-web-app-capable" content="yes" />
-
-          <meta name="msapplication-navbutton-color" content="#000000" />
-          <meta
-            name="msapplication-starturl"
-            content="https://react-thekit.vercel.app/"
-          />
-
-          <meta name="apple-mobile-web-app-title" content="Thekit" />
-          <meta
-            name="apple-mobile-web-app-status-bar-style"
-            content="black-translucent"
-          />
-          <meta name="apple-mobile-web-app-capable" content="yes" />
         </Head>
 
         <body>

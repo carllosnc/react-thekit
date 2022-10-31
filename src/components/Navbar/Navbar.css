@@ -8,7 +8,7 @@
   top-0
   left-0
   flex
-  bg-gray-900
+  bg-neutral-900
   bg-opacity-60
   backdrop-blur-sm
   text-sm
@@ -18,7 +18,7 @@
   @apply
   w-[40px]
   h-[40px]
-  bg-gray-900
+  bg-neutral-900
   rounded-full
   justify-center
   items-center
@@ -90,9 +90,9 @@
   md:w-full
   md:flex-col
   md:h-auto
-  md:bg-gray-800
+  md:bg-neutral-800
   md:divide-y
-  md:divide-gray-700
+  md:divide-neutral-700
 }
 
 /* menu item */
@@ -104,7 +104,7 @@
   px-4
   relative
   text-white
-  hover:bg-gray-900
+  hover:bg-neutral-900
   cursor-pointer
 
   /* mobile */
@@ -130,7 +130,7 @@
   flex-col
   h-auto
   whitespace-nowrap
-  bg-gray-900
+  bg-neutral-900
   top-[55px]
   left-0
   z-10
@@ -148,5 +148,5 @@
   @apply
   px-4
   py-2
-  hover:bg-gray-800
+  hover:bg-neutral-800
 }

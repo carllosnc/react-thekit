@@ -12,7 +12,7 @@
 .doc-page__title {
   @apply
   text-3xl
-  text-gray-700
+  text-neutral-700
 }
 
 .doc-page__emoji {
@@ -36,7 +36,7 @@
 .doc-line {
   @apply
   border-4
-  border-gray-200
+  border-neutral-200
 }
 
 .markdown {
@@ -48,7 +48,7 @@
 .markdown h1 {
   @apply
   font-normal
-  text-gray-700
+  text-neutral-700
   hidden
   w-0
   h-0
@@ -62,14 +62,14 @@
   @apply
   border-b
   pb-2
-  border-gray-200
-  text-gray-700
+  border-neutral-200
+  text-neutral-700
   text-lg
 }
 
 .markdown pre {
   @apply
-  rounded-md
+  rounded-none
   p-3
   text-white
   bg-[#23241F]

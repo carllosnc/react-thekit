@@ -82,7 +82,7 @@
 
 .markdown pre {
   @apply
-  rounded-md
+  rounded-sm
   !text-sm
   p-2
   text-neutral-800

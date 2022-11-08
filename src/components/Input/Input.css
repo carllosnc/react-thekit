@@ -19,7 +19,7 @@
   relative
   border
   rounded
-  py-2
+  py-3
   px-3
   border-neutral-200
   bg-neutral-200
@@ -56,7 +56,8 @@
   w-full
   border-b
   bg-transparent
-  text-neutral-700
+  placeholder-neutral-500
+  text-neutral-800
   border-neutral-200
   focus:border-neutral-400
 }

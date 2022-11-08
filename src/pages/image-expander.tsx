@@ -53,6 +53,7 @@ export default function ImageExpanderPage({ doc }) {
                 <Image
                   width={270}
                   height={270}
+                  className="object-cover h-auto"
                   placeholder="blur"
                   blurDataURL={item.src}
                   alt="image"

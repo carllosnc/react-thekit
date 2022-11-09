@@ -14,61 +14,34 @@ import { ImageExpander } from '@/components'
 
 ## Usage
 
-```javascript
+```jsx
 import { ImageExpander } from '@/components'
 import Image from 'next/image'
 
 const images = [
-  {
-    src: 'path/to/image.png',
-    width: 700,
-    height: 1000,
-  },
-  {
-    src: 'path/to/image.png',
-    width: 600,
-    height: 600,
-  },
-  {
-    src: 'path/to/image.png',
-    width: 800,
-    height: 500,
-  },
-  {
-    src: 'path/to/image.png',
-    width: 600,
-    height: 600,
-  },
+  'https://res.cloudinary.com/c4co/image/upload/v1655204172/thekit/images/02_zxxfjf.webp',
+  'https://res.cloudinary.com/c4co/image/upload/v1655204172/thekit/images/05_gm0bmx.webp',
+  'https://res.cloudinary.com/c4co/image/upload/v1655204172/thekit/images/04_hnipyy.webp',
+  'https://res.cloudinary.com/c4co/image/upload/v1655204172/thekit/images/03_vw6qtt.webp',
+  'https://res.cloudinary.com/c4co/image/upload/v1655204172/thekit/images/01_kmi288.webp',
+  'https://res.cloudinary.com/c4co/image/upload/v1655204172/thekit/images/06_c1cu6c.webp',
 ]
 
 function App() {
   return (
-    <div className="grid grid-cols-3 gap-2">
-      {images.map((item, index) => {
+    <div className="grid grid-cols-3">
+      {images.map(item => {
         return (
           <ImageExpander
             key={key()}
             thumb={
-              <Image
-                width={200}
-                height={200}
-                placeholder="blur"
-                blurDataURL={item.src}
+              <img
+                className="object-cover h-[200px] w-full sm:h-[100px]"
                 alt="image"
-                objectPosition="center"
-                src={item.src}
+                src={item}
               />
             }
-            full={
-              <Image
-                alt="image"
-                src={item.src}
-                placeholder="blur"
-                blurDataURL={item.src}
-                width={item.width}
-                height={item.height}
-              />
-            }
+            full={<img alt="image" src={item} />}
           ></ImageExpander>
         )
       })}
@@ -79,7 +52,7 @@ function App() {
 
 ## Props
 
-| name       | type         | default     | description |
-| ---------- | ------------ | ----------- | ----------- |
-| `normal`   | ReactElement | `undefined` | thumbnail   |
-| `expanded` | ReactElement | `undefined` | full image  |
+| name    | type         | default     | description |
+| ------- | ------------ | ----------- | ----------- |
+| `thumb` | ReactElement | `undefined` | thumbnail   |
+| `full`  | ReactElement | `undefined` | full image  |

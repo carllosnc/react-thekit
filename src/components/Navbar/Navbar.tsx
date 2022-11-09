@@ -24,11 +24,7 @@ export function Navbar({ children, brand }: NavbarProps) {
   return (
     <div data-testid="navbar" className="navbar">
       <div data-testid="navbar-content" className="navbar__content">
-        {brand && (
-          <div data-testid="navbar-brand" className="navbar__brand">
-            {brand}
-          </div>
-        )}
+        {brand && <div data-testid="navbar-brand">{brand}</div>}
 
         <div
           onClick={close}

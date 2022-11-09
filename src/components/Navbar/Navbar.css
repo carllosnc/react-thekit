@@ -39,15 +39,6 @@
   items-center
 }
 
-.navbar__brand {
-  @apply
-  h-[40px]
-  flex
-  text-white
-  justify-center
-  items-center
-}
-
 /* overlay */
 .navbar__overlay{
   @apply

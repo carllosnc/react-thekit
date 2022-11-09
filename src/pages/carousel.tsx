@@ -33,7 +33,7 @@ export default function CarouselPage({ doc }) {
           />,
 
           <MyImage
-            key={333}
+            key={444}
             src="https://res.cloudinary.com/c4co/image/upload/v1655204172/thekit/images/03_vw6qtt.webp"
           />,
         ]}

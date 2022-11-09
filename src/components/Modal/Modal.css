@@ -48,14 +48,14 @@
 
 .modal__content::-webkit-scrollbar-thumb {
   @apply
-  bg-neutral-300
+  bg-gray-300
   rounded-full
   transition-all
 }
 
 .modal__content::-webkit-scrollbar-thumb:hover {
   @apply
-  bg-neutral-400
+  bg-gray-400
 }
 
 /* close button */
@@ -71,6 +71,6 @@
   items-center
   cursor-pointer
   bg-white
-  text-neutral-400
+  text-gray-400
   hover:text-red-500
 }

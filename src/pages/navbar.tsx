@@ -5,7 +5,7 @@ import Link from 'next/link'
 function Brand() {
   return (
     <Link href="/">
-      <div className="py-[5px] px-[8px] text-white bg-neutral-900">TheKit</div>
+      <div className="py-[5px] px-[8px] text-white bg-gray-900">TheKit</div>
     </Link>
   )
 }

@@ -6,7 +6,7 @@
   items-center
   cursor-pointer
   outline-offset-4
-  outline-neutral-400
+  outline-gray-400
 }
 
 .checkbox__default{
@@ -25,7 +25,7 @@
  flex
  justify-center
  items-center
- border-neutral-400
+ border-gray-400
  bg-white
 }
 
@@ -33,10 +33,10 @@
   @apply
   w-[14px]
   h-[14px]
-  bg-neutral-800
+  bg-gray-800
 }
 
 .checkbox__label{
   @apply
-  text-neutral-700
+  text-gray-700
 }

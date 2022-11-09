@@ -60,14 +60,14 @@
 
 .syntax__content::-webkit-scrollbar-thumb {
   @apply
-  bg-neutral-700
+  bg-gray-700
   rounded-full
   transition-all
 }
 
 .syntax__content::-webkit-scrollbar-thumb:hover {
   @apply
-  bg-neutral-600
+  bg-gray-600
 }
 
 .syntax .linenumber{

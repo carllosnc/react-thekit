@@ -8,12 +8,12 @@
 .selectable__item {
   @apply
   outline-offset-4
-  outline-neutral-400
-  bg-neutral-200
+  outline-gray-400
+  bg-gray-200
   rounded-md
   p-4
   transition-all
-  text-neutral-700
+  text-gray-700
   relative
   flex
   items-center
@@ -23,7 +23,7 @@
 .selectable__item--active {
   @apply
   transition-all
-  bg-neutral-300
+  bg-gray-300
 }
 
 .selectable__mark {

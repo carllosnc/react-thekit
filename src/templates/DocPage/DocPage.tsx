@@ -50,7 +50,11 @@ export function DocPage({ children, markdown, title }: PageProps) {
       </header>
 
       <div className="doc-page__wrapper">
-        {title && <h1 className="doc-page__title"> {title} </h1>}
+        {title && (
+          <h1 data-testid="page-title" className="doc-page__title">
+            {title}
+          </h1>
+        )}
 
         <div>{children}</div>
       </div>

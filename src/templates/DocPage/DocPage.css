@@ -90,26 +90,6 @@
   border-gray-300
 }
 
-/* width */
-.markdown div::-webkit-scrollbar {
-  @apply
-  w-[10px]
-  h-[10px]
-}
-
-/* Track */
-.markdown div::-webkit-scrollbar-track {
-  @apply
-  bg-transparent
-}
-
-/* Handle */
-.markdown div::-webkit-scrollbar-thumb {
-  @apply
-  bg-[#4B5469]
-  transition-all
-}
-
 .markdown pre > code {
   @apply
   px-2

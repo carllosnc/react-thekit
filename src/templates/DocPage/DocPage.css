@@ -82,13 +82,32 @@
 
 .markdown pre {
   @apply
-  rounded-sm
   !text-sm
-  p-2
-  text-gray-800
-  !bg-[#FFFFFF]
+  p-3
+  bg-white
+  text-red-700
   border
-  border-blue-300
+  border-gray-300
+}
+
+/* width */
+.markdown div::-webkit-scrollbar {
+  @apply
+  w-[10px]
+  h-[10px]
+}
+
+/* Track */
+.markdown div::-webkit-scrollbar-track {
+  @apply
+  bg-transparent
+}
+
+/* Handle */
+.markdown div::-webkit-scrollbar-thumb {
+  @apply
+  bg-[#4B5469]
+  transition-all
 }
 
 .markdown pre > code {

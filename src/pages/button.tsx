@@ -4,7 +4,7 @@ import { MdStar, MdHeadset } from 'react-icons/md'
 
 export default function ButtonPage({ doc }) {
   return (
-    <DocPage title="Buttons" markdown={doc}>
+    <DocPage title="Button" markdown={doc}>
       <div className="flex gap-4 flex-wrap">
         <Button leftIcon={<MdStar />}>Button</Button>
         <Button rightIcon={<MdHeadset />}>Button</Button>

@@ -2,7 +2,7 @@
 
 ## Download
 
-```
+```c
 npx github-download-directory c4co/cn-react-thekit src/components/Button
 ```
 
@@ -20,7 +20,7 @@ import { Button } from '@/components'
 
 [ReactIcon](https://react-icons.github.io/react-icons/)
 
-```
+```c
 npm install react-icons
 ```
 

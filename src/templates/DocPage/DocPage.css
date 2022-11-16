@@ -2,7 +2,7 @@
   @apply
   max-w-[800px]
   m-auto
-  px-4
+  px-6
   py-[100px]
   flex
   flex-col
@@ -83,16 +83,16 @@
 .markdown pre {
   @apply
   !text-sm
-  p-3
-  bg-white
-  text-red-700
+  p-0
+  rounded
   border
-  border-gray-300
+  border-gray-200
+  bg-transparent
 }
 
-.markdown pre > code {
+.markdown pre div {
   @apply
-  px-2
+  !p-4
 }
 
 .markdown a {

@@ -41,6 +41,10 @@ test('Check if page', async ({ page }) => {
   await checkPage(page, 'if-link', 'If (component)')
 })
 
+test('Check image block page', async ({ page }) => {
+  await checkPage(page, 'image-block-link', 'Image Block')
+})
+
 test('Check Image Expander page', async ({ page }) => {
   await checkPage(page, 'image-expander-link', 'Image Expander')
 })

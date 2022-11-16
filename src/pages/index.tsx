@@ -20,6 +20,7 @@ import {
   TbLayoutSidebar,
   TbTable,
   TbHandFinger,
+  TbPhoto,
 } from 'react-icons/tb'
 
 export default function Home() {
@@ -66,6 +67,13 @@ export default function Home() {
             <span className="index__item">
               <TbQuestionMark className="index__item__icon" />
               If (condition)
+            </span>
+          </Link>
+
+          <Link data-testid="image-block-link" href="/image-block">
+            <span className="index__item">
+              <TbPhoto className="index__item__icon" />
+              Image block
             </span>
           </Link>
 

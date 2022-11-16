@@ -2,7 +2,7 @@ import Head from 'next/head'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import SyntaxHighlighter from 'react-syntax-highlighter'
-import { vs } from 'react-syntax-highlighter/dist/cjs/styles/hljs'
+import { xcode } from 'react-syntax-highlighter/dist/cjs/styles/hljs'
 import Link from 'next/link'
 import { FaGithubAlt } from 'react-icons/fa'
 
@@ -68,7 +68,7 @@ export function DocPage({ children, markdown, title }: PageProps) {
                 const match = /language-(\w+)/.exec(className || '')
                 return !inline && match ? (
                   <SyntaxHighlighter
-                    style={vs}
+                    style={xcode}
                     language={match[1]}
                     PreTag="div"
                     {...props}

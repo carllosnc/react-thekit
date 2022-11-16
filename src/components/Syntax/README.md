@@ -2,7 +2,7 @@
 
 ## Download
 
-```
+```c
 npx github-download-directory c4co/cn-react-thekit src/components/Syntax
 ```
 
@@ -16,7 +16,7 @@ import { Syntax } from '@/components'
 
 [react-syntax-highlighter](https://github.com/react-syntax-highlighter/react-syntax-highlighter)
 
-```
+```c
 npm install react-syntax-highlighter
 ```
 

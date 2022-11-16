@@ -2,7 +2,7 @@
 
 ## Download
 
-```
+```c
 npx github-download-directory c4co/cn-react-thekit src/components/Input
 ```
 
@@ -20,7 +20,7 @@ import { Input } from '@/components'
 
 [React-Icons](https://react-icons.github.io/react-icons/)
 
-```
+```c
 npm install react-icons
 ```
 

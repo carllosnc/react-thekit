@@ -1,3 +1,5 @@
+import LazyLoad from 'react-lazy-load'
+
 interface ImageBlockProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   bgColor: string
 }
@@ -12,12 +14,15 @@ export function ImageBlock({ bgColor, ...props }: ImageBlockProps) {
       data-testid="image-block-wrapper"
       className="relative overflow-hidden flex items-center"
     >
-      <img
-        data-testid="image-block-source"
-        className={`absolute w-full ${props.className}`}
-        alt={props.alt}
-        {...props}
-      />
+      <LazyLoad className="absolute z-10 w-full" offset={300}>
+        <img
+          data-testid="image-block-source"
+          className={`w-full ${props.className}`}
+          alt={props.alt}
+          {...props}
+        />
+      </LazyLoad>
+
       <svg
         data-testid="image-block-backdrop"
         viewBox={`0 0 ${props.width} ${props.height}`}

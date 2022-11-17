@@ -1,8 +1,9 @@
-import { render, screen } from '@testing-library/react'
+import 'intersection-observer'
+import { render, screen, waitFor } from '@testing-library/react'
 import { ImageBlock } from './ImageBlock'
 
 describe('<BlockImage /> component', () => {
-  test('check initial render', () => {
+  test('check initial render', async () => {
     render(
       <ImageBlock
         width={300}
@@ -15,8 +16,13 @@ describe('<BlockImage /> component', () => {
     expect(screen.getByTestId('image-block-wrapper')).toBeInTheDocument()
     expect(screen.getByTestId('image-block-wrapper')).toBeVisible()
 
-    expect(screen.getByTestId('image-block-source')).toBeInTheDocument()
-    expect(screen.getByTestId('image-block-source')).toBeVisible()
+    await waitFor(() => {
+      expect(screen.getByTestId('image-block-source')).toBeInTheDocument()
+    })
+
+    await waitFor(() => {
+      expect(screen.getByTestId('image-block-source')).toBeVisible()
+    })
 
     expect(screen.getByTestId('image-block-backdrop')).toBeInTheDocument()
     expect(screen.getByTestId('image-block-backdrop')).toBeVisible()

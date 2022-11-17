@@ -11,6 +11,7 @@ npx github-download-directory c4co/cn-react-thekit src/components/ImageBlock
 ```jsx
 import { ImageBlock } from '@/components'
 ```
+
 ## Dependencies
 
 [React Lazy Load Component](https://github.com/loktar00/react-lazy-load)

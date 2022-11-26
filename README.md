@@ -21,7 +21,7 @@
 | ✅ Checkbox      | [Link](https://the-kit.netlify.app/checkbox)       | [Link](https://github.com/C4co/react-thekit/tree/main/src/components/Checkbox)      |
 | 👇 Expander      | [Link](https://the-kit.netlify.app/expander)       | [Link](https://github.com/C4co/react-thekit/tree/main/src/components/Expander)      |
 | 🙅‍♂️ If            | [Link](https://the-kit.netlify.app/if)             | [Link](https://github.com/C4co/react-thekit/tree/main/src/components/If)            |
-| 🧱 ImageExpander | [Link](https://the-kit.netlify.app/image-block)    | [Link](https://github.com/C4co/react-thekit/tree/main/src/components/ImageBlock)    |
+| 🧱 ImageBlock    | [Link](https://the-kit.netlify.app/image-block)    | [Link](https://github.com/C4co/react-thekit/tree/main/src/components/ImageBlock)    |
 | 🖼 ImageExpander | [Link](https://the-kit.netlify.app/image-expander) | [Link](https://github.com/C4co/react-thekit/tree/main/src/components/ImageExpander) |
 | 🔠 Input         | [Link](https://the-kit.netlify.app/input)          | [Link](https://github.com/C4co/react-thekit/tree/main/src/components/Input)         |
 | 🖐 Modal         | [Link](https://the-kit.netlify.app/modal)          | [Link](https://github.com/C4co/react-thekit/tree/main/src/components/Modal)         |

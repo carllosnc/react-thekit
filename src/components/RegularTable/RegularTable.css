@@ -1,7 +1,7 @@
 .regular-table {
   @apply
   text-sm
-  text-gray-700
+  text-neutral-700
   overflow-auto
 }
 
@@ -18,7 +18,7 @@
   border-b
   text-left
   italic
-  border-gray-200
+  border-neutral-200
 }
 
 .regular-table th {
@@ -26,14 +26,14 @@
   text-left
   py-3
   border-b
-  border-gray-400
+  border-neutral-400
   capitalize
 }
 
 .regular-table tr {
   @apply
   border-b
-  border-gray-200
+  border-neutral-200
 }
 
 .regular-table td {

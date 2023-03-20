@@ -8,7 +8,7 @@
 .select__label{
   @apply
   text-xs
-  text-gray-700
+  text-neutral-700
 }
 
 .select__content {
@@ -23,7 +23,7 @@
   @apply
   w-[18px]
   h-[18px]
-  text-gray-500
+  text-neutral-500
 }
 
 .select__field {
@@ -35,9 +35,9 @@
   pr-6
   truncate
   rounded
-  text-gray-700
-  bg-gray-200
-  outline-gray-400
+  text-neutral-700
+  bg-neutral-200
+  outline-neutral-400
   outline-offset-2
   appearance-none
 }
@@ -46,7 +46,7 @@
   @apply
   absolute
   right-2
-  text-gray-600
+  text-neutral-600
 }
 
 .select__option{

@@ -21,8 +21,7 @@
   rounded
   py-2
   px-3
-  border-gray-200
-  bg-gray-200
+  border-gray-300
 }
 
 .input__content--error{
@@ -54,11 +53,9 @@
   @apply
   outline-none
   w-full
-  border-b
   bg-transparent
   placeholder-gray-500
   text-gray-800
-  border-gray-200
   focus:border-gray-400
 }
 

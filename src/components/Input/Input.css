@@ -62,7 +62,7 @@
 .input__error-message{
   @apply
   text-xs
-  text-red-500
+  text-red-600
 }
 
 .input__description{

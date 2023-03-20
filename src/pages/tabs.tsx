@@ -6,7 +6,7 @@ export default function TabsPage({ doc }) {
     <DocPage title="Tabs" markdown={doc}>
       <Tabs labels={['Tab 0', 'Tab 1', 'Tab 2']}>
         <Tab>
-          <p className="text-gray-700">
+          <p className="text-neutral-700">
             0 - Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Voluptas dicta nulla doloremque et. Explicabo culpa delectus
             tempore, incidunt minus quam quibusdam tempora assumenda
@@ -15,7 +15,7 @@ export default function TabsPage({ doc }) {
         </Tab>
 
         <Tab>
-          <p className="text-gray-700">
+          <p className="text-neutral-700">
             1 - Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Voluptas dicta nulla doloremque et. Explicabo culpa delectus
             tempore, incidunt minus quam quibusdam tempora assumenda
@@ -23,7 +23,7 @@ export default function TabsPage({ doc }) {
         </Tab>
 
         <Tab>
-          <p className="text-gray-700">
+          <p className="text-neutral-700">
             2 - Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Voluptas dicta nulla doloremque et. Explicabo culpa delectus
             tempore, incidunt minus quam quibusdam tempora assumenda

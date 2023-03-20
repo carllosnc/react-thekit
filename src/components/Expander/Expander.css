@@ -1,16 +1,16 @@
 .expander{
   @apply
-  bg-gray-200
+  bg-neutral-200
   rounded-md
   overflow-hidden
   outline-offset-4
-  outline-gray-400
+  outline-neutral-400
 }
 
 .expander__title{
   @apply
   font-bold
-  text-gray-800
+  text-neutral-800
   p-3
   text-sm
   cursor-pointer
@@ -29,12 +29,12 @@
   overflow-hidden
   p-3
   pt-0
-  text-gray-600
+  text-neutral-600
 }
 
 .expander__arrow{
   @apply
   text-base
-  text-gray-500
+  text-neutral-500
 }
 

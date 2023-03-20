@@ -30,7 +30,7 @@
   bg-black
   outline-4
   outline-offset-4
-  outline-gray-700
+  outline-neutral-700
   transition-all
   hover:bg-opacity-100
 }

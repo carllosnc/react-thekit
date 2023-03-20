@@ -21,7 +21,7 @@
   rounded
   py-2
   px-3
-  border-gray-300
+  border-neutral-300
 }
 
 .input__content--error{
@@ -32,14 +32,14 @@
 .input__label{
   @apply
   text-xs
-  text-gray-700
+  text-neutral-700
 }
 
 .input__icon svg{
   @apply
   w-[18px]
   h-[18px]
-  text-gray-500
+  text-neutral-500
 }
 
 .input__success svg{
@@ -54,9 +54,9 @@
   outline-none
   w-full
   bg-transparent
-  placeholder-gray-500
-  text-gray-800
-  focus:border-gray-400
+  placeholder-neutral-500
+  text-neutral-800
+  focus:border-neutral-400
 }
 
 .input__error-message{
@@ -68,5 +68,5 @@
 .input__description{
   @apply
   text-xs
-  text-gray-700
+  text-neutral-700
 }

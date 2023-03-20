@@ -33,7 +33,7 @@ export function DocPage({ children, markdown, title }: PageProps) {
       <header className="flex flex-col gap-3">
         <Link href="/">
           <svg
-            className="w-full h-auto max-w-[140px] md:max-w-[110px] fill-gray-400"
+            className="w-full h-auto max-w-[140px] md:max-w-[110px] fill-neutral-400"
             viewBox="0 0 189 70"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +46,7 @@ export function DocPage({ children, markdown, title }: PageProps) {
             <path d="M175.988 26.0352V55.2344C175.988 57.6451 176.5 59.3627 177.524 60.3872C178.549 61.3515 180.327 61.8336 182.858 61.8336H188.915V68.7944H181.502C176.922 68.7944 173.487 67.7397 171.196 65.6304C168.906 63.5211 167.761 60.0557 167.761 55.2344V26.0352H161.343V19.2552H167.761V6.78H175.988V19.2552H188.915V26.0352H175.988Z" />
           </svg>
         </Link>
-        <p className="text-gray-500"> React components </p>
+        <p className="text-neutral-500"> React components </p>
       </header>
 
       <div className="doc-page__wrapper">

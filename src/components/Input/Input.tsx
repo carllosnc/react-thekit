@@ -46,7 +46,9 @@ export function Input({
             {icon}
           </span>
         )}
+
         <input data-testid="input-field" className="input__field" {...props} />
+
         {success && (
           <span data-testid="input-success" className="input__success">
             <FiCheck />

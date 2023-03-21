@@ -21,6 +21,10 @@
   rounded
   py-2
   px-3
+  focus-within:ring-2
+  focus-within:ring-offset-2
+  focus-within:ring-blue-500
+  focus-within:ring-offset-white
   border-neutral-300
 }
 
@@ -54,9 +58,9 @@
   outline-none
   w-full
   bg-transparent
+  bg-white
   placeholder-neutral-500
   text-neutral-800
-  focus:border-neutral-400
 }
 
 .input__error-message{

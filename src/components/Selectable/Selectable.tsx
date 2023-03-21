@@ -76,7 +76,7 @@ export function Selectable({
               />
             ) : null}
 
-            {item}
+            <div className="selectable__content">{item}</div>
           </div>
         )
       })}

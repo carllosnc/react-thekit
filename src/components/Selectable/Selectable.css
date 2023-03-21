@@ -1,8 +1,8 @@
 .selectable {
   @apply
   flex
-  flex-col
-  gap-4;
+  gap-4
+  relative;
 }
 
 .selectable__item {
@@ -10,28 +10,38 @@
   outline-offset-4
   outline-neutral-400
   bg-neutral-200
-  rounded-md
+  rounded
+  w-full
+  h-[150px]
   p-4
   transition-all
   text-neutral-700
   relative
   flex
   items-center
-  gap-3;
+  gap-3
 }
 
 .selectable__item--active {
   @apply
   transition-all
-  bg-neutral-300
 }
 
 .selectable__mark {
   @apply
   absolute
   left-[0px]
+  w-full
+  h-full
+  rounded
+  bg-blue-200
+  z-10
+}
+
+.selectable__content {
+  @apply
+  w-full
+  h-full
+  relative
   z-20
-  w-[3px]
-  h-[20px]
-  bg-blue-600
 }

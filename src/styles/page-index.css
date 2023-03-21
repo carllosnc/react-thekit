@@ -16,12 +16,6 @@
   gap-8
 }
 
-.index__title {
-  @apply
-  text-5xl
-  text-neutral-600
-}
-
 .index__description {
   @apply
   text-neutral-600
@@ -47,14 +41,15 @@
   gap-4
   items-center
   transition-all
+  text-neutral-600
 
-  hover:bg-neutral-100
+  hover:border-blue-500
 }
 
 .index__item__icon {
   @apply
   text-[25px]
-  opacity-50
+  text-neutral-900
 }
 
 /* Lazy image transition */

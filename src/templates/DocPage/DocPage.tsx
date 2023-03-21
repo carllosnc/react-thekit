@@ -5,6 +5,8 @@ import SyntaxHighlighter from 'react-syntax-highlighter'
 import { xcode } from 'react-syntax-highlighter/dist/cjs/styles/hljs'
 import Link from 'next/link'
 import { FaGithubAlt } from 'react-icons/fa'
+import { useRouter } from 'next/router'
+import { FiChevronLeft } from 'react-icons/fi'
 
 type PageProps = {
   children: any
@@ -14,6 +16,9 @@ type PageProps = {
 
 export function DocPage({ children, markdown, title }: PageProps) {
   const content = markdown ? JSON.parse(markdown) : null
+  const { pathname } = useRouter()
+
+  console.log(pathname)
 
   return (
     <div className="max-w-[800px] m-auto px-6 py-[100px] flex flex-col gap-14">
@@ -31,12 +36,20 @@ export function DocPage({ children, markdown, title }: PageProps) {
         <FaGithubAlt className="text-[40px] text-white" />
       </a>
 
-      <Link href="/">
-        <header className="flex flex-col rounded-lg border border-neutral-300 p-5 transition-all hover:border-blue-500">
+      <header className="flex gap-6 items-center rounded-lg transition-all hover:border-blue-500">
+        {pathname !== '/' && (
+          <Link
+            href="/"
+            className="w-[35px] h-[35px] flex justify-center items-center bg-blue-500 hover:bg-blue-700 rounded-full"
+          >
+            <FiChevronLeft className="text-white text-lg" />
+          </Link>
+        )}
+        <div>
           <h2 className="text-[40px] text-neutral-800"> TheKit </h2>
           <p className="text-neutral-500"> Some useful react components </p>
-        </header>
-      </Link>
+        </div>
+      </header>
 
       <div className="flex flex-col gap-8">
         {title && (

@@ -25,6 +25,7 @@
 .markdown pre {
   @apply
   !text-sm
+  sm:!text-xs
   p-0
   rounded
   border

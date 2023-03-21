@@ -16,7 +16,11 @@
 
 .button--loading{
   @apply
-  animate-pulse
+  flex
+  gap-3
+  justify-center
+  items-center
+  hover:bg-neutral-800
   !cursor-not-allowed
 }
 

@@ -21,11 +21,12 @@
   rounded
   py-2
   px-3
+  bg-white
   focus-within:ring-2
   focus-within:ring-offset-2
   focus-within:ring-blue-500
   focus-within:ring-offset-white
-  border-neutral-300
+  border-neutral-400
 }
 
 .input__content--error{

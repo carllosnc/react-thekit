@@ -1,61 +1,3 @@
-.doc-page {
-  @apply
-  max-w-[800px]
-  m-auto
-  px-6
-  py-[100px]
-  flex
-  flex-col
-  gap-14
-}
-
-.doc-page__wrapper {
-  @apply
-  flex
-  flex-col
-  gap-8
-}
-
-.doc-page__header {
-  @apply
-  flex
-  flex-col
-  gap-3
-}
-
-.doc-page__title {
-  @apply
-  text-3xl
-  font-bold
-  text-neutral-700
-  pb-2
-  border-b
-  border-neutral-200
-}
-
-.doc-page__emoji {
-  @apply
-  text-2xl
-}
-
-.doc-page__back {
-  @apply
-  text-blue-600
-  flex
-  gap-3
-  items-center
-}
-
-.doc-page__back > span {
-  @apply
-  hover:underline
-}
-
-.doc-line {
-  @apply
-  border-neutral-200
-}
-
 .markdown {
   @apply
   prose
@@ -76,7 +18,7 @@
   pb-2
   border-b
   border-neutral-200
-  text-neutral-800
+  text-neutral-900
   text-lg
 }
 
@@ -110,25 +52,4 @@
   p-[2px]
   pt-[4px]
   bg-blue-100
-}
-
-.github {
-  @apply
-  animate-bounce
-  w-[70px]
-  h-[70px]
-  fixed
-  bottom-[20px]
-  right-[20px]
-  bg-neutral-800
-  rounded-full
-  flex
-  justify-center
-  items-center
-}
-
-.github__icon {
-  @apply
-  text-[40px]
-  text-white
 }

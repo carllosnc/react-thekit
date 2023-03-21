@@ -23,7 +23,7 @@ npm i -S react-lazy-load
 ## Usage
 
 ```jsx
-<BlockImage
+<ImageBlock
   className="max-w-[400px]"
   width={300}
   height={200}

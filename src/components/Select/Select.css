@@ -36,9 +36,10 @@
   truncate
   rounded
   text-neutral-700
-  bg-neutral-200
-  outline-neutral-400
-  outline-offset-2
+  border
+  border-neutral-300
+  outline-blue-500
+  outline-offset-4
   appearance-none
 }
 

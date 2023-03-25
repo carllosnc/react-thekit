@@ -7,7 +7,7 @@ describe('<Selectable /> component', () => {
       <Selectable
         start={1}
         onSelect={data => {
-          console.log(data)
+          //
         }}
       >
         <SelectableItem data={'foo'}>

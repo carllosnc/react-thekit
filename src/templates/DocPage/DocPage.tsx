@@ -18,8 +18,6 @@ export function DocPage({ children, markdown, title }: PageProps) {
   const content = markdown ? JSON.parse(markdown) : null
   const { pathname } = useRouter()
 
-  console.log(pathname)
-
   return (
     <div className="max-w-[800px] m-auto px-6 py-[100px] flex flex-col gap-14">
       <Head>
@@ -30,7 +28,7 @@ export function DocPage({ children, markdown, title }: PageProps) {
       <a
         target="__blank"
         href="https://github.com/C4co/cn-react-thekit"
-        className="animate-bounce w-[70px] h-[70px] fixed bottom-[20px] right-[20px] bg-neutral-800 rounded-full flex justify-center items-center
+        className="animate-bounce w-[70px] h-[70px] fixed bottom-[20px] right-[20px] bg-gradient-to-b from-sky-500 to-blue-700 rounded-full flex justify-center items-center
         "
       >
         <FaGithubAlt className="text-[40px] text-white" />

@@ -8,7 +8,6 @@ export default function SelectPage({ doc }) {
   return (
     <DocPage title="Selectable" markdown={doc}>
       <Selectable
-        start={1}
         onSelect={data => {
           setData(data)
         }}

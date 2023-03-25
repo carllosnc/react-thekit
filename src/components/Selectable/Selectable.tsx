@@ -17,11 +17,7 @@ type SelectableProps = {
   start?: number
 }
 
-export function Selectable({
-  children,
-  onSelect,
-  start = -1,
-}: SelectableProps) {
+export function Selectable({ children, onSelect, start = 0 }: SelectableProps) {
   const [isSelected, setIsSelected] = useState<number>(start)
 
   function clickHandle(item: ReactElement, index: number) {
@@ -43,9 +39,19 @@ export function Selectable({
     }
   }
 
+  useEffect(() => {
+    children.forEach((item: ReactElement, index: number) => {
+      const props = item.props as SelectableItemProps
+
+      if (index === isSelected) {
+        onSelect(props.data)
+      }
+    })
+  }, [start, children, isSelected, onSelect])
+
   return (
     <div data-testid="selectable" className="selectable">
-      {children.map((item, index) => {
+      {children.map((item: ReactElement, index: number) => {
         return (
           <div
             data-testid="selectable-item"

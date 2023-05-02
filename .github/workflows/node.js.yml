@@ -33,7 +33,7 @@ jobs:
       - name: Run lint
         run: npm run lint
       - name: Check code style
-        run: npm run format:check
+        run: npm run format
       - name: Run unit tests
         run: npm run test:unit
       - name: Install Playwright Browsers

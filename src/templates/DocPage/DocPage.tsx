@@ -67,19 +67,20 @@ export function DocPage({ children, markdown, title }: PageProps) {
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}
             components={{
-              code({ node, inline, className, children, ...props }) {
+              code(props) {
+                const { children, className, node, ...rest } = props
                 const match = /language-(\w+)/.exec(className || '')
-                return !inline && match ? (
+                return match ? (
                   <SyntaxHighlighter
-                    style={xcode}
-                    language={match[1]}
+                    {...rest}
                     PreTag="div"
-                    {...props}
-                  >
-                    {String(children).replace(/\n$/, '')}
-                  </SyntaxHighlighter>
+                    // eslint-disable-next-line react/no-children-prop
+                    children={String(children).replace(/\n$/, '')}
+                    language={match[1]}
+                    style={xcode}
+                  />
                 ) : (
-                  <code className={className} {...props}>
+                  <code {...rest} className={className}>
                     {children}
                   </code>
                 )

@@ -16,7 +16,7 @@ describe('<Tabs />', () => {
         <Tab>
           <div> tab-content-2 </div>
         </Tab>
-      </Tabs>
+      </Tabs>,
     )
   }
 

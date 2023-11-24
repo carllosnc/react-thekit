@@ -45,7 +45,7 @@ describe('<Select /> component', () => {
 
     expect(screen.getByTestId('select-placeholder')).toBeInTheDocument()
     expect(screen.getByTestId('select-placeholder')).toHaveTextContent(
-      'input placeholder'
+      'input placeholder',
     )
   })
 

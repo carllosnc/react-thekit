@@ -17,7 +17,7 @@ interface SelectProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
 const Select = forwardRef(
   (
     { placeholder, items, label, error, errorMessage, ...props }: SelectProps,
-    ref: React.Ref<HTMLSelectElement>
+    ref: React.Ref<HTMLSelectElement>,
   ) => {
     const errorClass = error ? 'select__field--error' : ''
 
@@ -69,7 +69,7 @@ const Select = forwardRef(
         </div>
       </div>
     )
-  }
+  },
 )
 
 Select.displayName = 'Select'

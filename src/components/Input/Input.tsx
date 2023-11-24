@@ -22,7 +22,7 @@ const Input = forwardRef(
       description,
       ...props
     }: InputProps,
-    ref: React.Ref<HTMLInputElement>
+    ref: React.Ref<HTMLInputElement>,
   ) => {
     const errorClass = error ? 'input__content--error' : ''
 
@@ -75,7 +75,7 @@ const Input = forwardRef(
         )}
       </label>
     )
-  }
+  },
 )
 
 Input.displayName = 'Input'

@@ -29,7 +29,7 @@ describe('<ImageExpande /> component', () => {
             height={500}
           />
         }
-      ></ImageExpander>
+      ></ImageExpander>,
     )
 
     expect(screen.getByTestId('image-expander')).toBeInTheDocument()
@@ -70,7 +70,7 @@ describe('<ImageExpande /> component', () => {
             height={500}
           />
         }
-      ></ImageExpander>
+      ></ImageExpander>,
     )
 
     fireEvent.click(screen.getByTestId('image-expander'))

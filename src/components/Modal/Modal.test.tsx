@@ -16,7 +16,7 @@ describe('<Modal /> component', () => {
     render(
       <Modal isOpen={modal} onClose={closeModal}>
         <p> modal content </p>
-      </Modal>
+      </Modal>,
     )
 
     expect(screen.getByTestId('modal')).toBeInTheDocument()
@@ -49,7 +49,7 @@ describe('<Modal /> component', () => {
     render(
       <Modal isOpen={result.current[0]} onClose={result.current[2]}>
         <p data-testid="content"> modal content </p>
-      </Modal>
+      </Modal>,
     )
 
     expect(result.current[0]).toBe(true)

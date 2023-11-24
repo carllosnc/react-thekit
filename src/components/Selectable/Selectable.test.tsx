@@ -21,7 +21,7 @@ describe('<Selectable /> component', () => {
         <SelectableItem data={'span'}>
           <p> Span </p>
         </SelectableItem>
-      </Selectable>
+      </Selectable>,
     )
 
     expect(screen.getByTestId('selectable')).toBeInTheDocument()

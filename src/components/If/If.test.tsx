@@ -6,13 +6,13 @@ describe('<If /> Component', () => {
     render(
       <If condition={true}>
         <span data-testid="true-condition"> true condition </span>
-      </If>
+      </If>,
     )
 
     expect(screen.getByTestId('true-condition')).toBeInTheDocument()
     expect(screen.getByTestId('true-condition')).toBeVisible()
     expect(screen.getByTestId('true-condition')).toHaveTextContent(
-      'true condition'
+      'true condition',
     )
   })
 
@@ -20,7 +20,7 @@ describe('<If /> Component', () => {
     const { queryByTestId } = render(
       <If condition={false}>
         <span data-testid="false-condition"> false condition </span>
-      </If>
+      </If>,
     )
 
     expect(screen.queryByTestId('false-condition')).toBeFalsy()
@@ -34,7 +34,7 @@ describe('<If /> Component', () => {
         <Else>
           <span data-testid="false-condition"> false condition </span>
         </Else>
-      </If>
+      </If>,
     )
 
     expect(screen.getByTestId('true-condition')).toBeInTheDocument()
@@ -49,7 +49,7 @@ describe('<If /> Component', () => {
         <Else>
           <span data-testid="false-condition"> false condition </span>
         </Else>
-      </If>
+      </If>,
     )
 
     expect(screen.getByTestId('false-condition')).toBeInTheDocument()

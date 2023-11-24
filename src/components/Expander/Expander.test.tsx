@@ -11,7 +11,7 @@ describe('<Expander /> component', () => {
     expect(screen.getByTestId('expander-title')).toBeInTheDocument()
     expect(screen.getByTestId('expander-title')).toBeVisible()
     expect(screen.getByTestId('expander-title')).toHaveTextContent(
-      'expander title'
+      'expander title',
     )
 
     expect(screen.getByTestId('expander-arrow')).toBeInTheDocument()
@@ -23,7 +23,7 @@ describe('<Expander /> component', () => {
     expect(screen.getByTestId('expander-content')).toBeInTheDocument()
     expect(screen.getByTestId('expander-container')).not.toBeVisible()
     expect(screen.getByTestId('expander-content')).toHaveTextContent(
-      'expander content'
+      'expander content',
     )
   })
 

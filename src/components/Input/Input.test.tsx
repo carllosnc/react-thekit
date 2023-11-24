@@ -29,19 +29,19 @@ describe('<Input /> component ', () => {
   test('check input error', () => {
     render(<Input error label="input label" />)
     expect(screen.getByTestId('input-content')).toHaveClass(
-      'input__content--error'
+      'input__content--error',
     )
   })
 
   test('check input error message', () => {
     render(
-      <Input error errorMessage="input error message" label="input label" />
+      <Input error errorMessage="input error message" label="input label" />,
     )
 
     expect(screen.getByTestId('input-error-message')).toBeInTheDocument()
     expect(screen.getByTestId('input-error-message')).toBeVisible()
     expect(screen.getByTestId('input-error-message')).toHaveTextContent(
-      'input error message'
+      'input error message',
     )
   })
 

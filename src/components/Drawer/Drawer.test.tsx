@@ -16,7 +16,7 @@ describe('<Drawer /> component', () => {
     render(
       <Drawer isOpen={drawer} onClose={closeDrawer}>
         <p> modal content </p>
-      </Drawer>
+      </Drawer>,
     )
 
     expect(screen.getByTestId('drawer')).toBeInTheDocument()
@@ -49,7 +49,7 @@ describe('<Drawer /> component', () => {
     render(
       <Drawer isOpen={result.current[0]} onClose={result.current[2]}>
         <p data-testid="content"> drawer content </p>
-      </Drawer>
+      </Drawer>,
     )
 
     expect(result.current[0]).toBe(true)
@@ -80,7 +80,7 @@ describe('<Drawer /> component', () => {
 
     await waitFor(() => {
       expect(screen.getByTestId('drawer-content')).toHaveTextContent(
-        'drawer content'
+        'drawer content',
       )
     })
 

@@ -9,7 +9,7 @@ describe('<Reveal /> component', () => {
         <p data-testid="first-item"> first item </p>
         <p data-testid="second-item"> second item </p>
         <p data-testid="third-item"> third item </p>
-      </Reveal>
+      </Reveal>,
     )
 
     expect(screen.getByTestId('reveal')).toBeInTheDocument()

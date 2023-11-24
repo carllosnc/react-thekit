@@ -13,7 +13,7 @@ describe('<Navbar/>', () => {
         <a data-testid="navbar-item" href="https://css-tricks.com/">
           css tricks
         </a>
-      </Navbar>
+      </Navbar>,
     )
 
     expect(screen.getByTestId('navbar')).toBeInTheDocument()
@@ -44,7 +44,7 @@ describe('<Navbar/>', () => {
             css tricks
           </a>
         </NavbarDropdown>
-      </Navbar>
+      </Navbar>,
     )
 
     expect(screen.getByTestId('navbar-dropdown')).toBeInTheDocument()
@@ -53,7 +53,7 @@ describe('<Navbar/>', () => {
     expect(screen.getByTestId('navbar-dropdown-label')).toBeInTheDocument()
     expect(screen.getByTestId('navbar-dropdown-label')).toBeVisible()
     expect(screen.getByTestId('navbar-dropdown-label')).toHaveTextContent(
-      'dropdown'
+      'dropdown',
     )
 
     expect(screen.queryByTestId('navbar-dropdown-content')).toBeNull()

@@ -1,5 +1,4 @@
-import { ReactNode, useState, Fragment, useEffect } from 'react'
-import { ReactElement } from 'react-markdown/lib/react-markdown'
+import { ReactNode, useState, Fragment, useEffect, ReactElement } from 'react'
 import { motion } from 'framer-motion'
 
 interface SelectableItemProps {
@@ -64,13 +63,13 @@ export function Selectable({ children, onSelect, start = 0 }: SelectableProps) {
             onFocus={() => {
               window.addEventListener(
                 'keydown',
-                tabAction(item as ReactElement, index)
+                tabAction(item as ReactElement, index),
               )
             }}
             onBlur={() => {
               window.removeEventListener(
                 'keydown',
-                tabAction(item as ReactElement, index)
+                tabAction(item as ReactElement, index),
               )
             }}
           >

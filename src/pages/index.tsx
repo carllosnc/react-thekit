@@ -23,10 +23,48 @@ import {
   TbPhoto,
 } from 'react-icons/tb'
 
+import { SiTailwindcss, SiTypescript, SiFramer, SiReact } from 'react-icons/si'
+
 export default function Home() {
   return (
     <DocPage>
       <div className="index">
+        <p className="text-base text-neutral-700 w-full">
+          <b>TheKit</b> is a collection of React components that are designed to
+          be simple, easy to use, reponsive and customizable. All components are
+          built with <b>TypeScript</b>, <b>Tailwind</b> and <b>React</b>.
+        </p>
+
+        <div className="flex gap-[10px] w-full">
+          <SiTypescript className="bg-black text-white text-[40px] p-[10px]" />
+          <SiReact className="bg-black text-white text-[40px] p-[10px]" />
+          <SiTailwindcss className="bg-black text-white text-[40px] p-[10px]" />
+          <SiFramer className="bg-black text-white text-[40px] p-[10px]" />
+        </div>
+
+        <div className="text-base text-neutral-700 w-full flex flex-col gap-4">
+          <span className="text-red-700">
+            🚨 TheKit is an experiment(not ready to production) and has
+            unconventional method to download and install components.
+          </span>
+          <ul>
+            <li>
+              - All components are independent and can be downloaded separately.
+            </li>
+            <li>
+              - The component is composed of 4 files: structure, style, test and
+              README.
+            </li>
+            <li>
+              - The structure file is a JSX file that contains the component
+              code.
+            </li>
+            <li>
+              - {"There's"} no versioning, the component is always the latest.
+            </li>
+          </ul>
+        </div>
+
         <div className="index__menu">
           <Link data-testid="button-link" href="/button">
             <span className="index__item">

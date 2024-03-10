@@ -18,7 +18,7 @@ export function DocPage({ children, markdown, title }: PageProps) {
   const { pathname } = useRouter()
 
   return (
-    <div className="max-w-[800px] m-auto px-4 py-[100px] flex flex-col gap-8">
+    <div className="max-w-[800px] m-auto px-6 py-[100px] flex flex-col gap-8">
       <Head>
         <meta name="viewport" content="width=device-width" />
         <title>{`${title || 'React'} - thekit`}</title>

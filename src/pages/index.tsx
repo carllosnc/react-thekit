@@ -47,20 +47,20 @@ export default function Home() {
             🚨 TheKit is an experiment(not ready to production) and has
             unconventional method to download and install components.
           </span>
-          <ul>
+          <ul className="flex flex-col gap-2">
             <li>
-              - All components are independent and can be downloaded separately.
+              • All components are independent and can be downloaded separately.
             </li>
             <li>
-              - The component is composed of 4 files: structure, style, test and
+              • The component is composed of 4 files: structure, style, test and
               README.
             </li>
             <li>
-              - The structure file is a JSX file that contains the component
+              • The structure file is a JSX file that contains the component
               code.
             </li>
             <li>
-              - {"There's"} no versioning, the component is always the latest.
+              • {"There's"} no versioning, the component is always the latest.
             </li>
           </ul>
         </div>

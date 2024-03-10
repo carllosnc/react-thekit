@@ -4,7 +4,8 @@ import remarkGfm from 'remark-gfm'
 import SyntaxHighlighter from 'react-syntax-highlighter'
 import { xcode } from 'react-syntax-highlighter/dist/cjs/styles/hljs'
 import Link from 'next/link'
-import { FaGithubAlt } from 'react-icons/fa'
+import { FaGithubAlt, FaArrowLeft } from 'react-icons/fa'
+import { useRouter } from 'next/router'
 
 type PageProps = {
   children: any
@@ -14,9 +15,10 @@ type PageProps = {
 
 export function DocPage({ children, markdown, title }: PageProps) {
   const content = markdown ? JSON.parse(markdown) : null
+  const { pathname } = useRouter()
 
   return (
-    <div className="max-w-[800px] m-auto px-6 py-[100px] flex flex-col gap-14">
+    <div className="max-w-[800px] m-auto px-4 py-[100px] flex flex-col gap-8">
       <Head>
         <meta name="viewport" content="width=device-width" />
         <title>{`${title || 'React'} - thekit`}</title>
@@ -25,7 +27,7 @@ export function DocPage({ children, markdown, title }: PageProps) {
       <a
         target="__blank"
         href="https://github.com/C4co/cn-react-thekit"
-        className="animate-bounce w-[70px] h-[70px] fixed bottom-[20px] right-[20px] bg-gradient-to-b from-sky-500 to-blue-700 rounded-full flex justify-center items-center
+        className="animate-bounce w-[70px] h-[70px] fixed bottom-[20px] right-[20px] bg-gradient-to-b from-sky-500 to-blue-700 z-10 rounded-full flex justify-center items-center
         "
       >
         <FaGithubAlt className="text-[40px] text-white" />
@@ -34,8 +36,11 @@ export function DocPage({ children, markdown, title }: PageProps) {
       <header className="flex gap-6 items-center rounded-lg transition-all hover:border-blue-500">
         <div className="w-full flex">
           <Link href="/">
-            <h2 className="text-[25px] font-black text-white bg-black px-4 py-1 transition-all">
-              TheKit
+            <h2 className="text-[25px] font-black text-white bg-black px-4 py-1 transition-all flex justify-center items-center gap-4">
+              {pathname !== '/' ? (
+                <FaArrowLeft className="text-white text-[18px]" />
+              ) : null}
+              <span>TheKit</span>
             </h2>
           </Link>
         </div>

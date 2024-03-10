@@ -17,7 +17,10 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <meta charSet="UTF-8" />
-          <meta name="description" content="Some useful react components" />
+          <meta
+            name="description"
+            content="TheKit is a collection of React components that are designed to be simple, easy to use, and customizable. All components are built with TypeScript, Tailwind and react."
+          />
           <meta
             name="keywords"
             content="react, components, javascript, html, css"

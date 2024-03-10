@@ -5,8 +5,6 @@ import SyntaxHighlighter from 'react-syntax-highlighter'
 import { xcode } from 'react-syntax-highlighter/dist/cjs/styles/hljs'
 import Link from 'next/link'
 import { FaGithubAlt } from 'react-icons/fa'
-import { useRouter } from 'next/router'
-import { FiChevronLeft } from 'react-icons/fi'
 
 type PageProps = {
   children: any
@@ -16,7 +14,6 @@ type PageProps = {
 
 export function DocPage({ children, markdown, title }: PageProps) {
   const content = markdown ? JSON.parse(markdown) : null
-  const { pathname } = useRouter()
 
   return (
     <div className="max-w-[800px] m-auto px-6 py-[100px] flex flex-col gap-14">
@@ -35,17 +32,12 @@ export function DocPage({ children, markdown, title }: PageProps) {
       </a>
 
       <header className="flex gap-6 items-center rounded-lg transition-all hover:border-blue-500">
-        {pathname !== '/' && (
-          <Link
-            href="/"
-            className="w-[35px] h-[35px] flex justify-center items-center bg-blue-500 hover:bg-blue-700 rounded-full"
-          >
-            <FiChevronLeft className="text-white text-lg" />
+        <div className="w-full flex">
+          <Link href="/">
+            <h2 className="text-[25px] font-black text-white bg-black px-4 py-1 transition-all">
+              TheKit
+            </h2>
           </Link>
-        )}
-        <div>
-          <h2 className="text-[40px] text-neutral-800"> TheKit </h2>
-          <p className="text-neutral-500"> Some useful react components </p>
         </div>
       </header>
 

@@ -1,4 +1,4 @@
-import { FiMenu } from 'react-icons/fi'
+import { FiMenu, FiX } from 'react-icons/fi'
 import { useState, MouseEvent, ReactNode } from 'react'
 
 type NavbarProps = {
@@ -45,7 +45,11 @@ export function Navbar({ children, brand }: NavbarProps) {
           onClick={toggle}
           className="navbar__open-menu"
         >
-          <FiMenu />
+          {menu ? (
+            <FiX className="text-[30px]" />
+          ) : (
+            <FiMenu className="text-[30px]" />
+          )}
         </div>
       </div>
     </div>

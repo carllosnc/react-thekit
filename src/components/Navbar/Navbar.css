@@ -8,7 +8,7 @@
   top-0
   left-0
   flex
-  bg-neutral-600
+  bg-black
   bg-opacity-60
   backdrop-blur-sm
   text-sm
@@ -18,8 +18,6 @@
   @apply
   w-[40px]
   h-[40px]
-  bg-neutral-900
-  rounded-full
   justify-center
   items-center
   text-white

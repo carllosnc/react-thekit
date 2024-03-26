@@ -36,10 +36,10 @@ export default function Home() {
         </p>
 
         <div className="flex gap-[10px] w-full">
-          <SiTypescript className="bg-black text-white text-[40px] p-[10px]" />
-          <SiReact className="bg-black text-white text-[40px] p-[10px]" />
-          <SiTailwindcss className="bg-black text-white text-[40px] p-[10px]" />
-          <SiFramer className="bg-black text-white text-[40px] p-[10px]" />
+          <SiTypescript className="bg-black text-white text-[40px] p-[10px] rounded-md" />
+          <SiReact className="bg-black text-white text-[40px] p-[10px] rounded-md" />
+          <SiTailwindcss className="bg-black text-white text-[40px] p-[10px] rounded-md" />
+          <SiFramer className="bg-black text-white text-[40px] p-[10px] rounded-md" />
         </div>
 
         <div className="text-base text-neutral-700 w-full flex flex-col gap-4">

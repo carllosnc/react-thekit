@@ -12,44 +12,44 @@ type RevealProps = {
 const DOWN = {
   start: {
     opacity: 0,
-    y: '-100px',
+    translateY: '-300px',
   },
   end: {
     opacity: 1,
-    y: '0px',
+    translateY: '0px',
   },
 }
 
 const UP = {
   start: {
     opacity: 0,
-    y: '100px',
+    translateY: '300px',
   },
   end: {
     opacity: 1,
-    y: '0px',
+    translateY: '0px',
   },
 }
 
 const LEFT = {
   start: {
     opacity: 0,
-    x: '-100px',
+    translateX: '-300px',
   },
   end: {
     opacity: 1,
-    x: '0px',
+    translateX: '0px',
   },
 }
 
 const RIGHT = {
   start: {
     opacity: 0,
-    x: '100px',
+    translateX: '300px',
   },
   end: {
     opacity: 1,
-    x: '0px',
+    translateX: '0px',
   },
 }
 

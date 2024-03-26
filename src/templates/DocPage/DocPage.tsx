@@ -2,7 +2,7 @@ import Head from 'next/head'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import SyntaxHighlighter from 'react-syntax-highlighter'
-import { xcode } from 'react-syntax-highlighter/dist/cjs/styles/hljs'
+import { github } from 'react-syntax-highlighter/dist/cjs/styles/hljs'
 import Link from 'next/link'
 import { FaGithubAlt, FaArrowLeft } from 'react-icons/fa'
 import { useRouter } from 'next/router'
@@ -18,7 +18,7 @@ export function DocPage({ children, markdown, title }: PageProps) {
   const { pathname } = useRouter()
 
   return (
-    <div className="max-w-[800px] m-auto px-6 py-[100px] flex flex-col gap-8">
+    <div className="max-w-[800px] w-full m-auto px-6 py-[100px] flex flex-col gap-8 overflow-x-hidden">
       <Head>
         <meta name="viewport" content="width=device-width" />
         <title>{`${title || 'React'} - thekit`}</title>
@@ -27,7 +27,7 @@ export function DocPage({ children, markdown, title }: PageProps) {
       <a
         target="__blank"
         href="https://github.com/C4co/cn-react-thekit"
-        className="animate-bounce w-[70px] h-[70px] fixed bottom-[20px] right-[20px] bg-gradient-to-b from-sky-500 to-blue-700 z-10 rounded-full flex justify-center items-center
+        className="animate-bounce w-[70px] h-[70px] fixed bottom-[20px] right-[20px] bg-gradient-to-b from-neutral-700 to-black z-10 rounded-full flex justify-center items-center
         "
       >
         <FaGithubAlt className="text-[40px] text-white" />
@@ -35,12 +35,12 @@ export function DocPage({ children, markdown, title }: PageProps) {
 
       <header className="flex gap-6 items-center rounded-lg transition-all hover:border-blue-500">
         <div className="w-full flex">
-          <Link href="/">
-            <h2 className="text-[25px] font-black text-white bg-black px-4 py-1 transition-all flex justify-center items-center gap-4">
+          <Link className="w-full" href="/">
+            <h2 className="text-[35px] font-bold py-2 rounded-full transition-all flex items-center gap-4">
               {pathname !== '/' ? (
-                <FaArrowLeft className="text-white text-[18px]" />
+                <FaArrowLeft className=" w-[35px] h-[35px] rounded-full border border-neutral-300 p-[9px]" />
               ) : null}
-              <span>TheKit</span>
+              <span>THEKIT</span>
             </h2>
           </Link>
         </div>
@@ -74,7 +74,7 @@ export function DocPage({ children, markdown, title }: PageProps) {
                     // eslint-disable-next-line react/no-children-prop
                     children={String(children).replace(/\n$/, '')}
                     language={match[1]}
-                    style={xcode}
+                    style={github}
                   />
                 ) : (
                   <code {...rest} className={className}>

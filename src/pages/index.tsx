@@ -52,12 +52,8 @@ export default function Home() {
               • All components are independent and can be downloaded separately.
             </li>
             <li>
-              • The component is composed of 4 files: structure, style, test and
-              README.
-            </li>
-            <li>
-              • The structure file is a JSX file that contains the component
-              code.
+              • Each component is composed of 4 files: structure, style, test
+              and README.
             </li>
             <li>
               • {"There's"} no versioning, the component is always the latest.

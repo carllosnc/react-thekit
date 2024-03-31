@@ -33,14 +33,14 @@ export function DocPage({ children, markdown, title }: PageProps) {
         <FaGithubAlt className="text-[40px] text-white" />
       </a>
 
-      <header className="flex gap-6 items-center rounded-lg transition-all hover:border-blue-500">
+      <header className="flex gap-6 items-center transition-all hover:border-blue-500">
         <div className="w-full flex">
           <Link className="w-full" href="/">
-            <h2 className="text-[35px] font-bold py-2 rounded-full transition-all flex items-center gap-4">
+            <h2 className="text-[70px] -tracking-widest transition-all flex items-center gap-4">
               {pathname !== '/' ? (
                 <FaArrowLeft className=" w-[35px] h-[35px] rounded-full border border-neutral-300 p-[9px]" />
               ) : null}
-              <span>THEKIT</span>
+              <span>thekit</span>
             </h2>
           </Link>
         </div>

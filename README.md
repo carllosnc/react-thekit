@@ -2,6 +2,7 @@
 
 [![Node.js CI](https://github.com/C4co/react-thekit/actions/workflows/node.js.yml/badge.svg)](https://github.com/C4co/react-thekit/actions/workflows/node.js.yml)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e283ee42-0ecc-4cfe-bbfc-3f81a39aaf44/deploy-status)](https://app.netlify.com/sites/the-kit/deploys)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/1d45ab5b6c364addab172a878b813388)](https://app.codacy.com/gh/C4co/react-thekit/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
 > some react components
 

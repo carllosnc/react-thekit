@@ -4,7 +4,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e283ee42-0ecc-4cfe-bbfc-3f81a39aaf44/deploy-status)](https://app.netlify.com/sites/the-kit/deploys)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/1d45ab5b6c364addab172a878b813388)](https://app.codacy.com/gh/C4co/react-thekit/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
-> some react components
+> TheKit is a collection of React components that are designed to be simple, easy to use, reponsive and customizable. All components are built with TypeScript, Tailwind and React.
 
 ### What's inside
 

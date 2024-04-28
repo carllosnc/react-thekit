@@ -43,10 +43,6 @@ export default function Home() {
         </div>
 
         <div className="text-base text-neutral-700 w-full flex flex-col gap-4">
-          <span className="text-red-700">
-            🚨 TheKit is an experiment(not ready to production) and has
-            unconventional method to download and install components.
-          </span>
           <ul className="flex flex-col gap-2">
             <li>
               • All components are independent and can be downloaded separately.

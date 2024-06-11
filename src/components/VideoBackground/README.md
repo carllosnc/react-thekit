@@ -3,7 +3,7 @@
 ## Download
 
 ```c
-npx github-download-directory c4co/cn-react-thekit src/components/VideoBackground
+npx github-download-directory carllosnc/cn-react-thekit src/components/VideoBackground
 ```
 
 ## Import
@@ -18,7 +18,7 @@ import { VideoBackground } from '@/components'
 import { VideoBackground } from '@/components'
 
 const videoUrl =
-  'https://res.cloudinary.com/c4co/video/upload/q_59/v1654051142/thekit/video_lg54le.mp4'
+  'https://videos.pexels.com/video-files/20315562/20315562-hd_1280_720_30fps.mp4'
 
 function App() {
   return <VideoBackground video={videoUrl}>...</VideoBackground>

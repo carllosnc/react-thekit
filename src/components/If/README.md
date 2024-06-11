@@ -3,7 +3,7 @@
 ## Download
 
 ```c
-npx github-download-directory c4co/cn-react-thekit src/components/If
+npx github-download-directory carllosnc/cn-react-thekit src/components/If
 ```
 
 ## Import

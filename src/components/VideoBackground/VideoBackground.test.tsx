@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react'
 import { VideoBackground } from './VideoBackground'
 
 const videoUrl =
-  'https://res.cloudinary.com/c4co/video/upload/q_59/v1654051142/thekit/video_lg54le.mp4'
+  'https://res.cloudinary.com/carllosnc/video/upload/q_59/v1654051142/thekit/video_lg54le.mp4'
 
 describe('<VideoBackground /> component', () => {
   test('check initial render', () => {

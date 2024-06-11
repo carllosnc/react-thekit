@@ -26,7 +26,7 @@ export function DocPage({ children, markdown, title }: PageProps) {
 
       <a
         target="__blank"
-        href="https://github.com/C4co/cn-react-thekit"
+        href="https://github.com/carllosnc/cn-react-thekit"
         className="animate-bounce w-[70px] h-[70px] fixed bottom-[20px] right-[20px] bg-gradient-to-b from-neutral-700 to-black z-10 rounded-full flex justify-center items-center
         "
       >

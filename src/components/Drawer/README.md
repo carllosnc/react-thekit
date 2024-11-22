@@ -3,7 +3,7 @@
 ## Download
 
 ```c
-npx github-download-directory carllosnc/cn-react-thekit src/components/Drawer
+npx github-download-directory carllosnc/react-thekit src/components/Drawer
 ```
 
 ## Import

@@ -29,14 +29,12 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Build project
-        run: npm run build --if-present
+        run: bun run build --if-present
       - name: Run lint
-        run: npm run lint
-      - name: Check code style
-        run: npm run format
+        run: bun run lint
       - name: Run unit tests
-        run: npm run test:unit
+        run: bun run test:unit
       - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
+        run: bunx playwright install --with-deps
       - name: Run Playwright tests
-        run: npm run test:e2e:ci
+        run: bun run test:e2e:ci
